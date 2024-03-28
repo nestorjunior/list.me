@@ -4,8 +4,8 @@ export function ItemComponent() {
   return(
     <div className="container d-flex justify-content-center vh-100">
       <div className="p-4">
-        <div className="form-check mb-2 list-item-wishorama">
-          <input className="form-check-input" type="checkbox" value="" id="checkbox1" />
+        <div className="form-check mb-2 list-item-wishorama list-item-wishorama__checked">
+          <input className="form-check-input" type="checkbox" value="" id="checkbox1" checked />
           <label className="form-check-label" htmlFor="checkbox1">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit
           </label>
