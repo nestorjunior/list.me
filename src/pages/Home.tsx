@@ -9,10 +9,10 @@ export function Home() {
           <NavbarComponent/>
         </header>
         <main>
-
+    
         </main>
         <footer>
-          
+
         </footer>
       </div>
       
