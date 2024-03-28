@@ -1,3 +1,10 @@
-.centered-placeholder::placeholder {
-  text-align: center;
+.navbar-wishorama {
+  .centered-placeholder::placeholder {
+    text-align: center;
+  }
+  svg {
+    cursor: pointer;
+  }
 }
+
+
