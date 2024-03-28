@@ -7,13 +7,15 @@ export function Home() {
   return(
     <>
       <div className='home d-flex flex-column vh-100'>
+      <div className="container">
         <header>
           <NavbarComponent/>
         </header>
         <main className='flex-grow-1'>
           <ItemComponent />
         </main>
-        <FooterComponent />
+      </div>
+      <FooterComponent />
       </div>
       
     </>
