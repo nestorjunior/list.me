@@ -1,10 +1,16 @@
-import { Button } from "react-bootstrap"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Home } from './pages/Home'
 
 function App() {
   return (
     <>
-      <h3>Wishorama®</h3>
-      <Button variant="primary">Primary button</Button>
+      <Router>
+        <div className='App'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   )
 }
