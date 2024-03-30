@@ -1,6 +1,6 @@
-import { ButtonComponent } from './ButtonComponent'
-import { SearchComponent } from './SearchComponent'
-import { LogoComponent } from './LogoComponent'
+import { ButtonComponent } from '../button/ButtonComponent'
+import { SearchComponent } from '../search/SearchComponent'
+import { LogoComponent } from '../logo/LogoComponent'
 
 import './NavbarComponent.scss'
 import { CiUser } from "react-icons/ci";
