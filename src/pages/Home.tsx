@@ -1,25 +1,29 @@
+import { Container } from 'react-bootstrap';
+import NavigationBar from '../components/NavigationBar/NavigationBar'
+import { Footer } from '../components/Footer/Footer';
+import CardHeader from '../components/CardHeader/CardHeader';
+
 import './Home.scss'
-import { NavbarComponent } from '../components/navbar/NavbarComponent'
-import { FooterComponent } from '../components/footer/FooterComponent'
-import { ItemComponent } from '../components/item/ItemComponent'
-import { NavbarComponentLogin } from '../components/navbar-login/NavbarComponentLogin'
 
 export function Home() {
-  return(
-    <>
-      <div className='home d-flex flex-column vh-100'>
-      <NavbarComponentLogin />
-			<div className="container">
-        <header>
-          <NavbarComponent/>
-        </header>
-        <main className='flex-grow-1'>
-          <ItemComponent />
-        </main>
-      </div>
-      <FooterComponent />
-      </div>
-      
-    </>
-  )
+	return (
+		<>
+			<Container fluid className='container-wb p-0'>
+				<NavigationBar />
+				<header>
+					<Container className='container-wb__title p-0' style={{ width: '900px' }}>
+						<h1 className="text-left title-wb">Wishbox® | <span>Share, connect, gift</span></h1>
+					</Container>
+					<CardHeader />
+				</header>
+				<main>
+					{/* Section */}
+					{/* Card-Products */}
+				</main>
+				<footer>
+					<Footer />
+				</footer>
+			</Container>
+		</>
+	)
 }
