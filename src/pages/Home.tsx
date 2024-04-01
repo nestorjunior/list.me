@@ -16,9 +16,14 @@ export function Home() {
 					</Container>
 					<CardHeader />
 				</header>
-				<main>
-					{/* Section */}
-					{/* Card-Products */}
+				<main className='mb-3 justify-content-center d-flex'>
+					<section>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
+						{/* Card-Products */}
+					</section>
 				</main>
 				<footer>
 					<Footer />
