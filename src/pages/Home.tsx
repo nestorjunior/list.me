@@ -4,6 +4,7 @@ import { Footer } from '../components/Footer/Footer';
 import CardHeader from '../components/CardHeader/CardHeader';
 
 import './Home.scss'
+import CardProducts from '../components/CardProducts/CardProducts';
 
 export function Home() {
 	return (
@@ -18,11 +19,12 @@ export function Home() {
 				</header>
 				<main className='mb-3 justify-content-center d-flex'>
 					<section>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ea vel libero eum, molestiae rem maiores fuga culpa nesciunt autem! Et esse dicta deserunt exercitationem quas velit aut enim beatae!
-						{/* Card-Products */}
+						<CardProducts />
+						<CardProducts />
+						<CardProducts />
+						<CardProducts />
+						<CardProducts />
+						<CardProducts />
 					</section>
 				</main>
 				<footer>

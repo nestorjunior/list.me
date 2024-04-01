@@ -5,7 +5,7 @@ import './CardHeader.scss'
 
 const CardHeader = () => {
   return (
-		<Card className="card card-wb mb-3 d-flex justify-content-center" style={{ width: '900px', height: '230px' }}>
+		<Card className="card card-header-wb mb-3 d-flex justify-content-center" style={{ width: '900px', height: '230px' }}>
 			<div className="row g-0 align-items-center">
 					<div className="col-md-4 d-flex justify-content-center">
 							<Card.Img src="https://i.pravatar.cc/150" className="img-fluid" />
@@ -17,8 +17,6 @@ const CardHeader = () => {
 								<Card.Text>Escritora</Card.Text>
 								<Card.Text>This is a wider card with supporting text below as a natural lead-in to additional content.</Card.Text>
 								<Card.Text><FaMapPin /> São Paulo/SP</Card.Text>
-
-								<Card.Text><small className="text-body-secondary">Last updated 3 mins ago</small></Card.Text>
 							</Card.Body>
 					</div>
 			</div>

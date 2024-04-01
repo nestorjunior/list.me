@@ -1,0 +1,30 @@
+.card-products-wb {
+	border: 0!important;
+	img {
+		border-radius: 10%;
+		width: 150px;
+		border: 2px solid var(--gray-100);
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: var(--black);
+	}
+
+	button {
+		background-color: var(--orange-500);
+		color: #fff;
+		transition: background-color 0.3s, color 0.3s;
+		border: 0;
+		padding: 2px 5px;
+		font-size: 0.875rem;
+		&:hover {
+			background-color: var(--orange-500-hover);
+			color: #fff;
+		}
+	}
+
+}
