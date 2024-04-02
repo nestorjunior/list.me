@@ -15,6 +15,16 @@ export function Home() {
 		setShowAllProducts(true)
 	}
 
+	const products = [
+		<CardProducts />,
+		<CardProducts />,
+		<CardProducts />,
+		<CardProducts />,
+		<CardProducts />,
+		<CardProducts />,
+		<CardProducts />,
+	]
+
 	return (
 		<>
 			<Container fluid className='container-wb p-0'>
@@ -27,30 +37,16 @@ export function Home() {
 				</header>
 				<main className='mb-3 justify-content-center d-flex'>
 					<section>
-						<CardProducts />
-						<CardProducts />
-						<CardProducts />
-						<CardProducts />
-						
-						{showAllProducts && (
-							<>
-								<CardProducts />
-								<CardProducts />
-								<CardProducts />
-								<CardProducts />
-							</>
-						)}
-						<footer className="text-center mb-3">
-						{!showAllProducts && (
-								<CiCircleChevDown size={50} onClick={handleShowMore} className="button-show-more-wb" />
-						)}
-					</footer>
+						{ products.slice(0, showAllProducts ? products.length : 4) }
+						<span className="text-center mb-3">
+							{!showAllProducts && (
+									<CiCircleChevDown size={50} onClick={handleShowMore} className="button-show-more-wb" />
+							)}
+						</span>
 					</section>
 				</main>
-				<footer>
-					<Footer />
-				</footer>
 			</Container>
+			<Footer />
 		</>
 	)
 }

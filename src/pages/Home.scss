@@ -33,6 +33,7 @@ header {
 
 main {
 	background: var(--white-100);
+	flex: 1;
 }
 
 section {
@@ -56,5 +57,5 @@ section {
 }
 
 footer {
-	
+	margin-top: auto;
 }
