@@ -2,6 +2,7 @@ import { Card } from 'react-bootstrap';
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { MdOutlineDescription } from "react-icons/md";
 import { FaLink } from "react-icons/fa6";
+import Share from '../Share/Share';
 
 import './CardProducts.scss'
 
@@ -23,6 +24,7 @@ const CardProducts = () => {
 								<button type="button" className="btn m-1">
 									2024
 								</button>
+								<Share />
 							</Card.Body>
 					</div>
 					<hr />

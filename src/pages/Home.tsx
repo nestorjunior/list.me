@@ -6,7 +6,6 @@ import CardProducts from '../components/CardProducts/CardProducts';
 import NavigationBar from '../components/NavigationBar/NavigationBar'
 import { CiCircleChevDown } from "react-icons/ci";
 import './Home.scss'
-
 export function Home() {
 
 	const [showAllProducts, setShowAllProducts] = useState(false)
@@ -37,7 +36,11 @@ export function Home() {
 				</header>
 				<main className='mb-3 justify-content-center d-flex'>
 					<section>
-						{ products.slice(0, showAllProducts ? products.length : 4) }
+						{ products.slice(0, showAllProducts ? products.length : 4).map((product, index) => (
+								<div key={index}>
+									{product}
+								</div>
+						)) }
 						<span className="text-center mb-3">
 							{!showAllProducts && (
 									<CiCircleChevDown size={50} onClick={handleShowMore} className="button-show-more-wb" />

@@ -1,4 +1,5 @@
 .card-header-wb {
+
 	img {
 		border-radius: 50%;
 		width: 150px;
@@ -7,5 +8,10 @@
 
 	p {
 		margin-bottom: 0;
+		color: var(--gray-600);
+	}
+
+	svg {
+		color: var(--gray-600);
 	}
 }

@@ -1,7 +1,7 @@
 import { Card } from 'react-bootstrap';
 import { FaMapPin } from "react-icons/fa";
-
 import './CardHeader.scss'
+import Share from '../Share/Share';
 
 const CardHeader = () => {
   return (
@@ -17,6 +17,8 @@ const CardHeader = () => {
 								<Card.Text>Escritora</Card.Text>
 								<Card.Text>This is a wider card with supporting text below as a natural lead-in to additional content.</Card.Text>
 								<Card.Text><FaMapPin /> São Paulo/SP</Card.Text>
+								<Share />
+								
 							</Card.Body>
 					</div>
 			</div>
