@@ -28,6 +28,9 @@ header {
 	h1 {
 		text-align: left;
 		margin-bottom: 50px;
+		span {
+			vertical-align: middle;
+		}
 	}
 
 }
@@ -49,7 +52,7 @@ section {
   border-radius: 25px;
   margin-top: calc(50vh - 550px);
 	margin-bottom: 50px;
-	padding: 25px;
+	padding: 25px 0;
 }
 
 .button-show-more-wb {
