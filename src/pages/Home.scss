@@ -42,12 +42,17 @@ section {
 
 	border: 5px solid var(--gray-100);
 	width: 900px;
-  min-height: 230px;
+  min-height: 300px;
   background-color: #fff;
   border-radius: 25px;
   margin-top: calc(50vh - 550px);
 	margin-bottom: 50px;
 	padding: 25px;
+}
+
+.button-show-more-wb {
+	margin-top: 20px; 
+	cursor: pointer;
 }
 
 footer {
