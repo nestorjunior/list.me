@@ -1,0 +1,24 @@
+.account-wb {
+
+	form {
+    padding: 25px;
+    border-radius: 25px;
+		background: var(--blue-100);
+	}
+	
+	.box-button-bw {
+		text-align: right;
+		margin-top: 5px;
+		
+		button {
+			background: var(--white-100);
+			transition: background-color 0.5s ease;
+			
+			&:hover {
+				background: var(--white-200);
+			}
+		}
+
+	}
+
+}
