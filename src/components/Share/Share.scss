@@ -1,6 +1,6 @@
 .box-share-wb {
-	display: block;
-	text-align: right;
+	cursor: pointer;
+	justify-self: flex-end;
 
 	svg {
 		color: var(--bs-secondary-color);

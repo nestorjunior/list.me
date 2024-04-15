@@ -14,4 +14,45 @@
 	svg {
 		color: var(--gray-600);
 	}
+
+	&__notificationUser {
+		display: flex;
+		justify-content: space-between;
+
+		.card-header-wb-buttons {
+			display: flex;
+			justify-content: flex-start;
+		}
+	}	
+
+	&__detailsUser {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__detailsUserName {
+
+	}
+
+	&__detailsUserFollow {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__detailsUserFollowBox {
+		text-align: center;
+		
+		color: var(--gray-400);
+		padding: 0 25px 0 0;
+
+		span {
+			font-size: 1.25rem;
+			font-weight: bold;
+		}
+		p{
+			font-size: 0.875rem;
+		}
+	}
+
 }

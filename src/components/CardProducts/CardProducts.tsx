@@ -18,13 +18,14 @@ const CardProducts = () => {
 								<Card.Title><BsFillPinAngleFill /> Camiseta Insider</Card.Title>
 								<Card.Text><MdOutlineDescription /> Preta, tamanho P, Gola V</Card.Text>
 								<Card.Text><FaLink /> <a href="#">https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653</a></Card.Text>
-								<button type="button" className="btn m-1">
-									Roupas
-								</button>
-								<button type="button" className="btn m-1">
-									2024
-								</button>
-								<Share />
+								<div className='card-products-wb__notification'>
+									<div className='card-products-wb-buttons'>
+										<button type="button" className="btn m-1">Roupas</button>
+										<button type="button" className="btn m-1">2024</button>
+									</div>
+									
+									<Share />
+								</div>
 							</Card.Body>
 					</div>
 					<hr />
