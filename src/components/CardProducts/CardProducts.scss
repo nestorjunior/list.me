@@ -19,9 +19,18 @@
 		display: flex;
 		justify-content: space-between;
 
-		.card-products-wb-buttons {
+		.card-products-wb-tags {
 			display: flex;
 			justify-content: flex-start;
+		}
+
+		.card-products-wb-buttons {
+			display: flex;
+			align-items: center;
+
+			> div[class^="box-"]:not(:last-child) {
+				margin-right: 0.625rem;
+			}
 		}
 	}	
 
@@ -37,5 +46,6 @@
 			color: #fff;
 		}
 	}
+
 
 }
