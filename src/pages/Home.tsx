@@ -67,7 +67,7 @@ export function Home() {
               ))}
             {!showAllProducts && (
               <span className="text-center mb-3 button-show-more-wb">
-								<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} />
+								<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='jumping-icon' />
               </span>
             )}
           </section>

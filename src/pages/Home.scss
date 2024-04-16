@@ -63,3 +63,19 @@ section {
 footer {
 	margin-top: auto;
 }
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jumping-icon {
+  animation: jump 0.9s infinite;
+}
