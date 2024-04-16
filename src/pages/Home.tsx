@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import { CiCircleChevDown } from 'react-icons/ci';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import { Footer } from '../components/Footer/Footer';
 import { CardHeader } from '../components/CardHeader/CardHeader';
@@ -64,12 +66,8 @@ export function Home() {
                 <div key={index}>{product}</div>
               ))}
             {!showAllProducts && (
-              <span className="text-center mb-3">
-                <CiCircleChevDown
-                  size={50}
-                  onClick={handleShowMore}
-                  className="button-show-more-wb"
-                />
+              <span className="text-center mb-3 button-show-more-wb">
+								<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} />
               </span>
             )}
           </section>

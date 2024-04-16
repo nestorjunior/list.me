@@ -1,4 +1,5 @@
-import { HiShare } from "react-icons/hi";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShareNodes } from '@fortawesome/free-solid-svg-icons';
 
 import './Share.scss'
 
@@ -6,7 +7,7 @@ export function Share() {
 	return(
 		<>
 			<div className="box-share-wb">
-				<HiShare size={20} />
+				<FontAwesomeIcon icon={faShareNodes} />
 			</div>
 		</>
 	)

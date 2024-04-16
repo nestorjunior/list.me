@@ -1,19 +1,21 @@
-.container-wb {
+.containerWb {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	background: var(--white-100);
+	padding: 0;
 }
 
 .title-wb {
 	font-size: 2rem;
 	color: var(--blue-600);
 	font-weight: bolder;
-	span {
-		font-size: 1rem;
-		color: var(--blue-400);
-		font-weight: 100;
-	}
+}
+
+.title-wb span {
+	font-size: 1rem;
+	color: var(--blue-400);
+	font-weight: 100;
 }
 
 header {
@@ -24,15 +26,15 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
 
-	h1 {
-		text-align: left;
-		margin-bottom: 50px;
-		span {
-			vertical-align: middle;
-		}
-	}
+header h1 {
+	text-align: left;
+	margin-bottom: 50px;
+}
 
+header h1 span {
+	vertical-align: middle;
 }
 
 main {
@@ -52,9 +54,10 @@ section {
 	padding: 25px 0;
 }
 
-.button-show-more-wb {
+.button-show-more-wb svg {
 	margin-top: 20px; 
 	cursor: pointer;
+	font-size: 40px;
 }
 
 footer {

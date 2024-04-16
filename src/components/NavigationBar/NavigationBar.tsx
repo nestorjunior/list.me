@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { IoChevronForwardCircleOutline } from 'react-icons/io5';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export function NavigationBar () {
   return (
@@ -7,7 +8,7 @@ export function NavigationBar () {
       <Container fluid>
         <Nav className="ms-auto">
           <Nav.Link href="/login">
-            <IoChevronForwardCircleOutline size={20} /> Login
+						<FontAwesomeIcon icon={faCircleChevronRight} /> Login
           </Nav.Link>
         </Nav>
       </Container>

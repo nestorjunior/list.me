@@ -10,17 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
     "react-spring": "^9.7.3"
   },
   "devDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -29,7 +31,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "sass": "^1.72.0",
+    "sass": "^1.75.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.6",
     "vite-plugin-sass": "^0.1.0"

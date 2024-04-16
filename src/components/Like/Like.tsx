@@ -1,4 +1,6 @@
-import { AiFillLike } from "react-icons/ai";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+
 
 import './Like.scss'
 
@@ -6,7 +8,7 @@ export function Like () {
 	return(
 		<>
 			<div className="box-like-wb">
-				<AiFillLike size={20} />
+				<FontAwesomeIcon icon={faThumbsUp} />
 			</div>
 		</>
 	)
