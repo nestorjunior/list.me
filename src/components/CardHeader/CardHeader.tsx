@@ -7,7 +7,7 @@ import Message from '../Message/Message';
 
 const CardHeader = () => {
   return (
-		<Card className="card card-header-wb mb-3 d-flex justify-content-center" style={{ width: '900px', height: '230px' }}>
+		<Card className="card card-header-wb mb-3 d-flex justify-content-center" style={{ height: '230px' }}>
 			<div className="row g-0 align-items-center">
 					<div className="col-md-4 d-flex justify-content-center">
 							<Card.Img src="https://i.pravatar.cc/150" className="img-fluid" />

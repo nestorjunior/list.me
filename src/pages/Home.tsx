@@ -55,7 +55,7 @@ export function Home() {
           <CardHeader />
         </header>
         <main className="mb-3 justify-content-center d-flex">
-          <section style={{ marginTop: marginTop }}>
+          <section className='section-list-products-wb' style={{ marginTop: marginTop }}>
             {products
               .slice(0, showAllProducts ? products.length : 4)
               .map((product, index) => (
