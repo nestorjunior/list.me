@@ -2,14 +2,15 @@ import { Card } from 'react-bootstrap';
 import { BsFillPinAngleFill } from "react-icons/bs";
 import { MdOutlineDescription } from "react-icons/md";
 import { FaLink } from "react-icons/fa6";
-import Share from '../Share/Share';
-import Star from '../Star/Star'
-import Heart from '../Heart/Heart'
-import Like from '../Like/Like'
+
+import { Share } from '../Share/Share';
+import { Star } from '../Star/Star'
+import { Heart } from '../Heart/Heart'
+import { Like } from '../Like/Like'
 
 import './CardProducts.scss'
 
-const CardProducts = () => {
+export function CardProducts () {
   return (
 		<Card className="card card-products-wb mb-3 d-flex justify-content-center">
 			<div className="row g-0 align-items-center">
@@ -42,5 +43,3 @@ const CardProducts = () => {
 
   );
 };
-
-export default CardProducts;

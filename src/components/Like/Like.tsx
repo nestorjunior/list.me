@@ -1,9 +1,8 @@
-import './Like.scss'
 import { AiFillLike } from "react-icons/ai";
 
+import './Like.scss'
 
-
-const Like = () => {
+export function Like () {
 	return(
 		<>
 			<div className="box-like-wb">
@@ -12,5 +11,3 @@ const Like = () => {
 		</>
 	)
 }
-
-export default Like

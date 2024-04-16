@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { Home } from './pages/Home'
-import LoginPage from './pages/LoginPage'
-import CreateAccount from './pages/CreateAccount'
 
-function App() {
+import { Home } from './pages/Home'
+import { LoginPage } from './pages/LoginPage'
+import { CreateAccount } from './pages/CreateAccount'
+
+export function App() {
   return (
     <>
       <Router>
@@ -18,5 +19,3 @@ function App() {
     </>
   )
 }
-
-export default App

@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { IoChevronForwardCircleOutline } from 'react-icons/io5';
 
-const CustomNavbar = () => {
+export function NavigationBar () {
   return (
     <Navbar bg="light" expand="lg" className="navbar-wb">
       <Container fluid>
@@ -14,5 +14,3 @@ const CustomNavbar = () => {
     </Navbar>
   );
 };
-
-export default CustomNavbar;

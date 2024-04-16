@@ -1,7 +1,8 @@
-import './Share.scss'
 import { HiShare } from "react-icons/hi";
 
-const Share = () => {
+import './Share.scss'
+
+export function Share() {
 	return(
 		<>
 			<div className="box-share-wb">
@@ -10,5 +11,3 @@ const Share = () => {
 		</>
 	)
 }
-
-export default Share

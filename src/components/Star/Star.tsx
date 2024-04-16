@@ -1,7 +1,8 @@
-import './Star.scss'
 import { FaStar } from "react-icons/fa";
 
-const Star = () => {
+import './Star.scss'
+
+export function Star () {
 	return(
 		<>
 			<div className="box-star-wb">
@@ -10,5 +11,3 @@ const Star = () => {
 		</>
 	)
 }
-
-export default Star

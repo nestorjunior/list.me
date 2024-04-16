@@ -1,11 +1,9 @@
-import Account from "../components/Account/Account"
+import { Account } from "../components/Account/Account"
 
-const LoginPage = () => {
+export function CreateAccount () {
 	return(
 		<>
 			<Account />
 		</>
 	)
 }
-
-export default LoginPage

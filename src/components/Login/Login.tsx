@@ -1,8 +1,9 @@
 import React, { FormEvent, useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
+
 import './Login.scss';
 
-const Login = () => {
+export function Login () {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
@@ -104,5 +105,3 @@ const Login = () => {
     </Container>
   );
 };
-
-export default Login;

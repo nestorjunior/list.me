@@ -1,11 +1,13 @@
-import { Card } from 'react-bootstrap';
 import { FaMapPin } from "react-icons/fa";
-import './CardHeader.scss'
-import Share from '../Share/Share';
-import Follow from '../Follow/Follow';
-import Message from '../Message/Message';
 
-const CardHeader = () => {
+import { Card } from 'react-bootstrap';
+import { Share } from '../Share/Share';
+import { Follow } from '../Follow/Follow';
+import { Message } from '../Message/Message';
+
+import './CardHeader.scss'
+
+export function CardHeader () {
   return (
 		<Card className="card card-header-wb mb-3 d-flex justify-content-center" style={{ height: '230px' }}>
 			<div className="row g-0 align-items-center">
@@ -48,5 +50,3 @@ const CardHeader = () => {
 
   );
 };
-
-export default CardHeader;

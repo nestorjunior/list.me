@@ -1,8 +1,9 @@
 import React, { FormEvent, useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
+
 import './Account.scss';
 
-const Account = () => {
+export function Account () {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 	const [confirmPassword, setConfirmPassword] = useState<string>('');
@@ -116,5 +117,3 @@ const Account = () => {
     </Container>
   );
 };
-
-export default Account;

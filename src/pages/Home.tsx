@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import { Footer } from '../components/Footer/Footer';
-import CardHeader from '../components/CardHeader/CardHeader';
-import CardProducts from '../components/CardProducts/CardProducts';
-import NavigationBar from '../components/NavigationBar/NavigationBar';
 import { CiCircleChevDown } from 'react-icons/ci';
+
+import { Footer } from '../components/Footer/Footer';
+import { CardHeader } from '../components/CardHeader/CardHeader';
+import { CardProducts } from '../components/CardProducts/CardProducts';
+import { NavigationBar } from '../components/NavigationBar/NavigationBar';
+
 import './Home.scss';
 
 export function Home() {

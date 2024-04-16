@@ -1,8 +1,8 @@
-import './Heart.scss'
 import { FaHeart } from "react-icons/fa";
 
+import './Heart.scss'
 
-const Heart = () => {
+export function Heart () {
 	return(
 		<>
 			<div className="box-heart-wb">
@@ -11,5 +11,3 @@ const Heart = () => {
 		</>
 	)
 }
-
-export default Heart
