@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -45,17 +44,14 @@ export function Home() {
 
   return (
     <>
-      <Container fluid className="container-wb p-0">
+      <div className="container-wb container-fluid p-0">
         <NavigationBar />
         <header>
-          <Container
-            className="container-wb__title p-0"
-            style={{ width: '900px' }}
-          >
-            <h1 className="text-left title-wb">
+          <div className="container-wb__title p-0" style={{ width: '900px' }}>
+            <h1 className="title-wb">
               wishbox® | <span>dream, share, connect</span>
             </h1>
-          </Container>
+          </div>
           <CardHeader />
         </header>
         <main className="mb-3 justify-content-center d-flex">
@@ -72,7 +68,7 @@ export function Home() {
             )}
           </section>
         </main>
-      </Container>
+      </div>
       <Footer />
     </>
   );

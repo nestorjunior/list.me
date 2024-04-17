@@ -1,5 +1,4 @@
 import React, { FormEvent, useState } from 'react';
-import { Form, Button, Container } from 'react-bootstrap';
 
 import './Login.scss';
 
@@ -70,38 +69,40 @@ export function Login () {
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center vh-100 login-wb">
-      <Form onSubmit={handleSubmit} className="w-50">
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
+    <div className="d-flex justify-content-center align-items-center vh-100 login-wb">
+      <form onSubmit={handleSubmit} className="w-50">
+        <div className="formBasicEmail">
+          <label className='form-label'>Email</label>
+          <input
+						className='form-control'
             type="text"
             placeholder="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </Form.Group>
+        </div>
 
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Senha</Form.Label>
-          <Form.Control
+        <div className="formBasicPassword">
+					<label className='form-label'>Senha</label>
+          <input
+						className='form-control'
             type="password"
             placeholder="senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-        </Form.Group>
+        </div>
 
         {error && <div className="error-message">{error}</div>}
 
         <div className="box-button-bw">
-          <Button variant="primary" type="submit">
+          <button className='btn btn-primary' type="submit">
             Enviar
-          </Button>
+          </button>
         </div>
-      </Form>
-    </Container>
+      </form>
+    </div>
   );
 };

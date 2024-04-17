@@ -34,6 +34,10 @@
   .card-header-wb, .section-list-products-wb {
 		width: 800px;
 	}
+
+	.title-wb {
+		text-align: left;
+	}
   
 }
 
@@ -55,7 +59,23 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-  /* CSS */
+	.card-header-wb {
+		.card-body {
+			padding-top: 0;
+		}
+
+		.card-header-wb__notificationUser {
+			justify-content: center;
+		}
+	}
+
+  .title-wb {
+		text-align: center;
+	}
+
+	.card-header-wb img {
+    width: 125px;
+	}
   
 }
 

@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 
-import { Card } from 'react-bootstrap';
 import { Share } from '../Share/Share';
 import { Follow } from '../Follow/Follow';
 import { Message } from '../Message/Message';
@@ -10,17 +9,17 @@ import './CardHeader.scss'
 
 export function CardHeader () {
   return (
-		<Card className="card card-header-wb mb-3 d-flex justify-content-center" style={{ height: '230px' }}>
+		<div className="card card-header-wb mb-3 d-flex justify-content-center" style={{ height: '230px' }}>
 			<div className="row g-0 align-items-center">
-					<div className="col-md-4 d-flex justify-content-center">
-							<Card.Img src="https://i.pravatar.cc/150" className="img-fluid" />
+					<div className="col-sm-12 col-md-4 d-flex justify-content-center">
+							<img src="https://i.pravatar.cc/150" className="card-img img-fluid" />
 					</div>
-					<div className="col-md-8">
-							<Card.Body>
+					<div className="col-sm-12 col-md-8">
+							<div className='card-body'>
 								<div className='card-header-wb__detailsUser'>
 									<div className='card-header-wb__detailsUserName'>
-										<Card.Text><small className="text-body-secondary">@mollybloom</small></Card.Text>
-										<Card.Title>Molly Bloom</Card.Title>
+										<p><small className="text-body-secondary">@mollybloom</small></p>
+										<h5>Molly Bloom</h5>
 									</div>
 									<div className='card-header-wb__detailsUserFollow'>
 										<div className='card-header-wb__detailsUserFollowBox'>
@@ -33,9 +32,9 @@ export function CardHeader () {
 										</div>
 									</div>
 								</div>
-								<Card.Text>Escritora</Card.Text>
-								<Card.Text>This is a wider card with supporting text below as a natural lead-in to additional content.</Card.Text>
-								<Card.Text><FontAwesomeIcon icon={faMapPin} /> São Paulo/SP</Card.Text>
+								<p>Escritora</p>
+								<p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+								<p className='card-text'><FontAwesomeIcon icon={faMapPin} /> São Paulo/SP</p>
 								<div className='card-header-wb__notificationUser'>
 									<div className='card-header-wb-buttons'>
 										<Follow />
@@ -44,10 +43,10 @@ export function CardHeader () {
 									<Share />
 								</div>
 								
-							</Card.Body>
+							</div>
 					</div>
 			</div>
-	</Card>
+	</div>
 
   );
 };
