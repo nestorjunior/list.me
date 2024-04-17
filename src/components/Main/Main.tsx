@@ -40,7 +40,7 @@ export function Main() {
 	];
 
 	return (
-		<main className="mb-3 justify-content-center d-flex">
+		<main className="justify-content-center d-flex">
 			<section className='section-list-products-wb' style={{ marginTop: marginTop }}>
 				{products
 					.slice(0, showAllProducts ? products.length : 4)
@@ -48,7 +48,7 @@ export function Main() {
 						<div key={index}>{product}</div>
 					))}
 				{!showAllProducts && (
-					<span className="text-center mb-3 button-show-more-wb">
+					<span className="text-center button-show-more-wb">
 						<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='jumping-icon' />
 					</span>
 				)}
