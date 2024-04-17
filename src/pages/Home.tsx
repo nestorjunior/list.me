@@ -9,6 +9,7 @@ import { CardProducts } from '../components/CardProducts/CardProducts';
 import { Navbar } from '../components/Navbar/Navbar';
 
 import './Home.scss';
+import { Header } from '../components/Header/Header';
 
 export function Home() {
   const [showAllProducts, setShowAllProducts] = useState(false);
@@ -46,14 +47,7 @@ export function Home() {
     <>
       <div className="container-wb container-fluid p-0">
         <Navbar />
-        <header>
-          <div className="container-wb__title p-0" style={{ width: '900px' }}>
-            <h1 className="title-wb">
-              wishbox® | <span>dream, share, connect</span>
-            </h1>
-          </div>
-          <CardHeader />
-        </header>
+        <Header />
         <main className="mb-3 justify-content-center d-flex">
           <section className='section-list-products-wb' style={{ marginTop: marginTop }}>
             {products
@@ -68,8 +62,8 @@ export function Home() {
             )}
           </section>
         </main>
+				<Footer />
       </div>
-      <Footer />
     </>
   );
 }
