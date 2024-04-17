@@ -1,40 +1,9 @@
-.containerWb {
+.wbox-main-container {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
 	background: var(--white-100);
 	padding: 0;
-}
-
-.title-wb {
-	font-size: 2rem;
-	color: var(--blue-600);
-	font-weight: bolder;
-}
-
-.title-wb span {
-	font-size: 1rem;
-	color: var(--blue-400);
-	font-weight: 100;
-}
-
-header {
-	height: 450px;
-	width: 100%;
-	background: var(--blue-100);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-header h1 {
-	text-align: left;
-	margin-bottom: 50px;
-}
-
-header h1 span {
-	vertical-align: middle;
 }
 
 main {
