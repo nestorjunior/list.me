@@ -6,7 +6,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { Footer } from '../components/Footer/Footer';
 import { CardHeader } from '../components/CardHeader/CardHeader';
 import { CardProducts } from '../components/CardProducts/CardProducts';
-import { NavigationBar } from '../components/NavigationBar/NavigationBar';
+import { Navbar } from '../components/Navbar/Navbar';
 
 import './Home.scss';
 
@@ -45,7 +45,7 @@ export function Home() {
   return (
     <>
       <div className="container-wb container-fluid p-0">
-        <NavigationBar />
+        <Navbar />
         <header>
           <div className="container-wb__title p-0" style={{ width: '900px' }}>
             <h1 className="title-wb">
