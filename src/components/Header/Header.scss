@@ -1,24 +1,18 @@
 .wbox-header {
-	border: 1px solid red;
-	// height: 450px;
-	// width: 100%;
-	background: var(--blue-100);
+	background: rgb(213,232,235);
+	// background: linear-gradient(60deg, rgba(213,232,235,1) 0%, rgba(170,227,236,1) 35%, rgba(155,195,201,1) 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	&__container {
-		max-width: 900px;
-		border: 1px solid blue;
+		
 	}
 
 	&__title {
 		font-size: 2rem;
 		color: var(--blue-600);
 		font-weight: bolder;
-		// display: flex;
-		// align-items: center;
-		// align-self: flex-start;
 	}
 
 	&__description {
@@ -28,18 +22,3 @@
 	}
 
 }
-
-// header {
-// 	height: 450px;
-// 	width: 100%;
-// 	background: var(--blue-100);
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	align-items: center;
-// }
-
-// header h1 {
-// 	text-align: left;
-// 	margin-bottom: 50px;
-// }

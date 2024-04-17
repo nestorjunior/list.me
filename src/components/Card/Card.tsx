@@ -65,7 +65,6 @@ export function Card({
             <p>{occupation}</p>
             <p>{description}</p>
             <p className='card-text'>{location}</p>
-            {/* Verificação para renderizar conteúdo específico do produto, se necessário */}
             {productTitle && (
               <>
                 <div className='card-title h5'><FontAwesomeIcon icon={faThumbTack} /> {productTitle}</div>
@@ -73,7 +72,6 @@ export function Card({
                 <p className='card-text'><FontAwesomeIcon icon={faLink} /> <a href={productLink}>{productLink}</a></p>
               </>
             )}
-            {/* Aqui você pode adicionar o restante do conteúdo do card */}
           </div>
         </div>
       </div>
