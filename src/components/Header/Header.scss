@@ -1,0 +1,45 @@
+.wbox-header {
+	border: 1px solid red;
+	// height: 450px;
+	// width: 100%;
+	background: var(--blue-100);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__container {
+		max-width: 900px;
+		border: 1px solid blue;
+	}
+
+	&__title {
+		font-size: 2rem;
+		color: var(--blue-600);
+		font-weight: bolder;
+		// display: flex;
+		// align-items: center;
+		// align-self: flex-start;
+	}
+
+	&__description {
+		font-size: 1rem;
+		color: var(--blue-400);
+		font-weight: 100;
+	}
+
+}
+
+// header {
+// 	height: 450px;
+// 	width: 100%;
+// 	background: var(--blue-100);
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+// header h1 {
+// 	text-align: left;
+// 	margin-bottom: 50px;
+// }
