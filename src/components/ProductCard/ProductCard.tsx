@@ -56,7 +56,7 @@ export function CardProduct ({
 		// 			</div>
 		// 	</div>
 		// </div>
-		<div className="wbox-product-card card mb-3">
+		<div className="wbox-product-card card mb-3 mt-3">
 			<div className="row g-0">
 				<div className="col-md-4 d-flex justify-content-center">
 					<img src={imageUrl} className="img-fluid" alt={productImageAlt} />

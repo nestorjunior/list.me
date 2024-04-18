@@ -30,7 +30,7 @@ export function Content() {
 
 	const products = [
 		<CardProduct
-			imageUrl='https://picsum.photos/id/1/150/150'
+			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
 			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
@@ -38,7 +38,7 @@ export function Content() {
 			productLastUpdate='Last updated 3 mins ago'
 		/>,
 		<CardProduct
-			imageUrl='https://picsum.photos/id/7/150/150'
+			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
 			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
 			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
