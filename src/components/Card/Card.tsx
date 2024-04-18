@@ -1,16 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbTack, faFileLines, faLink } from '@fortawesome/free-solid-svg-icons';
 
-import { Share } from '../Share/Share';
-import { Star } from '../Star/Star'
-import { Heart } from '../Heart/Heart'
-import { Like } from '../Like/Like'
+// import { Share } from '../Share/Share';
+// import { Star } from '../Star/Star'
+// import { Heart } from '../Heart/Heart'
+// import { Like } from '../Like/Like'
 
 import './Card.scss'
 
 interface CardProps {
 	variant: string;
-	imageUrl: string;
+	imageUrl?: string;
   username?: string;
   nickname?: string;
   followingCount?: number;
@@ -39,7 +39,7 @@ export function Card({
 }: CardProps) {
 	
 	return (
-		<div className={` ${variant} mb-3 d-flex justify-content-center `} style={{ height: '230px' }}>
+		<div className={`${variant} card mb-3 d-flex justify-content-center`} style={{ height: '230px' }}>
       <div className="row g-0 align-items-center">
         <div className="col-md-4 d-flex justify-content-center">
           <img src={imageUrl} className="card-img img-fluid" alt="User avatar" />

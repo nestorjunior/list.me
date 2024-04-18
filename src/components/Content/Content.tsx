@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { CardProduct } from '../CardProduct/CardProduct';
 
 import '../Content/Content.scss'
-import { CardProducts } from '../CardProducts/CardProducts';
 
 export function Content() {
 	const [showAllProducts, setShowAllProducts] = useState(false);
@@ -29,19 +29,25 @@ export function Content() {
 	};
 
 	const products = [
-		<CardProducts />,
-		<CardProducts />,
-		<CardProducts />,
-		<CardProducts />,
-		<CardProducts />,
-		<CardProducts />,
-		<CardProducts />,
-		<CardProducts />,
+		<CardProduct
+			imageUrl='https://picsum.photos/id/1/130/130'
+			productTitle='Camiseta Insider'
+			productDescription='Preta, tamanho P, Gola V'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='roupas'
+		/>,
+		<CardProduct
+			imageUrl='https://picsum.photos/id/7/130/130'
+			productTitle='Livro Ariano Suassuna'
+			productDescription='Livro do escritor do Auto da compadecina'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='livros'
+		/>,
 	];
 
 	return (
 		<main className="wbox-content-container justify-content-center d-flex">
-			<section className='wbox-content-container__section section-list-products-wb' style={{ marginTop: marginTop }}>
+			<section className='wbox-content-container__section' style={{ marginTop: marginTop }}>
 				{products
 					.slice(0, showAllProducts ? products.length : 4)
 					.map((product, index) => (
