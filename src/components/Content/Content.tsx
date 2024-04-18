@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-import '../Main/Main.scss'
+import '../Content/Content.scss'
 import { CardProducts } from '../CardProducts/CardProducts';
 
-export function Main() {
+export function Content() {
 	const [showAllProducts, setShowAllProducts] = useState(false);
 	const [marginTop, setMarginTop] = useState('calc(45vh - 550px)');
 
@@ -40,8 +40,8 @@ export function Main() {
 	];
 
 	return (
-		<main className="justify-content-center d-flex">
-			<section className='section-list-products-wb' style={{ marginTop: marginTop }}>
+		<main className="wbox-content-container justify-content-center d-flex">
+			<section className='wbox-content-container__section section-list-products-wb' style={{ marginTop: marginTop }}>
 				{products
 					.slice(0, showAllProducts ? products.length : 4)
 					.map((product, index) => (
