@@ -1,5 +1,6 @@
-import { HeaderCard } from '../HeaderCard/HeaderCard'
 
+
+import { HeaderCard } from '../HeaderCard/HeaderCard'
 import './Header.scss'
 
 export function Header() {
@@ -9,12 +10,24 @@ export function Header() {
 				<div className="row">
 					<div className='col-sm-12'>
 						<header className='wbox-header-container'>
-							<div>
+							<section className='wbox-header-container__section'>
 								<h1 className="wbox-header-container__title">
 									wishbox® | <span className='wbox-header-container__description'>dream, share, connect</span>
 								</h1>
-								<HeaderCard />
-							</div>
+								<HeaderCard
+									headerUserImageUrl='https://i.pravatar.cc/150'
+									headerUserImageAlt='Nome usuário'
+									headerFollowUser='Follow'
+									headerMessageUser='Message'
+									headerUserNickname='@mollybloom'
+									headerUserName='Molly Bloom'
+									headerFollowersCount={23234}
+									headerFollowingCount={88488}
+									headerUserDescription='Sem saber que era impossível, foi lá e fez!'
+									headerUserLocation='Curitiba/PR'
+									headerUserOccupation='Escritora'
+								/>
+							</section>
 						</header> 
 					</div>
 				</div>

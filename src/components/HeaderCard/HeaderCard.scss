@@ -1,58 +1,140 @@
-.card-header-wb {
+.wbox-header-card {
+	border: none!important;
 	border-radius: 25px!important;
+	justify-content: center;
+
+	a, p, .card-title {
+		color: var(--gray-600);
+	}
+
 	img {
 		border-radius: 50%;
-		width: 150px;
-		border: 5px solid var(--blue-100);
+		border: 5px solid var(--blue-100)!important;
 	}
 
-	p {
-		margin-bottom: 0;
-		color: var(--gray-600);
-	}
-
-	svg {
-		color: var(--gray-600);
-	}
-
-	&__notificationUser {
+	&__title {
 		display: flex;
 		justify-content: space-between;
-
-		.card-header-wb-buttons {
-			display: flex;
-			justify-content: flex-start;
-		}
-	}	
-
-	&__detailsUser {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__detailsUserName {
-
-	}
-
-	&__detailsUserFollow {
-		display: flex;
-		justify-content: center;
 		align-items: center;
 	}
 
-	&__detailsUserFollowBox {
-		text-align: center;
-		
-		color: var(--gray-400);
-		padding: 0 25px 0 0;
+	&__followers {
+		display: flex;
+		justify-content: space-between;
 
-		span {
-			font-size: 1.25rem;
+		p {
+			font-size: 1.125rem;
 			font-weight: bold;
 		}
-		p{
-			font-size: 0.875rem;
+
+		span {
+			text-align: center;
+		}
+
+		span:first-child {
+			margin-right: 25px;
+		}
+
+	}
+
+	&__main {
+		h5.card-title {
+			font-size: 1.563rem;
+			color: var(--blue-600);
+		}
+		p {
+			margin-bottom: 0;
 		}
 	}
 
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__tags {
+		button {
+			background-color: var(--orange-500);
+			color: #fff;
+			transition: background-color 0.3s, color 0.3s;
+			border: 0;
+			padding: 2px 5px;
+			font-size: 0.875rem;
+
+			&:hover {
+				background-color: var(--orange-500-hover);
+				color: #fff;
+			}
+
+		}
+	}
+
+	&__reactions {
+		display: flex;
+		align-items: center;
+
+		> div[class^="box-"]:not(:last-child) {
+			margin-right: 0.625rem;
+		}
+	}
 }
+
+// .wbox-header-card {
+// 	border-radius: 25px!important;
+// 	img {
+// 		border-radius: 50%;
+// 		width: 150px;
+// 		border: 5px solid var(--blue-100);
+// 	}
+
+// 	p {
+// 		margin-bottom: 0;
+// 		color: var(--gray-600);
+// 	}
+
+// 	svg {
+// 		color: var(--gray-600);
+// 	}
+
+// 	&__notificationUser {
+// 		display: flex;
+// 		justify-content: space-between;
+
+// 		.card-header-wb-buttons {
+// 			display: flex;
+// 			justify-content: flex-start;
+// 		}
+// 	}	
+
+// 	&__detailsUser {
+// 		display: flex;
+// 		justify-content: space-between;
+// 	}
+
+// 	&__detailsUserName {
+
+// 	}
+
+// 	&__detailsUserFollow {
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 	}
+
+// 	&__detailsUserFollowBox {
+// 		text-align: center;
+		
+// 		color: var(--gray-400);
+// 		padding: 0 25px 0 0;
+
+// 		span {
+// 			font-size: 1.25rem;
+// 			font-weight: bold;
+// 		}
+// 		p{
+// 			font-size: 0.875rem;
+// 		}
+// 	}
+
+// }
+

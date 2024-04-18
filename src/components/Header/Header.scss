@@ -8,6 +8,14 @@
 	align-items: center;
 	justify-content: center;
 
+	&__section {
+		border-radius: 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 900px;
+	}
+
 	&__title {
 		// text-align: left;
 		margin-bottom: 50px;

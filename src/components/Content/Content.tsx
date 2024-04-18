@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { CardProduct } from '../ProductCard/ProductCard';
+import { ProductCard } from '../ProductCard/ProductCard';
 
 import '../Content/Content.scss'
 
@@ -29,7 +29,7 @@ export function Content() {
 	};
 
 	const products = [
-		<CardProduct
+		<ProductCard
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
@@ -37,7 +37,55 @@ export function Content() {
 			productTags='roupas'
 			productLastUpdate='Last updated 3 mins ago'
 		/>,
-		<CardProduct
+		<ProductCard
+			imageUrl='https://i.pravatar.cc/150'
+			productTitle='Livro Ariano Suassuna'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='livros'
+			productLastUpdate='Last updated 7 months ago'
+		/>,
+		<ProductCard
+			imageUrl='https://i.pravatar.cc/150'
+			productTitle='Camiseta Insider'
+			productDescription='Preta, tamanho P, Gola V'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='roupas'
+			productLastUpdate='Last updated 3 mins ago'
+		/>,
+		<ProductCard
+			imageUrl='https://i.pravatar.cc/150'
+			productTitle='Livro Ariano Suassuna'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='livros'
+			productLastUpdate='Last updated 7 months ago'
+		/>,
+		<ProductCard
+			imageUrl='https://i.pravatar.cc/150'
+			productTitle='Camiseta Insider'
+			productDescription='Preta, tamanho P, Gola V'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='roupas'
+			productLastUpdate='Last updated 3 mins ago'
+		/>,
+		<ProductCard
+			imageUrl='https://i.pravatar.cc/150'
+			productTitle='Livro Ariano Suassuna'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='livros'
+			productLastUpdate='Last updated 7 months ago'
+		/>,
+		<ProductCard
+			imageUrl='https://i.pravatar.cc/150'
+			productTitle='Camiseta Insider'
+			productDescription='Preta, tamanho P, Gola V'
+			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productTags='roupas'
+			productLastUpdate='Last updated 3 mins ago'
+		/>,
+		<ProductCard
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
 			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
