@@ -52,7 +52,11 @@ export function Content() {
 			<main className="wbox-content-container justify-content-center d-flex">
 				<section className='wbox-content-container__section' style={{ marginTop: marginTop }}>
 					{products .slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
-							<div key={index}>{product}</div>
+							
+						<div className='wbox-content-container__product' key={index}>{product}
+							<hr className='wbox-content-container__divider'/>
+						</div>
+					
 					))}
 				</section>
 			</main>
