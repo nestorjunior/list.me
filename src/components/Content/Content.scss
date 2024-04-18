@@ -4,10 +4,13 @@
 	// flex: 1;
 
 	&__section {
+		border-radius: 25px!important;
+		border: 5px solid var(--gray-100)!important;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		background-color: #fff;
+		max-width: 900px;
 	}
 
 	&__button--more {

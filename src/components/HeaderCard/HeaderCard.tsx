@@ -5,9 +5,9 @@ import { Share } from '../Share/Share';
 import { Follow } from '../Follow/Follow';
 import { Message } from '../Message/Message';
 
-import './CardHeader.scss'
+import './HeaderCard.scss'
 
-export function CardHeader () {
+export function HeaderCard () {
   return (
 		<div className="card card-header-wb mb-3 d-flex justify-content-center" style={{ height: '230px' }}>
 			<div className="row g-0 align-items-center">

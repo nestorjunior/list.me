@@ -1,4 +1,4 @@
-import { CardHeader } from '../CardHeader/CardHeader'
+import { HeaderCard } from '../HeaderCard/HeaderCard'
 
 import './Header.scss'
 
@@ -13,7 +13,7 @@ export function Header() {
 								<h1 className="wbox-header-container__title">
 									wishbox® | <span className='wbox-header-container__description'>dream, share, connect</span>
 								</h1>
-								<CardHeader />
+								<HeaderCard />
 							</div>
 						</header> 
 					</div>

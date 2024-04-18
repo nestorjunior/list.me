@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { CardProduct } from '../CardProduct/CardProduct';
+import { CardProduct } from '../ProductCard/ProductCard';
 
 import '../Content/Content.scss'
 
@@ -30,35 +30,37 @@ export function Content() {
 
 	const products = [
 		<CardProduct
-			imageUrl='https://picsum.photos/id/1/130/130'
+			imageUrl='https://picsum.photos/id/1/150/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
 			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
 			productTags='roupas'
+			productLastUpdate='Last updated 3 mins ago'
 		/>,
 		<CardProduct
-			imageUrl='https://picsum.photos/id/7/130/130'
+			imageUrl='https://picsum.photos/id/7/150/150'
 			productTitle='Livro Ariano Suassuna'
-			productDescription='Livro do escritor do Auto da compadecina'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
 			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
 			productTags='livros'
+			productLastUpdate='Last updated 7 months ago'
 		/>,
 	];
 
 	return (
-		<main className="wbox-content-container justify-content-center d-flex">
-			<section className='wbox-content-container__section' style={{ marginTop: marginTop }}>
-				{products
-					.slice(0, showAllProducts ? products.length : 4)
-					.map((product, index) => (
-						<div key={index}>{product}</div>
+		<>
+			<main className="wbox-content-container justify-content-center d-flex">
+				<section className='wbox-content-container__section' style={{ marginTop: marginTop }}>
+					{products .slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
+							<div key={index}>{product}</div>
 					))}
-				{!showAllProducts && (
-					<span className="text-center wbox-content-container__button--more">
-						<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='wbox-content-container__button--animation' />
-					</span>
-				)}
-			</section>
-		</main>
+				</section>
+			</main>
+			{!showAllProducts && (
+				<span className="text-center wbox-content-container__button--more">
+					<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='wbox-content-container__button--animation' />
+				</span>
+			)}
+		</>
 	)
 }
