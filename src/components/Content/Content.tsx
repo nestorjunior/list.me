@@ -48,8 +48,8 @@ export function Content() {
 						<div key={index}>{product}</div>
 					))}
 				{!showAllProducts && (
-					<span className="text-center button-show-more-wb">
-						<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='jumping-icon' />
+					<span className="text-center wbox-content-container__button--more">
+						<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='wbox-content-container__button--animation' />
 					</span>
 				)}
 			</section>

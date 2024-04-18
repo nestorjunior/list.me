@@ -6,26 +6,3 @@
 	background: var(--white-100);
 	padding: 0;
 }
-
-.button-show-more-wb svg {
-	margin-top: 20px; 
-	cursor: pointer;
-	font-size: 40px;
-}
-
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.jumping-icon {
-  animation: jump 0.9s infinite;
-}
-

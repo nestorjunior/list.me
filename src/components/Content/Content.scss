@@ -14,4 +14,29 @@
 		margin-bottom: 50px;
 		padding: 25px 0;
 	}
+
+	&__button--more {
+		margin-top: 20px; 
+		cursor: pointer;
+		font-size: 30px;
+	}
+
+	&__button--animation {
+		animation: jump 0.9s infinite;
+	}
+
 }
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
