@@ -6,8 +6,9 @@
 	a, p, .card-title {
 		color: var(--gray-600);
 	}
-
+	
 	img {
+		object-fit: cover;
 		border-radius: 50%;
 		border: 5px solid var(--blue-100)!important;
 	}
@@ -76,6 +77,14 @@
 		> div[class^="box-"]:not(:last-child) {
 			margin-right: 0.625rem;
 		}
+
+		svg {
+			transition: all .2s ease-in-out;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+
 	}
 }
 
