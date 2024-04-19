@@ -11,9 +11,19 @@
 		border: 5px solid var(--gray-100)!important;
 	}
 
-	&__title {
+	svg {
+		margin-right: 5px;
+		color: var(--gray-500);
+	}
+
+	&__header {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&__title {
+		display: flex;
+		align-items: baseline;
 	}
 
 	&__main {
@@ -21,6 +31,11 @@
 		p {
 			margin-bottom: 0;
 		}
+	}
+
+	&__description {
+		display: flex;
+		align-items: baseline;
 	}
 
 	&__footer {
@@ -51,12 +66,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		// > div[class^="box-"]:not(:last-child) {
-		// 	margin-right: 0.625rem;
-		// }
 
 		svg {
-			color: var(--gray-500);
 			cursor: pointer;
 			font-size: 1.25rem;
 			margin-right: 0.625rem;

@@ -37,12 +37,16 @@ export function ProductCard ({
 				<div className="col-md-8">
 					<div className="card-body">
 						<div className='wbox-product-card__main'>
-							<div className='wbox-product-card__title'>
-								<h5 className="card-title"><FontAwesomeIcon icon={faThumbTack} /> {productTitle}</h5>
-								<p className="card-text"><small className="text-body-secondary">{productLastUpdate}</small></p>
+							<div className='wbox-product-card__header'>
+								<div className='wbox-product-card__title'>
+									<FontAwesomeIcon icon={faThumbTack} /><h5 className="card-title"> {productTitle}</h5>
+								</div>
+								<small className="text-body-secondary">{productLastUpdate}</small>
 							</div>
-							<p className="card-text"><FontAwesomeIcon icon={ faFileLines} /> {productDescription}.</p>
-							<p className='card-text'><FontAwesomeIcon icon={faLink} /> <a href="#">{productLink}</a></p>
+							<div className='wbox-product-card__description'>
+								<FontAwesomeIcon icon={ faFileLines} /><p className="card-text"> {productDescription}.</p>
+							</div>
+							<FontAwesomeIcon icon={faLink} /><a href="#">{productLink}</a>
 						</div>
 						
 						<div className='wbox-product-card__footer'>
