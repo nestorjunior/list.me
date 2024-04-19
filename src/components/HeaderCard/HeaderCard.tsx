@@ -45,7 +45,7 @@ export function HeaderCard ({
 					<div className="card-body">
 						<div className='wbox-header-card__main'>
 							<div className='wbox-header-card__title'>
-							<p className='card-text'> {headerUserNickname}</p>
+								<h5 className="card-title"> {headerUserName}</h5>
 								<div className='wbox-header-card__followers'>
 									<span>
 										<p>{headerFollowingCount}</p>
@@ -58,8 +58,8 @@ export function HeaderCard ({
 									</span>
 
 								</div>
-							</div>
-							<h5 className="card-title"> {headerUserName}</h5>
+							</div>	
+							<p className='card-text'> {headerUserNickname}</p>
 							<p className='card-text'> {headerUserOccupation}</p>
 							<p className="card-text"> {headerUserDescription}.</p>
 							<p className="card-text"> {headerUserLocation}.</p>
