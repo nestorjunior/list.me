@@ -1,0 +1,25 @@
+.dark-theme {
+	.wbox-navbar, .wbox-header-container, .wbox-content-container, .wbox-content-container__section {
+		background-color: #333;
+		color: #fff;
+	}
+
+	.wbox-header-card, .wbox-content-card {
+		background-color: #333;
+		color: #fff;
+		border: 2px solid #fff;
+	}
+}
+
+.light-theme {
+	.wbox-navbar, .wbox-header-container, .wbox-content-container, .wbox-content-container__section {
+		background-color: #fff;
+		color: #fff;
+	}
+
+	.wbox-header-card, .wbox-content-card {
+		background-color: #fff;
+		color: #333;
+		border: 2px solid #333;
+	}
+}

@@ -47,8 +47,8 @@ export function ProductCard ({
 						
 						<div className='wbox-product-card__footer'>
 							<div className='wbox-product-card__tags'>
-								<button type="button" className="btn m-1">{productTags}</button>
-								<button type="button" className="btn m-1">{productTags}</button>
+								<a href='#'>{`#${productTags}`}</a>
+								<a href='#'>{`#${productTags}`}</a>
 							</div>
 							<div className='wbox-product-card__reactions'>
 								<Like />
