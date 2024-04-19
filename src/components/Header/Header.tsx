@@ -8,7 +8,7 @@ export function Header() {
 		<>
 			<div className="container-fluid pt-0">
 				<div className="row">
-					<div className='col-sm-12'>
+					<div className='col-sm-12 px-0'>
 						<header className='wbox-header-container'>
 							<section className='wbox-header-container__section'>
 								<h1 className="wbox-header-container__title">
