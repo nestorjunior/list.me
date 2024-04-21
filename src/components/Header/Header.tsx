@@ -10,7 +10,7 @@ export function Header() {
 				<div className="row">
 					<div className='col-sm-12'>
 						<header className='wbox-header-container'>
-							<section className='wbox-header-container__section'>
+							<section className='wbox-header-container__section col-sm-12'>
 								<h1 className="wbox-header-container__title">
 									wishbox® | <span className='wbox-header-container__description'>dream, share, connect</span>
 								</h1>
