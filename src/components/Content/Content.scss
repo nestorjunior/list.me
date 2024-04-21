@@ -1,13 +1,14 @@
 .wbox-content-container {
-	background: var(--white-100);
-
+	
 	&__section {
 		border-radius: 25px!important;
 		border: 5px solid var(--gray-100)!important;
+		padding-left: 15px;
+		padding-right: 15px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		background-color: #fff;
+		background-color: var(--rose-100);
 		max-width: 900px;
 	}
 
@@ -22,6 +23,7 @@
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
+		margin: 0;
 	}
 
 	&__button--more {
