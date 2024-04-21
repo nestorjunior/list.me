@@ -1,6 +1,8 @@
 .wbox-header-card {
 	border-radius: 25px!important;
 	justify-content: center;
+	background: var(--rose-100)!important;
+	border: 5px solid var(--white-100)!important;
 
 	a, p, .card-title {
 		color: var(--gray-600);
