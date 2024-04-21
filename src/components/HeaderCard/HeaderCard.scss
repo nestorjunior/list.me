@@ -1,5 +1,4 @@
 .wbox-header-card {
-	border: 1px solid red;
 	border-radius: 25px!important;
 	justify-content: center;
 
@@ -46,6 +45,9 @@
 		}
 		p {
 			margin-bottom: 0;
+			&:last-child {
+				margin-bottom: 10px;
+			}
 		}
 	}
 
@@ -90,63 +92,4 @@
 
 	}
 }
-
-// .wbox-header-card {
-// 	border-radius: 25px!important;
-// 	img {
-// 		border-radius: 50%;
-// 		width: 150px;
-// 		border: 5px solid var(--blue-100);
-// 	}
-
-// 	p {
-// 		margin-bottom: 0;
-// 		color: var(--gray-600);
-// 	}
-
-// 	svg {
-// 		color: var(--gray-600);
-// 	}
-
-// 	&__notificationUser {
-// 		display: flex;
-// 		justify-content: space-between;
-
-// 		.card-header-wb-buttons {
-// 			display: flex;
-// 			justify-content: flex-start;
-// 		}
-// 	}	
-
-// 	&__detailsUser {
-// 		display: flex;
-// 		justify-content: space-between;
-// 	}
-
-// 	&__detailsUserName {
-
-// 	}
-
-// 	&__detailsUserFollow {
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 	}
-
-// 	&__detailsUserFollowBox {
-// 		text-align: center;
-		
-// 		color: var(--gray-400);
-// 		padding: 0 25px 0 0;
-
-// 		span {
-// 			font-size: 1.25rem;
-// 			font-weight: bold;
-// 		}
-// 		p{
-// 			font-size: 0.875rem;
-// 		}
-// 	}
-
-// }
 
