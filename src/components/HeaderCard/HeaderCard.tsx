@@ -67,8 +67,8 @@ export function HeaderCard ({
 						
 						<div className='wbox-header-card__footer'>
 							<div className='wbox-header-card__tags'>
-								<button type="button" className="btn m-1">{headerFollowUser}</button>
-								<button type="button" className="btn m-1">{headerMessageUser}</button>
+								<button type="button" className="btn me-1">{headerFollowUser}</button>
+								<button type="button" className="btn me-1">{headerMessageUser}</button>
 							</div>
 							<div className='wbox-header-card__reactions'>
 								<Share />
