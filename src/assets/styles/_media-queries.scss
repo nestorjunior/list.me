@@ -10,7 +10,7 @@
 
 	.wbox-header-container {
 		&__section {
-			padding: 15px;
+			padding: 5px;
 		}
 	}
   
@@ -24,7 +24,39 @@
 @media (min-width: 481px) and (max-width: 767px) {
 	.wbox-header-container {
 		&__section {
-			padding: 15px;
+			padding: 5px;
+		}
+		&__logo {
+			justify-content: center;
+		}
+	}
+
+	.wbox-header-card {
+		height: 100%!important;
+		img {
+			width: 6.25rem;
+		}
+
+		.card-body {
+			padding-top: 0;
+		}
+
+		&__footer {
+			justify-content: center;
+		}
+	}
+
+	.wbox-content-container {
+		&__product {
+			img {
+				width: 6.25rem;
+			}
+		}
+	}
+
+	.wbox-product-card {
+		&__header {
+			flex-direction: column;
 		}
 	}
 }
@@ -32,7 +64,29 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .wbox-header-container {
 		&__section {
-			padding: 15px;
+			padding: 5px;
+		}
+		&__logo {
+			justify-content: center;
+		}
+	}
+
+	.wbox-header-card {
+		height: 100%!important;
+		img {
+			width: 6.25rem;
+		}
+		.card-body {
+			padding-top: 0;
+		}
+		&__footer {
+			justify-content: center;
+		}
+	}
+
+	.wbox-product-card {
+		&__header {
+			flex-direction: column;
 		}
 	}
 }

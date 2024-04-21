@@ -11,9 +11,10 @@ export function Header() {
 					<div className='col-sm-12 px-0'>
 						<header className='wbox-header-container'>
 							<section className='wbox-header-container__section col-sm-12'>
-								<h1 className="wbox-header-container__title">
-									wishbox® | <span className='wbox-header-container__description'>dream, share, connect</span>
-								</h1>
+								<div className='wbox-header-container__logo'>
+									<h1 className="wbox-header-container__title">wishbox</h1>
+									<span className='wbox-header-container__description ml-2'>dream, share, connect</span>
+								</div>
 								<HeaderCard
 									headerUserImageUrl='https://i.pravatar.cc/150'
 									headerUserImageAlt='Nome usuário'

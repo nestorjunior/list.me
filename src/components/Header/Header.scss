@@ -15,11 +15,20 @@
     max-width: 900px;
 	}
 
+	&__logo {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+	}
+
 	&__title {
-		margin-bottom: 50px;
 		font-size: 2rem;
 		color: var(--blue-600);
 		font-weight: bolder;
+
+		&::after {
+			content: " |";
+		}
 	}
 
 	&__description {
