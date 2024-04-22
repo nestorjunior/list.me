@@ -60,14 +60,14 @@
 
 	&__tags {
 		button {
-			background-color: var(--orange-300);
+			background-color: var(--orange-600);
 			color: #fff;
 			transition: background-color 0.3s, color 0.3s;
 			border: 0;
 			font-size: 0.875rem;
 
 			&:hover {
-				background-color: var(--orange-500-hover);
+				background-color: var(--orange-600-hover);
 				color: #fff;
 			}
 
