@@ -10,7 +10,7 @@
 
 	.wbox-header-container {
 		&__section {
-			padding: 5px;
+			padding: 0 10px 25px 10px;
 		}
 	}
   
@@ -24,7 +24,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
 	.wbox-header-container {
 		&__section {
-			padding: 5px;
+			padding: 0 10px 25px 10px;
 		}
 		&__logo {
 			justify-content: center;
@@ -64,7 +64,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .wbox-header-container {
 		&__section {
-			padding: 5px;
+			padding: 0 10px 25px 10px;
 		}
 		&__logo {
 			justify-content: center;

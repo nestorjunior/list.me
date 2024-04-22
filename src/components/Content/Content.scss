@@ -12,9 +12,26 @@
 	}
 
 	&__product {
-		&:last-child hr {
-			display: none;
+		background: var(--rose-100);
+		padding-left: 15px;
+		padding-right: 15px; 
+
+		&:first-child {
+			padding-top: 15px;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
 		}
+
+		&:last-child {
+			padding-bottom: 15px;
+			border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+
+			hr {
+				display: none;
+			}	
+		}
+
 	}
 
 	&__divider {

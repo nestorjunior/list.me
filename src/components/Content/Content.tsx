@@ -33,7 +33,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='roupas'
 			productLastUpdate='Last updated 3 mins ago'
 		/>,
@@ -41,7 +41,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
 			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
 		/>,
@@ -49,7 +49,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='roupas'
 			productLastUpdate='Last updated 3 mins ago'
 		/>,
@@ -57,7 +57,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
 			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
 		/>,
@@ -65,7 +65,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='roupas'
 			productLastUpdate='Last updated 3 mins ago'
 		/>,
@@ -73,7 +73,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
 			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
 		/>,
@@ -81,7 +81,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Camiseta Insider'
 			productDescription='Preta, tamanho P, Gola V'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='roupas'
 			productLastUpdate='Last updated 3 mins ago'
 		/>,
@@ -89,7 +89,7 @@ export function Content() {
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
 			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
-			productLink='https://www.insiderstore.com.br/products/tech-t-shirt?variant=43168998293653'
+			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
 		/>,

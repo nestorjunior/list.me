@@ -29,7 +29,7 @@ export function ProductCard ({
 
 }:ProductCardProps) {
   return (
-		<div className="wbox-product-card card mb-3 mt-3">
+		<div className="wbox-product-card card">
 			<div className="row g-0">
 				<div className="col-md-4 d-flex justify-content-center">
 					<img src={imageUrl} className="img-fluid" alt={productImageAlt} />
