@@ -71,15 +71,17 @@ export function Login () {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 login-wb">
       <form onSubmit={handleSubmit} className="w-50">
+			<h2 style={{marginBottom: '15px'}}>Login</h2>
         <div className="formBasicEmail">
           <label className='form-label'>Email</label>
           <input
 						className='form-control'
             type="text"
-            placeholder="email"
+            placeholder="Digite seu e-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+						style={{marginBottom: '15px'}}
           />
         </div>
 
@@ -88,10 +90,11 @@ export function Login () {
           <input
 						className='form-control'
             type="password"
-            placeholder="senha"
+            placeholder="Digite sua senha"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+						style={{marginBottom: '15px'}}
           />
         </div>
 
