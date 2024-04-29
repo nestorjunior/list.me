@@ -1,56 +1,58 @@
-import { OverlayTrigger, Tooltip } from "react-bootstrap"
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Info } from "../Info/Info";
+import './Signup.scss';
 
 export function Signup() {
-	return(
-		<>	
-			 <div className="d-flex justify-content-center align-items-center vh-100 login-wb">
-				<form className="w-50">
-					<h2 style={{marginBottom: '15px'}}>Signup</h2>
-					<div className="formNameUser">
-						<label className='form-label'>Name</label>
-						<input
-							className='form-control'
-							type="text"
-							placeholder="Name"
-							required
-							style={{marginBottom: '15px'}}
-						/>
-					</div>
+    return(
+        <>
+            <div className="d-flex justify-content-center align-items-center vh-100 signup-wb">
+                <form className="w-50">
+                    <h2 style={{marginBottom: '15px'}}>Signup</h2>
+                    <div className="formMailUser">
+                        <label className='form-label'>E-mail</label>
+                        <input
+                            className='form-control'
+                            type="mail"
+                            placeholder="E-mail"
+                            required
+                            style={{marginBottom: '15px'}}
+                        />
+                    </div>
 
-					<div className="formMailUser">
-						<label className='form-label'>E-mail</label>
-						<input
-							className='form-control'
-							type="mail"
-							placeholder="E-mail"
-							required
-							style={{marginBottom: '15px'}}
-						/>
-					</div>
+                    <div className="formPasswordUser">
+                        <label className='form-label'>Password</label>
+                        <input
+                            className='form-control'
+                            type="password"
+                            placeholder="Password"
+                            required
+                            style={{marginBottom: '15px'}}
+                        />
+                    </div>
 
-					<div className="formBirthdayUser">
-						<OverlayTrigger
-							placement="right"
-							overlay={<Tooltip>Just observation</Tooltip>}
-						>
-							<label className='form-label'>Day and month of your birthday</label>
-						</OverlayTrigger>
-						<input
-							className='form-control'
-							type="date"
-							placeholder="Digite o dia e mês do seu aniversário"
-							required
-							style={{marginBottom: '15px'}}
-						/>
-					</div>
+                    <div className="formRepeatPasswordUser">
+                        <label className='form-label'>Repeat password</label>
+                        <input
+                            className='form-control'
+                            type="password"
+                            placeholder="Repeat password"
+                            required
+                            style={{marginBottom: '15px'}}
+                        />
+                    </div>
 
-					<div className="box-button-bw">
-						<button className='btn btn-primary' type="submit">
-							Enviar
-						</button>
-					</div>
-				</form>
-			</div>
-		</>
-	)
+                    <div className="form-check">
+                        <input type="checkbox" className="form-check-input" id="termsCheckbox" required />
+                        <label className="form-check-label" htmlFor="termsCheckbox">I agree to the <a href="#">Terms of Service</a></label>
+                    </div>
+
+                    <div className="box-button-bw">
+                        <button className='btn btn-primary' type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </>
+    )
 }
