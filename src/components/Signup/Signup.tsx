@@ -1,3 +1,4 @@
+import { OverlayTrigger, Tooltip } from "react-bootstrap"
 
 export function Signup() {
 	return(
@@ -5,12 +6,12 @@ export function Signup() {
 			 <div className="d-flex justify-content-center align-items-center vh-100 login-wb">
 				<form className="w-50">
 					<h2 style={{marginBottom: '15px'}}>Signup</h2>
-					<div className="formFullName">
-						<label className='form-label'>Nome Completo</label>
+					<div className="formNameUser">
+						<label className='form-label'>Name</label>
 						<input
 							className='form-control'
 							type="text"
-							placeholder="Digite seu nome completo"
+							placeholder="Name"
 							required
 							style={{marginBottom: '15px'}}
 						/>
@@ -21,28 +22,22 @@ export function Signup() {
 						<input
 							className='form-control'
 							type="mail"
-							placeholder="Digite seu e-mail"
+							placeholder="E-mail"
 							required
 							style={{marginBottom: '15px'}}
 						/>
 					</div>
 
-					<div className="formFullName">
-						<label className='form-label'>Nome de Usuário</label>
+					<div className="formBirthdayUser">
+						<OverlayTrigger
+							placement="right"
+							overlay={<Tooltip>Just observation</Tooltip>}
+						>
+							<label className='form-label'>Day and month of your birthday</label>
+						</OverlayTrigger>
 						<input
 							className='form-control'
-							type="text"
-							placeholder="Digite um nome de usuário"
-							required
-							style={{marginBottom: '15px'}}
-						/>
-					</div>
-
-					<div className="formFullName">
-						<label className='form-label'>Dia e mês do seu aniversário</label>
-						<input
-							className='form-control'
-							type="text"
+							type="date"
 							placeholder="Digite o dia e mês do seu aniversário"
 							required
 							style={{marginBottom: '15px'}}
