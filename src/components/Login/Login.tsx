@@ -86,11 +86,11 @@ export function Login () {
         </div>
 
         <div className="formBasicPassword">
-					<label className='form-label'>Senha</label>
+					<label className='form-label'>Password</label>
           <input
 						className='form-control'
             type="password"
-            placeholder="Digite sua senha"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
@@ -102,7 +102,7 @@ export function Login () {
 
         <div className="box-button-bw">
           <button className='btn btn-primary' type="submit">
-            Enviar
+            Submit
           </button>
         </div>
       </form>

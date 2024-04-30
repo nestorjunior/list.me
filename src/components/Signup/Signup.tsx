@@ -20,11 +20,11 @@ export function Signup() {
 				<form className="w-50">
 					<h2 style={{ marginBottom: '15px' }}>Signup</h2>
 					<div className="formMailUser">
-						<label className='form-label'>E-mail</label>
+						<label className='form-label'>Email</label>
 						<input
 							className='form-control'
 							type="mail"
-							placeholder="E-mail"
+							placeholder="Email"
 							required
 							style={{ marginBottom: '15px' }}
 						/>
