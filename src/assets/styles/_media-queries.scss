@@ -59,6 +59,12 @@
 			flex-direction: column;
 		}
 	}
+
+	.login-wb, .signup-wb {
+		form {
+			width: 500px!important;
+		}
+	}
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -87,6 +93,12 @@
 	.wbox-product-card {
 		&__header {
 			flex-direction: column;
+		}
+	}
+
+	.login-wb, .signup-wb {
+		form {
+			width: 500px!important;
 		}
 	}
 }
