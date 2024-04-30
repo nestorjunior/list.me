@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import { ModalDefault } from '../ModalDefault/ModalDefault';
+import { useState } from 'react';
 import './Signup.scss';
 
 export function Signup() {
@@ -64,7 +64,7 @@ export function Signup() {
 					</div>
 				</form>
 			</div>
-			
+
 			{showModal && <ModalDefault onClose={handleCloseModal} />}
 
 		</>

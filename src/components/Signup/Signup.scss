@@ -1,20 +1,39 @@
 .signup-wb {
+
 	form {
+		margin-top: -70vh;
+		border-radius: 25px !important;
+		border: 5px solid var(--gray-100) !important;
+		padding-left: 15px;
+		padding-right: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: var(--white-100);
+		max-width: 600px;	
+		
     padding: 25px;
     border-radius: 25px;
-		background: var(--blue-100);
+		color: var(--gray-600);
 	}
 	
+	h2 {
+		font-size: 1.563rem;
+    color: var(--blue-600);
+	}
+
 	.box-button-bw {
 		text-align: right;
 		margin-top: 5px;
 		
 		button {
-			background: var(--white-100);
+			background-color: var(--orange-600);
+			color: #fff;
 			transition: background-color 0.5s ease;
 			
 			&:hover {
-				background: var(--white-200);
+				background-color: var(--orange-600-hover);
+    		color: #fff;
 			}
 		}
 
