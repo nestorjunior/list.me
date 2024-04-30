@@ -27,5 +27,7 @@
 	.form-check a {
 		color: var(--black-900);
 		font-size: inherit;
+		text-decoration: underline!important;
+		cursor: pointer;
 	}
 }

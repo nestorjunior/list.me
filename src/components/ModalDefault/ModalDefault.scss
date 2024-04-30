@@ -1,0 +1,18 @@
+.wb-modal-signup {
+	.modal-content {
+		background: rgb(213, 232, 235);
+		color: var(--gray-600);
+
+		button.btn-secondary {
+			background: var(--white-100);
+    	transition: background-color 0.5s ease;
+			border: 0;
+			color: var(--black-900);
+
+			&:hover {
+				background: var(--white-200);
+			}
+		}
+	}
+}
+
