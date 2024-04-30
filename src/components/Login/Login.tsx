@@ -10,12 +10,12 @@ export function Login () {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!validateEmail(email)) {
-      setError('Email inválido');
+      setError('Invalid email');
       return;
     }
 
     if (!validatePassword(password)) {
-      setError('A senha deve ter pelo menos 6 caracteres');
+      setError('Password must be at least 6 characters long');
       return;
     }
 
@@ -26,8 +26,8 @@ export function Login () {
       localStorage.setItem('token', token);
       window.location.href = '/';
     } catch (error) {
-      console.error('Erro ao autenticar:', error);
-      setError('Verifique suas credenciais e tente novamente');
+      console.error('Error authenticating:', error);
+      setError('Check your credentials and try again');
     }
   };
 
@@ -61,7 +61,7 @@ export function Login () {
 
     if (!response.ok) {
       console.log(response);
-      throw new Error('Erro na autenticação');
+      throw new Error('Authentication error');
     }
 
     const data = await response.json();
@@ -77,7 +77,7 @@ export function Login () {
           <input
 						className='form-control'
             type="text"
-            placeholder="Digite seu e-mail"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
