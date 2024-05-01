@@ -72,7 +72,7 @@ export function Login () {
     <div className="d-flex justify-content-center align-items-center vh-100 login-wb">
       <form onSubmit={handleSubmit} className="w-50">
 			<h2 style={{marginBottom: '15px'}}>Login</h2>
-        <div className="formBasicEmail">
+        <div className="formEmailUser">
           <label className='form-label'>Email</label>
           <input
 						className='form-control'
@@ -85,7 +85,7 @@ export function Login () {
           />
         </div>
 
-        <div className="formBasicPassword">
+        <div className="formEmailPassword">
 					<label className='form-label'>Password</label>
           <input
 						className='form-control'

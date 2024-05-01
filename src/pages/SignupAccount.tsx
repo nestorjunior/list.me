@@ -7,7 +7,7 @@ import { Signup } from "../components/Signup/Signup";
 export function SignupAccount() {
 	return(
 		<>
-			<div className="container-fluid">
+			<div className="container-fluid p-x-0">
 				<Navbar/>
 				<Header height="250px"/>
 				<Signup />
