@@ -5,7 +5,7 @@ const StyledLink = styled.a`
   font-size: 1rem;
 	color: var(--gray-500);
 	text-decoration: none;
-	transition: color 0.2s;
+	transition: all .2s ease-in-out;
 
 	&:first-child {
 		margin-right: 15px;
