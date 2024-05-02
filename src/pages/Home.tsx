@@ -11,7 +11,7 @@ export function Home() {
     <>
       <div className="wbox-main-container container-fluid">
         <Navbar />
-        <Header>
+        <Header height=''>
 					<HeaderCard
 						headerUserImageUrl='https://i.pravatar.cc/150'
 						headerUserImageAlt='Nome usuário'
