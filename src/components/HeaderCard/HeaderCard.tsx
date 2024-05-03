@@ -1,10 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapPin } from '@fortawesome/free-solid-svg-icons';
-
-import { Share } from '../Share/Share';
-// import { Follow } from '../Follow/Follow';
-// import { Message } from '../Message/Message';
-
+import { Share } from '../Share';
 import './HeaderCard.scss'
 
 interface HeaderCardProps {

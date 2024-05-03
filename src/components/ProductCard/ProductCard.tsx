@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbTack, faFileLines, faLink } from '@fortawesome/free-solid-svg-icons';
 
-import { Share } from '../Share/Share';
-import { Star } from '../Star/Star'
+import { Share } from '../Share';
+import { Star } from '../Star'
 import { Heart } from '../Heart'
-import { Like } from '../Like/Like'
+import { Like } from '../Like'
 
 import './ProductCard.scss'
 

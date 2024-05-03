@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { Logo } from '../Logo';
 import './Header.scss'
 
 interface HeaderProps {
@@ -20,10 +21,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
 					<div className='col-sm-12 px-0'>
 						<header className='wbox-header-container' style={headerStyle}>
 							<section className='wbox-header-container__section col-sm-12'>
-								<div className='wbox-header-container__logo'>
-									<h1 className="wbox-header-container__title">wishbox</h1>
-									<span className='wbox-header-container__description ml-2'>dream, share, connect</span>
-								</div>
+								<Logo/>
 								{props.children}
 							</section>
 						</header> 
