@@ -3,7 +3,7 @@ import { faThumbTack, faFileLines, faLink } from '@fortawesome/free-solid-svg-ic
 
 import { Share } from '../Share/Share';
 import { Star } from '../Star/Star'
-import { Heart } from '../Heart/Heart'
+import { Heart } from '../Heart'
 import { Like } from '../Like/Like'
 
 import './ProductCard.scss'
