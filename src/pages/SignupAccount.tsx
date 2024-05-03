@@ -1,5 +1,5 @@
 
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header/Header";
 import { Navbar } from "../components/Navbar";
 import { Signup } from "../components/Signup/Signup";
