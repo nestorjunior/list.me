@@ -10,7 +10,8 @@ import {
 	CardBoxFollowers,
 	CardFooter,
 	CardButton,
-	CardBoxShareUser 
+	CardBoxShareUser,
+	CardBody 
 } from './styles'
 
 interface UserCardProps {
@@ -48,7 +49,7 @@ export function UserCard ({
 					<CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} />
 				</div>
 				<div className="col-sm-12 col-md-8">
-					<div className="card-body">
+					<CardBody>
 					
 						<CardContent>
 							<CardTitle> {UserCardName}</CardTitle>
@@ -65,7 +66,7 @@ export function UserCard ({
 
 							</CardFollowers>
 						</CardContent>	
-
+						
 						<CardParagraph className='card-text'> {UserCardNickname}</CardParagraph>
 						<CardParagraph className='card-text'> {UserCardOccupation}</CardParagraph>
 						<CardParagraph className="card-text"> {UserCardDescription}.</CardParagraph>
@@ -81,7 +82,7 @@ export function UserCard ({
 							</CardBoxShareUser>
 						</CardFooter>
 
-					</div>
+					</CardBody>
 				</div>
 			</div>
 		</CardWrapper>

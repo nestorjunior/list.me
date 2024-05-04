@@ -11,6 +11,10 @@ export const CardImage = styled.img`
 	object-fit: cover;
 	border-radius: 50%;
 	border: 5px solid var(--blue-100);
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		width: 6.25rem;
+	}
 `
 export const CardContent = styled.div`
 	display: flex;
@@ -64,4 +68,10 @@ export const CardButton = styled.button`
 export const CardBoxShareUser = styled.div`
 	display: flex;
 	align-items: center;
+`
+
+export const CardBody = styled.div`
+	@media (min-width: 320px) and (max-width: 480px) {
+		padding-top: 0;
+	}
 `
