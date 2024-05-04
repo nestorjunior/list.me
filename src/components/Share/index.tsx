@@ -1,10 +1,10 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShareNodes } from '@fortawesome/free-solid-svg-icons';
+import { StyledShareNodes } from './styles';
 
 export function Share() {
 	return(
 		<>
-			<FontAwesomeIcon icon={faShareNodes} />
+			<StyledShareNodes icon={faShareNodes} />
 		</>
 	)
 }
