@@ -6,7 +6,13 @@ import { Star } from '../Star'
 import { Heart } from '../Heart'
 import { Like } from '../Like'
 
-import './ProductCard.scss'
+import './styles'
+
+import { 
+	CardWrapper,
+	CardImage,
+	CardBody
+} from './styles'
 
 interface ProductCardProps {
 	imageUrl: string;
@@ -29,13 +35,13 @@ export function ProductCard ({
 
 }:ProductCardProps) {
   return (
-		<div className="wbox-product-card card">
+		<CardWrapper className="card">
 			<div className="row g-0">
 				<div className="col-md-4 d-flex justify-content-center">
-					<img src={imageUrl} className="img-fluid" alt={productImageAlt} />
+					<CardImage src={imageUrl} className="img-fluid" alt={productImageAlt} />
 				</div>
 				<div className="col-md-8">
-					<div className="card-body">
+					<CardBody className="card-body">
 						<div className='wbox-product-card__main'>
 							<div className='wbox-product-card__header'>
 								<div className='wbox-product-card__title'>
@@ -61,9 +67,9 @@ export function ProductCard ({
 								<Share />
 							</div>
 						</div>
-					</div>
+					</CardBody>
 				</div>
 			</div>
-		</div>
+		</CardWrapper>
   );
 };

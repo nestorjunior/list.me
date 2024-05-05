@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { ProductCard } from '../ProductCard/ProductCard';
+import { ProductCard } from '../ProductCard';
 
 import '../Content/Content.scss'
 

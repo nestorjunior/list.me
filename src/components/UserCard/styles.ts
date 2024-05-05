@@ -12,7 +12,6 @@ export const CardWrapper = styled.div`
 	@media (min-width: 320px) and (max-width: 480px) {
     height: 300px;
   }
-
 `
 export const CardImage = styled.img`
 	object-fit: cover;
