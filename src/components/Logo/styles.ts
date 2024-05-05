@@ -3,8 +3,12 @@ import styled from 'styled-components'
 export const LogoContainer = styled.div`
 	display: flex;
 	align-items: center;
-`
 
+	@media (min-width: 320px) and (max-width: 480px) {
+    justify-content: center;
+  }
+
+`
 export const TitleContainer = styled.h1`
 	font-size: 2rem;
 	color: var(--blue-600);
@@ -15,7 +19,6 @@ export const TitleContainer = styled.h1`
 		content: " |";
 	}
 `
-
 export const DescriptionContainer = styled.span`
 	font-size: 1em;
 	color: var(--blue-600);

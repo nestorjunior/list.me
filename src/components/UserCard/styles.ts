@@ -3,9 +3,16 @@ import styled from 'styled-components'
 export const CardWrapper = styled.div`
 	height: 230px;
 	width: 100%;
+	display: flex;
+	justify-content: center;
 	background: var(--rose-100);
 	border-radius: 25px;
 	border: 6px solid var(--white-100);
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    height: 300px;
+  }
+
 `
 export const CardImage = styled.img`
 	object-fit: cover;
@@ -52,6 +59,11 @@ export const CardBoxParagraph = styled.p`
 export const CardFooter = styled.div`
 	display: flex;
 	justify-content: space-between;
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		justify-content: center;
+	}
+
 `
 
 export const CardButton = styled.button`
@@ -71,7 +83,10 @@ export const CardBoxShareUser = styled.div`
 `
 
 export const CardBody = styled.div`
+	padding-right: 15px;
+	
 	@media (min-width: 320px) and (max-width: 480px) {
+		padding-left: 15px;
 		padding-top: 0;
 	}
 `
