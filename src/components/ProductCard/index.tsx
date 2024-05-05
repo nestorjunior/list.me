@@ -11,7 +11,14 @@ import './styles'
 import { 
 	CardWrapper,
 	CardImage,
-	CardBody
+	CardBody,
+	CardContent,
+	CardHeader,
+	CardTitle,
+	CardDescription,
+	CardFooter,
+	CardTags,
+	CardReactions
 } from './styles'
 
 interface ProductCardProps {
@@ -42,31 +49,31 @@ export function ProductCard ({
 				</div>
 				<div className="col-md-8">
 					<CardBody className="card-body">
-						<div className='wbox-product-card__main'>
-							<div className='wbox-product-card__header'>
-								<div className='wbox-product-card__title'>
+						<CardContent>
+							<CardHeader>
+								<CardTitle>
 									<FontAwesomeIcon icon={faThumbTack} /><h5 className="card-title"> {productTitle}</h5>
-								</div>
+								</CardTitle>
 								<small className="text-body-secondary">{productLastUpdate}</small>
-							</div>
-							<div className='wbox-product-card__description'>
+							</CardHeader>
+							<CardDescription>
 								<FontAwesomeIcon icon={ faFileLines} /><p className="card-text"> {productDescription}.</p>
-							</div>
+							</CardDescription>
 							<FontAwesomeIcon icon={faLink} /><a href="#">{productLink}</a>
-						</div>
+						</CardContent>
 						
-						<div className='wbox-product-card__footer'>
-							<div className='wbox-product-card__tags'>
+						<CardFooter>
+							<CardTags>
 								<a href='#'>{`#${productTags}`}</a>
 								<a href='#'>{`#${productTags}`}</a>
-							</div>
-							<div className='wbox-product-card__reactions'>
+							</CardTags>
+							<CardReactions>
 								<Like />
 								<Heart />
 								<Star />
 								<Share />
-							</div>
-						</div>
+							</CardReactions>
+						</CardFooter>
 					</CardBody>
 				</div>
 			</div>
