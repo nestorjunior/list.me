@@ -1,4 +1,4 @@
-import { IconShare } from '../IconShare';
+import { IconPaperPlane } from '../IconPaperPlane';
 import { IconStar } from '../IconStar';
 import { IconHeart } from '../IconHeart';
 import { IconLike } from '../IconLike';
@@ -74,7 +74,7 @@ export function ProductCard ({
 								<IconLike />
 								<IconHeart />
 								<IconStar />
-								<IconShare />
+								<IconPaperPlane />
 							</CardReactions>
 						</CardFooter>
 					</CardBody>
