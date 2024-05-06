@@ -1,4 +1,4 @@
-import { IconShare } from '../IconShare';
+import { IconShare } from '../Icons';
 import { 
 	CardWrapper,
 	CardImage, 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../ProductCard';
-import { IconChevronDown } from '../IconChevronDown'
+import { IconChevronDown } from '../Icons'
 import './styles'
 
 import { 

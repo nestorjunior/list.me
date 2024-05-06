@@ -1,5 +1,5 @@
 import Link from '../Link/';
-import { IconCircleChevronRight } from '../IconCircleChevronRight';
+import { IconCircleChevronRight } from '../Icons';
 import { NavbarContainer, Container } from './styles'
 
 

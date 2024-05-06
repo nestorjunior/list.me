@@ -1,10 +1,10 @@
-import { IconPaperPlane } from '../IconPaperPlane';
-import { IconStar } from '../IconStar';
-import { IconHeart } from '../IconHeart';
-import { IconLike } from '../IconLike';
-import { IconThumbTack } from '../IconThumbTack'
-import { IconFileLines } from '../IconFileLines'
-import { IconLink } from '../IconLink';
+import { IconPaperPlane } from '../Icons';
+import { IconStar } from '../Icons';
+import { IconHeart } from '../Icons';
+import { IconLike } from '../Icons';
+import { IconThumbTack } from '../Icons'
+import { IconFileLines } from '../Icons'
+import { IconLink } from '../Icons';
 
 import './styles'
 
