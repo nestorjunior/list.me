@@ -1,4 +1,4 @@
-import { Share } from '../Share';
+import { IconShare } from '../IconShare';
 import { 
 	CardWrapper,
 	CardImage, 
@@ -78,7 +78,7 @@ export function UserCard ({
 								<CardButton type="button" className="btn me-1">{UserCardMessage}</CardButton>
 							</div>
 							<CardBoxShareUser>
-								<Share />
+								<IconShare />
 							</CardBoxShareUser>
 						</CardFooter>
 

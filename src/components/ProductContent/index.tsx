@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { ProductCard } from '../ProductCard';
+import { IconChevronDown } from '../IconChevronDown'
+import './styles'
 
-import '../Content/Content.scss'
+import { 
+	MainContainer,
+	SectionContainer,
+	ProductContainer,
+	ProductDivider,
+	ProductShowMore,
+	ProductButtonShowMore
+} from './styles'
 
-export function Content() {
+export function ProductContent() {
 	const [showAllProducts, setShowAllProducts] = useState(false);
 	const [marginTop, setMarginTop] = useState('calc(45vh - 550px)');
 
@@ -97,21 +103,23 @@ export function Content() {
 
 	return (
 		<>
-			<main className="wbox-content-container justify-content-center d-flex">
-				<section className='wbox-content-container__section' style={{ marginTop: marginTop }}>
+			<MainContainer className="justify-content-center d-flex">
+				<SectionContainer style={{ marginTop: marginTop }}>
 					{products .slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
 							
-						<div className='wbox-content-container__product' key={index}>{product}
-							<hr className='wbox-content-container__divider'/>
-						</div>
+						<ProductContainer className='wbox-content-container__product' key={index}>{product}
+							<ProductDivider/>
+						</ProductContainer>
 					
 					))}
-				</section>
-			</main>
+				</SectionContainer>
+			</MainContainer>
 			{!showAllProducts && (
-				<span className="text-center wbox-content-container__button--more">
-					<FontAwesomeIcon icon={faChevronDown} onClick={handleShowMore} className='wbox-content-container__button--animation' />
-				</span>
+				<ProductShowMore className="text-center">
+					<ProductButtonShowMore onClick={handleShowMore}>
+						<IconChevronDown />
+					</ProductButtonShowMore>
+				</ProductShowMore>
 			)}
 		</>
 	)

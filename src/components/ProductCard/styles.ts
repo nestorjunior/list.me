@@ -19,7 +19,7 @@ export const CardImage = styled.img`
 	}
 `
 export const CardBody = styled.div`
-	border: 1px solid red;
+	
 `
 export const CardContent = styled.div`
 	margin-bottom: 5px;

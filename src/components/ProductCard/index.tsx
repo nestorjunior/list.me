@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbTack, faFileLines, faLink } from '@fortawesome/free-solid-svg-icons';
 
-import { Share } from '../Share';
-import { Star } from '../Star'
-import { Heart } from '../Heart'
-import { Like } from '../Like'
+import { IconShare } from '../IconShare';
+import { IconStar } from '../IconStar'
+import { IconHeart } from '../IconHeart'
+import { IconLike } from '../IconLike'
 
 import './styles'
 
@@ -68,10 +68,10 @@ export function ProductCard ({
 								<a href='#'>{`#${productTags}`}</a>
 							</CardTags>
 							<CardReactions>
-								<Like />
-								<Heart />
-								<Star />
-								<Share />
+								<IconLike />
+								<IconHeart />
+								<IconStar />
+								<IconShare />
 							</CardReactions>
 						</CardFooter>
 					</CardBody>

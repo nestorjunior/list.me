@@ -82,10 +82,8 @@ export const CardBoxShareUser = styled.div`
 `
 
 export const CardBody = styled.div`
-	padding-right: 15px;
 	
 	@media (min-width: 320px) and (max-width: 480px) {
-		padding-left: 15px;
 		padding-top: 0;
 	}
 `
