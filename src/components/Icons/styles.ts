@@ -124,6 +124,7 @@ export const StyledIconThumbTack = styled(FontAwesomeIcon).attrs({
 	margin-right: 0.625rem;
 `;	
 
+// Function that affects the icon: show more products.
 const jump = keyframes`
   0% {
     transform: translateY(0);

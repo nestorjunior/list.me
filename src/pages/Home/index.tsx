@@ -1,15 +1,15 @@
-import { Navbar } from '../components/Navbar';
-import { Header } from '../components/Header';
-import { UserCard } from '../components/UserCard';
-import { ProductContent } from '../components/ProductContent';
-import { Footer } from '../components/Footer';
+import { Navbar } from '../../components/Navbar';
+import { Header } from '../../components/Header';
+import { UserCard } from '../../components/UserCard';
+import { ProductContent } from '../../components/ProductContent';
+import { Footer } from '../../components/Footer';
 
-import './Home.scss';
+import { MainContainer } from './styles';
 
 export function Home() {
   return (
     <>
-      <div className="wbox-main-container container-fluid">
+      <MainContainer className="container-fluid">
         <Navbar />
         <Header height=''>
 					<UserCard
@@ -28,7 +28,7 @@ export function Home() {
 				</Header>
         <ProductContent />
 				<Footer />
-      </div>
+      </MainContainer>
     </>
   );
 }
