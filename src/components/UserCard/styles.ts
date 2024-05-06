@@ -9,6 +9,10 @@ export const CardWrapper = styled.div`
 	border-radius: 25px;
 	border: 6px solid var(--white-100);
 
+	@media (min-width: 481px) and (max-width: 767px) {
+    /* height: 300px; */
+  }
+
 	@media (min-width: 320px) and (max-width: 480px) {
     height: 300px;
   }
@@ -17,6 +21,10 @@ export const CardImage = styled.img`
 	object-fit: cover;
 	border-radius: 50%;
 	border: 5px solid var(--blue-100);
+
+	@media (min-width: 481px) and (max-width: 767px) {
+    width: 6.25rem;
+  }
 
 	@media (min-width: 320px) and (max-width: 480px) {
 		width: 6.25rem;
@@ -59,6 +67,10 @@ export const CardFooter = styled.div`
 	display: flex;
 	justify-content: space-between;
 
+	@media (min-width: 481px) and (max-width: 767px) {
+    justify-content: center;
+  }
+
 	@media (min-width: 320px) and (max-width: 480px) {
 		justify-content: center;
 	}
@@ -83,6 +95,10 @@ export const CardBoxShareUser = styled.div`
 
 export const CardBody = styled.div`
 	
+	@media (min-width: 481px) and (max-width: 767px) {
+    padding-top: 0;
+  }
+
 	@media (min-width: 320px) and (max-width: 480px) {
 		padding-top: 0;
 	}

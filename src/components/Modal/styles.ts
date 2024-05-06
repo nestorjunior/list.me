@@ -9,7 +9,6 @@ export const StyledBackgroundModal = styled.div`
 	background-color: rgb(0,0,0,0.7);
 	z-index: 1000;
 `
-
 export const StyledModal = styled.div`
 	position: fixed;
 	top: 50%;
@@ -30,11 +29,9 @@ export const StyledModalTitle = styled.h5`
 	font-size: 1.563rem;
 	color: var(--blue-600);
 `
-
 export const StyledModalBody = styled.div`
 	
 `
-
 export const StyledModalFooter = styled.div`
 	display: flex;
 	justify-content: flex-end;
@@ -43,7 +40,6 @@ export const StyledModalButtonClose = styled.button`
 	border: 0;
 	padding: 5px;
 `
-
 export const StyledModalButton = styled.button`
 	background-color: var(--orange-600);
 	color: #fff;

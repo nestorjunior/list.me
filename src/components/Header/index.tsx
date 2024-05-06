@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { Logo } from '../Logo';
-import './Header.scss'
+import { HeaderWrapper, HeaderContainer, HeaderSection } from './styles'
 
 interface HeaderProps {
 	children?: ReactNode;
@@ -16,18 +16,18 @@ export const Header: React.FC<HeaderProps> = (props) => {
 
 	return(
 		<>
-			<div className="container-fluid pt-0">
+			<HeaderWrapper className="container-fluid">
 				<div className="row">
 					<div className='col-sm-12 px-0'>
-						<header className='wbox-header-container' style={headerStyle}>
-							<section className='wbox-header-container__section col-sm-12'>
+						<HeaderContainer style={headerStyle}>
+							<HeaderSection className='col-sm-12'>
 								<Logo/>
 								{props.children}
-							</section>
-						</header> 
+							</HeaderSection>
+						</HeaderContainer> 
 					</div>
 				</div>
-			</div>
+			</HeaderWrapper>
 		</>
 	)
 }

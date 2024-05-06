@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbTack, faFileLines, faLink } from '@fortawesome/free-solid-svg-icons';
 
 import { IconShare } from '../IconShare';
-import { IconStar } from '../IconStar'
-import { IconHeart } from '../IconHeart'
-import { IconLike } from '../IconLike'
+import { IconStar } from '../IconStar';
+import { IconHeart } from '../IconHeart';
+import { IconLike } from '../IconLike';
+import { IconThumbTack } from '../IconThumbTack'
 
 import './styles'
 
@@ -52,14 +52,14 @@ export function ProductCard ({
 						<CardContent>
 							<CardHeader>
 								<CardTitle>
-									<FontAwesomeIcon icon={faThumbTack} /><h5 className="card-title"> {productTitle}</h5>
+									<IconThumbTack /> <h5 className="card-title"> {productTitle}</h5>
 								</CardTitle>
 								<small className="text-body-secondary">{productLastUpdate}</small>
 							</CardHeader>
 							<CardDescription>
-								<FontAwesomeIcon icon={ faFileLines} /><p className="card-text"> {productDescription}.</p>
+								{/* <FontAwesomeIcon icon={ faFileLines} /><p className="card-text"> {productDescription}.</p> */}
 							</CardDescription>
-							<FontAwesomeIcon icon={faLink} /><a href="#">{productLink}</a>
+							{/* <FontAwesomeIcon icon={faLink} /><a href="#">{productLink}</a> */}
 						</CardContent>
 						
 						<CardFooter>

@@ -5,10 +5,6 @@ export const CardWrapper = styled.div`
 	border-radius: 25px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-
-	@media (min-width: 320px) and (max-width: 480px) {
-    
-  }
 `
 export const CardImage = styled.img`
 	border-radius: 10%;
