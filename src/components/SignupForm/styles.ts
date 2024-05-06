@@ -6,7 +6,8 @@ export const SignupFormContainer = styled.div`
 	height: 100vh;
 `
 export const SignupFormStyled = styled.form`
-	width: 50%;
+	width: 60vw;
+	max-width: 600px;
 	height: 450px;
 	margin-top: -50px;
 	background-color: var(--white-100);
@@ -17,6 +18,10 @@ export const SignupFormStyled = styled.form`
 	border: 5px solid var(--gray-100);
 	padding-left: 15px;
 	padding-right: 15px;
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    width: 90vw;
+  }
 `
 
 export const SignupFormTitle = styled.h2`
