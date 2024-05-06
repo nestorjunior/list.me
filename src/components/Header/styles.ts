@@ -2,6 +2,14 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
   padding-top: 0;
+	
+	@media (min-width: 481px) and (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    margin-bottom: 25px;
+  }
 `;
 
 export const HeaderContainer = styled.header`
@@ -21,11 +29,12 @@ export const HeaderSection = styled.section`
 	justify-content: center;
 
 	@media (min-width: 768px) and (max-width: 1024px) {
-    /* padding: 0 10px 25px 10px; */
+    padding: 0 10px 25px 10px;
   }
 
 	@media (min-width: 481px) and (max-width: 767px) {
-    /* padding: 0 10px 25px 10px; */
+    padding: 0 10px 25px 10px;
+		width: 100%;
   }
 
 	@media (min-width: 320px) and (max-width: 480px) {

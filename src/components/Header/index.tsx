@@ -20,7 +20,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
 				<div className="row">
 					<div className='col-sm-12 px-0'>
 						<HeaderContainer style={headerStyle}>
-							<HeaderSection className='col-sm-12'>
+							<HeaderSection className='col-sm-12 col-md-12'>
 								<Logo/>
 								{props.children}
 							</HeaderSection>

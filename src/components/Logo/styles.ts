@@ -22,6 +22,11 @@ export const TitleContainer = styled.h1`
 		font-weight: lighter;
 		content: " |";
 	}
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+
 `
 export const DescriptionContainer = styled.span`
 	font-size: 1em;

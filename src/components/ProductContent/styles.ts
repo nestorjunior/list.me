@@ -1,8 +1,20 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.main`
+
+	@media (min-width: 768px) and (max-width: 1024px) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	@media (min-width: 481px) and (max-width: 767px) {
+		padding-right: 15px;
+		padding-left: 15px;
+  }
+
 	@media (min-width: 320px) and (max-width: 480px) {
-    
+    padding-right: 15px;
+		padding-left: 15px;
   }
 `
 
@@ -11,11 +23,13 @@ export const SectionContainer = styled.section`
 	background-color: var(--rose-100);
 	border-radius: 25px!important;
 	border: 5px solid var(--gray-100)!important;
-	padding-right: 15px;
-	padding-left: 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	@media (min-width: 481px) and (max-width: 767px) {
+    
+  }
 
 	@media (min-width: 320px) and (max-width: 480px) {
     
