@@ -1,8 +1,17 @@
 import React, { FormEvent, useState } from 'react';
 import { ModalDefault } from '../ModalDefault/ModalDefault';
-import './Signup.scss';
+import './styles';
 
-export function Signup() {
+import { 
+	SignupFormContainer,
+	SignupFormStyled,
+	SignupFormTitle,
+	StyledSubmitButton,
+	StyledBoxSubmitButton,
+	StyledTermsLink
+} from './styles'
+
+export function SignupForm() {
 	const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 	const [confirmPassword, setConfirmPassword] = useState<string>('');
@@ -53,9 +62,9 @@ export function Signup() {
 
 	return (
 		<>
-			<div className="d-flex justify-content-center align-items-center vh-100 signup-wb">
-				<form onSubmit={handleSubmit} className="w-50">
-					<h2 style={{ marginBottom: '15px' }}>Signup</h2>
+			<SignupFormContainer>
+				<SignupFormStyled onSubmit={handleSubmit}>
+					<SignupFormTitle>Signup</SignupFormTitle>
 					
 					<div className="formMailUser">
 						<label className='form-label'>Email</label>
@@ -105,21 +114,20 @@ export function Signup() {
 							onChange={(e) => setAgreeToTerms(e.target.checked)}
 							required 
 						/>
-						<label className="form-check-label" htmlFor="termsCheckbox">I agree to the <a onClick={handleShowModal}>Terms of Service.</a></label>
+						<label className="form-check-label" htmlFor="termsCheckbox">I agree to the <StyledTermsLink onClick={handleShowModal}>Terms of Service.</StyledTermsLink></label>
 					</div>
 
 					{error && <div className="error-message">{error}</div>}
 
-					<div className="box-button-bw">
-						<button className='btn btn-primary' type="submit">
+					<StyledBoxSubmitButton>
+						<StyledSubmitButton className='btn btn-primary' type="submit">
 							Submit
-						</button>
-					</div>
-				</form>
-			</div>
+						</StyledSubmitButton>
+					</StyledBoxSubmitButton>
+				</SignupFormStyled>
+			</SignupFormContainer>
 
 			{showModal && <ModalDefault onClose={handleCloseModal} />}
-
 		</>
 	)
 }
