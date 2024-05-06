@@ -1,8 +1,15 @@
 import React, { FormEvent, useState } from 'react';
 
-import './Login.scss';
+import './styles';
+import { 
+	LoginFormContainer,
+	LoginFormStyled,
+	LoginFormTitle,
+	LoginBoxSubmitButton,
+	StyledSubmitButton
+} from './styles'
 
-export function Login () {
+export function LoginForm () {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
@@ -69,9 +76,9 @@ export function Login () {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100 login-wb">
-      <form onSubmit={handleSubmit} className="w-50">
-			<h2 style={{marginBottom: '15px'}}>Login</h2>
+    <LoginFormContainer>
+      <LoginFormStyled onSubmit={handleSubmit}>
+			<LoginFormTitle>Login</LoginFormTitle>
         <div className="formEmailUser">
           <label className='form-label'>Email</label>
           <input
@@ -100,12 +107,12 @@ export function Login () {
 
         {error && <div className="error-message">{error}</div>}
 
-        <div className="box-button-bw">
-          <button className='btn btn-primary' type="submit">
+        <LoginBoxSubmitButton>
+          <StyledSubmitButton className='btn btn-primary' type="submit">
             Submit
-          </button>
-        </div>
-      </form>
-    </div>
+          </StyledSubmitButton>
+        </LoginBoxSubmitButton>
+      </LoginFormStyled>
+    </LoginFormContainer>
   );
 };
