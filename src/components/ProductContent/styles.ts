@@ -19,7 +19,7 @@ export const MainContainer = styled.main`
 `
 
 export const SectionContainer = styled.section`
-	max-width: 900px;
+	width: 900px;
 	background-color: var(--rose-100);
 	border-radius: 25px!important;
 	border: 5px solid var(--gray-100)!important;
