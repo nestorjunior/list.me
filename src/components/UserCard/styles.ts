@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const CardWrapper = styled.div`
+	padding-right: 25px;
 	height: 230px;
 	width: 100%;
 	display: flex;
@@ -66,6 +67,7 @@ export const CardBoxParagraph = styled.p`
 export const CardFooter = styled.div`
 	display: flex;
 	justify-content: space-between;
+	margin-top: 15px;
 
 	@media (min-width: 481px) and (max-width: 767px) {
     justify-content: center;
@@ -76,7 +78,6 @@ export const CardFooter = styled.div`
 	}
 
 `
-
 export const CardButton = styled.button`
 	background-color: var(--orange-600);
 	color: #fff;
@@ -94,7 +95,6 @@ export const CardBoxShareUser = styled.div`
 `
 
 export const CardBody = styled.div`
-	
 	@media (min-width: 481px) and (max-width: 767px) {
     padding-top: 0;
   }

@@ -45,10 +45,10 @@ export function ProductCard ({
   return (
 		<CardWrapper className="card">
 			<div className="row g-0">
-				<div className="col-md-4 d-flex justify-content-center">
+				<div className="col-md-3 d-flex justify-content-center">
 					<CardImage src={imageUrl} className="img-fluid" alt={productImageAlt} />
 				</div>
-				<div className="col-md-8">
+				<div className="col-md-9">
 					<CardBody className="card-body">
 						<CardContent>
 							<CardHeader>

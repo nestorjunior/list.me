@@ -45,10 +45,10 @@ export function UserCard ({
 		<>
 		<CardWrapper className='card mb-3'>
 			<div className="row g-0 align-items-center">
-				<div className="col-sm-12 col-md-4 d-flex justify-content-center">
+				<div className="col-sm-12 col-md-3 d-flex justify-content-center">
 					<CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} />
 				</div>
-				<div className="col-sm-12 col-md-8">
+				<div className="col-sm-12 col-md-9">
 					<CardBody>
 					
 						<CardContent>
