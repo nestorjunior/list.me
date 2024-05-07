@@ -14,7 +14,7 @@ export const HeaderWrapper = styled.div`
 
 export const HeaderContainer = styled.header`
   width: 100%;
-	background: rgb(213,232,235);
+	background: var(--blue-100);
 	display: flex;
 	flex-direction: column;
 	align-items: center;

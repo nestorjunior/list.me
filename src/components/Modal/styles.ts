@@ -15,7 +15,7 @@ export const StyledModal = styled.div`
 	left: 50%;
 	translate: -50% -50%;
 	border-radius: 25px;
-	border: 5px solid var(--gray-100);
+	border: 5px solid var(--gray-200);
 	padding: 25px;
 	background-color: var(--white-100);
 	color: var(--gray-600);

@@ -15,7 +15,7 @@ export const LoginFormStyled = styled.form`
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 25px;
-	border: 5px solid var(--gray-100);
+	border: 5px solid var(--gray-200);
 	padding-left: 15px;
 	padding-right: 15px;
 

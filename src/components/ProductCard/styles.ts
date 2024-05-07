@@ -24,24 +24,45 @@ export const CardHeader = styled.div`
 	display: flex;
 	justify-content: space-between;
 `
-export const CardTitle = styled.div`
+export const CardBoxTitle = styled.div`
 	display: flex;
 	align-items: baseline;
-	color: var(--gray-600);
 `
+export const CardTitle = styled.h5`
+	color: var(--gray-200);
+	font-weight: 600;
+	font-size: 1.5rem;
+`
+
 export const CardDescription = styled.div`
 	display: flex;
 	align-items: baseline;
 `
+
+export const CardParagraphDescription = styled.p`
+	color: var(--gray-200);
+	font-weight: normal;
+	font-size: 1rem;
+`
+
+// export const CardLinkDescription = styled.a`
+// 	color: var(--gray-200);
+// 	font-weight: normal;
+// 	font-size: 1rem;
+// 	text-decoration: none;
+// 	&:hover {
+// 		color: red;
+// 		text-decoration: underline;
+// 	}
+// `
+
 export const CardLink = styled.div`
 	a {
-		color: var(--gray-600);
+		color: var(--gray-200);
 		transition: background-color 0.3s, color 0.3s;
-		font-size: 0.875rem;
-		text-decoration: none;
+		font-size: 1rem;
 		&:hover {
-			color: var(--gray-600);
-			text-decoration: underline;
+			color: var(--gray-200);
 		}
 	}
 `
@@ -53,13 +74,13 @@ export const CardFooter = styled.div`
 
 export const CardTags = styled.div`
 	a {
-		color: var(--blue-bold);
+		color: var(--blue-300);
 		transition: background-color 0.3s, color 0.3s;
 		font-size: 0.875rem;
 		text-decoration: none;
 		margin-right: 5px;
 		&:hover {
-			color: var(--blue-bold);
+			color: var(--blue-300);
 		}
 	}
 `
@@ -73,7 +94,7 @@ export const CardReactions = styled.div`
 		cursor: pointer;
 		font-size: 1.25rem;
 		margin-right: 0.625rem;
-		transition: all .2s ease-in-out;
+		transition: all .1s ease-in-out;
 		&:hover {
 			transform: scale(1.2);
 		}

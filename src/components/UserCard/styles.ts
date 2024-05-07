@@ -38,8 +38,9 @@ export const CardContent = styled.div`
 	margin-bottom: 0;
 `
 export const CardTitle = styled.h5`
-	font-size: 1.563rem;
-	color: var(--blue-600);
+	font-size: 1.5rem;
+	color: var(--blue-200);
+	font-weight: 600;
 `
 export const CardFollowers = styled.div`
 	display: flex;
@@ -55,11 +56,12 @@ export const CardBoxFollowers = styled.span`
 	}
 `
 export const CardParagraph = styled.p`
-	color: var(--gray-600);
-	margin-bottom: 0;
+	color: var(--gray-200);
+	font-size: 1rem;
+	font-weight: 400;
 `
 export const CardBoxParagraph = styled.p`
-	color: var(--gray-600);
+	color: var(--gray-200);
 	font-size: 1.125rem;
 	font-weight: bold;
 	margin-bottom: 0;
@@ -79,13 +81,13 @@ export const CardFooter = styled.div`
 
 `
 export const CardButton = styled.button`
-	background-color: var(--orange-600);
+	background-color: var(--orange-200);
 	color: #fff;
 	transition: background-color 0.3s, color 0.3s;
 	border: 0;
 	font-size: 0.875rem;
 	&:hover {
-		background-color: var(--orange-600-hover);
+		background-color: var(--orange-200);
 		color: #fff;
 	}
 `

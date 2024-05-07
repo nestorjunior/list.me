@@ -14,8 +14,10 @@ import {
 	CardBody,
 	CardContent,
 	CardHeader,
+	CardBoxTitle,
 	CardTitle,
 	CardDescription,
+	CardParagraphDescription,
 	CardLink,
 	CardFooter,
 	CardTags,
@@ -52,13 +54,13 @@ export function ProductCard ({
 					<CardBody className="card-body">
 						<CardContent>
 							<CardHeader>
-								<CardTitle>
-									<IconThumbTack /> <h5 className="card-title"> {productTitle}</h5>
-								</CardTitle>
+								<CardBoxTitle>
+									<IconThumbTack /> <CardTitle className="card-title"> {productTitle}</CardTitle>
+								</CardBoxTitle>
 								<small className="text-body-secondary">{productLastUpdate}</small>
 							</CardHeader>
 							<CardDescription>
-								<IconFileLines /><p className="card-text"> {productDescription}.</p>
+								<IconFileLines /><CardParagraphDescription className="card-text"> {productDescription}.</CardParagraphDescription>
 							</CardDescription>
 							<CardLink>
 								<IconLink/> <a href="#">{productLink}</a>
