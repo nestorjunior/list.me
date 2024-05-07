@@ -10,6 +10,8 @@ import {
 	faShareNodes,
 	faStar,
 	faThumbTack,
+	faSun,
+	faMoon,
 	faChevronDown 
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -122,6 +124,26 @@ export const StyledIconThumbTack = styled(FontAwesomeIcon).attrs({
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-right: 0.625rem;
+`;	
+
+export const StyledIconSun = styled(FontAwesomeIcon).attrs({
+	icon: faSun
+})`
+  cursor: pointer;
+  color: var(--gray-500);
+	margin-top: 5px;
+	font-size: 1.25rem;
+	margin-left: 0.625rem;
+`;	
+
+export const StyledIconMoon = styled(FontAwesomeIcon).attrs({
+	icon: faMoon
+})`
+  cursor: pointer;
+  color: var(--gray-500);
+	margin-top: 5px;
+	font-size: 1.25rem;
+	margin-left: 0.625rem;
 `;	
 
 // Function that affects the icon: show more products.

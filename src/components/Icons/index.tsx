@@ -8,6 +8,8 @@ import {
 	faShareNodes,
 	faStar,
 	faThumbTack,
+	faSun,
+	faMoon,
 	faChevronDown 
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -21,6 +23,8 @@ import {
 	StyledIconsShareNodes,
 	StyledIconStar,
 	StyledIconThumbTack,
+	StyledIconSun,
+	StyledIconMoon,
 	StyledIconChevronDown 
 } from './styles';
 
@@ -81,6 +85,18 @@ export function IconStar () {
 export function IconThumbTack () {
 	return(
 		<StyledIconThumbTack icon={faThumbTack} />
+	)
+}
+
+export function IconSun () {
+	return(
+		<StyledIconSun icon={faSun} />
+	)
+}
+
+export function IconMoon () {
+	return(
+		<StyledIconMoon icon={faMoon} />
 	)
 }
 
