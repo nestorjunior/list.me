@@ -10,7 +10,8 @@ import {
 	faThumbTack,
 	faSun,
 	faMoon,
-	faChevronDown 
+	faChevronDown,
+	faCircleChevronDown
 } from '@fortawesome/free-solid-svg-icons';
 
 import { 
@@ -25,7 +26,8 @@ import {
 	StyledIconThumbTack,
 	StyledIconSun,
 	StyledIconMoon,
-	StyledIconChevronDown 
+	StyledIconChevronDown,
+	StyledIconChevronDownCircle 
 } from './styles';
 
 export function IconLink() {
@@ -103,6 +105,12 @@ export function IconMoon () {
 export function IconChevronDown() {
   return (
     <StyledIconChevronDown icon={faChevronDown} />
+  );
+}
+
+export function IconChevronDownCircle() {
+  return (
+    <StyledIconChevronDownCircle icon={faCircleChevronDown} />
   );
 }
 

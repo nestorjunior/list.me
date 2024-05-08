@@ -15,10 +15,10 @@ export const StyledModal = styled.div`
 	left: 50%;
 	translate: -50% -50%;
 	border-radius: 25px;
-	border: 5px solid var(--gray-200);
+	border: 5px solid var(--gray-100);
 	padding: 25px;
 	background-color: var(--white-100);
-	color: var(--gray-600);
+	color: var(--gray-200);
 	width: 600px;	
 `
 export const StyledModalHeader = styled.div`
@@ -26,8 +26,10 @@ export const StyledModalHeader = styled.div`
 	justify-content: space-between;
 `
 export const StyledModalTitle = styled.h5`
-	font-size: 1.563rem;
-	color: var(--blue-600);
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+	color: var(--blue-200);
+	font-weight: 600;
 `
 export const StyledModalBody = styled.div`
 	

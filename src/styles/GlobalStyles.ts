@@ -30,6 +30,15 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Open Sans", sans-serif;
   }
 
+	input:focus{
+		border: var(--blue-200);
+		box-shadow: 0 0 0 .25rem rgba(127, 162, 168, .25);
+	}
+
+	label {
+		color: var(--gray-200);
+	}
+
   :root {
     --blue-100: #d5e8eb;
     --blue-200: #7fa2a8;

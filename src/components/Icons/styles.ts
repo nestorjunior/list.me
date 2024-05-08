@@ -12,7 +12,8 @@ import {
 	faThumbTack,
 	faSun,
 	faMoon,
-	faChevronDown 
+	faChevronDown,
+	faCircleChevronDown
 } from '@fortawesome/free-solid-svg-icons';
 
 export const StyledIconLink = styled(FontAwesomeIcon).attrs({
@@ -167,8 +168,20 @@ export const StyledIconChevronDown = styled(FontAwesomeIcon).attrs({
   font-size: 20px;
   color: var(--gray-200);
 	margin-top: 5px;
-	font-size: 1rem;
+	font-size: 2rem;
 	margin-right: 0.625rem;
 	animation: ${jump} 1s ease infinite;
 `;
 
+export const StyledIconChevronDownCircle = styled(FontAwesomeIcon).attrs({
+	icon: faCircleChevronDown
+})`
+	cursor: pointer;
+  margin-top: 20px;  
+  font-size: 20px;
+  color: var(--blue-200);
+	margin-top: 5px;
+	font-size: 2.3rem;
+	margin-right: 0.625rem;
+	animation: ${jump} 1s ease infinite;
+`;

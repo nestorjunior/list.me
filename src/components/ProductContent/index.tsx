@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../ProductCard';
-import { IconChevronDown } from '../Icons'
+import { IconChevronDownCircle } from '../Icons'
 import './styles'
 
 import { 
@@ -117,7 +117,7 @@ export function ProductContent() {
 			{!showAllProducts && (
 				<ProductShowMore className="text-center">
 					<ProductButtonShowMore onClick={handleShowMore}>
-						<IconChevronDown />
+						<IconChevronDownCircle />
 					</ProductButtonShowMore>
 				</ProductShowMore>
 			)}

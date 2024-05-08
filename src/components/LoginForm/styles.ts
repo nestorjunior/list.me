@@ -15,7 +15,7 @@ export const LoginFormStyled = styled.form`
 	flex-direction: column;
 	justify-content: center;
 	border-radius: 25px;
-	border: 5px solid var(--gray-200);
+	border: 5px solid var(--gray-100);
 	padding-left: 15px;
 	padding-right: 15px;
 
@@ -25,8 +25,9 @@ export const LoginFormStyled = styled.form`
 `
 export const LoginFormTitle = styled.h2`
 	margin-bottom: 15px;
-	font-size: 1.563rem;
-	color: var(--blue-600);
+	font-size: 1.5rem;
+	color: var(--blue-200);
+	font-weight: 600;
 `
 export const LoginBoxSubmitButton = styled.div`
 	display: flex;
@@ -34,11 +35,13 @@ export const LoginBoxSubmitButton = styled.div`
 `
 
 export const StyledSubmitButton = styled.button`
-	background-color: var(--orange-600);
+	background-color: var(--orange-200);
 	color: #fff;
-	transition: background-color 0.5s ease;
+	transition: background-color 0.3s, color 0.3s;
+	border: 0;
+	font-size: 0.875rem;
 	&:hover {
-		background-color: var(--orange-600-hover);
+		background-color: var(--orange-200);
 		color: #fff;
 	}
 `
