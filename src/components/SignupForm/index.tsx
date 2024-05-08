@@ -60,7 +60,7 @@ export function SignupForm() {
 	return (
 		<>
 			<SignupFormContainer>
-				<div className="col-md-6">
+				<div className="col-sm-4">
 					<SignupFormStyled className="card mb-4">
 						<div className="card-header">Signup</div>
 						<div className="card-body">

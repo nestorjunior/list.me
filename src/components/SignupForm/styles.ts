@@ -18,11 +18,11 @@ export const SignupFormStyled = styled.div`
 	}
 
 	@media (min-width: 481px) and (max-width: 767px) {
-    margin-top: auto;
+    margin-top: -70px;
   }
 
 	@media (min-width: 320px) and (max-width: 480px) {
-		margin-top: auto;
+		margin-top: -70px;
 	}
 `
 

@@ -26,9 +26,7 @@ export const Modal: React.FC<ComponentProps> = ({isOpen, children, onClose}) => 
 								<StyledModalClose className='btn-close' onClick={onClose} />
 							</div>
 							<div className="card-body">
-								<p>
-									{children}
-								</p>
+								{children}
 							</div>
 							<div className='card-footer'>
 								<StyledModalButtonClose type="button" className="btn ms-auto" onClick={onClose}>Close</StyledModalButtonClose>

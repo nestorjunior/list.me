@@ -75,7 +75,7 @@ export function LoginForm () {
 
   return (
     <LoginFormContainer>
-			<div className="col-md-6">
+			<div className="col-sm-4">
 				<LoginFormStyled className="card mb-4">
 					<div className="card-header">Login</div>
 					<div className="card-body">
