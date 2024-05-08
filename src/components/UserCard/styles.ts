@@ -6,7 +6,7 @@ export const CardWrapper = styled.div`
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	background: var(--rose-100);
+	/* background: var(--rose-100); */
 	border-radius: 25px;
 	border: 6px solid var(--white-100);
 

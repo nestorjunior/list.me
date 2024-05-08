@@ -107,7 +107,8 @@ export function ProductContent() {
 				<SectionContainer style={{ marginTop: marginTop }}>
 					{products .slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
 							
-						<ProductContainer className='wbox-content-container__product' key={index}>{product}
+						<ProductContainer className='wbox-content-container__product' key={index}>
+							{product}
 							<ProductDivider/>
 						</ProductContainer>
 					

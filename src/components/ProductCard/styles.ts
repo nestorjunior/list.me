@@ -45,17 +45,6 @@ export const CardParagraphDescription = styled.p`
 	font-size: 1rem;
 `
 
-// export const CardLinkDescription = styled.a`
-// 	color: var(--gray-200);
-// 	font-weight: normal;
-// 	font-size: 1rem;
-// 	text-decoration: none;
-// 	&:hover {
-// 		color: red;
-// 		text-decoration: underline;
-// 	}
-// `
-
 export const CardLink = styled.div`
 	a {
 		color: var(--gray-200);

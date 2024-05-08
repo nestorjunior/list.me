@@ -20,7 +20,7 @@ export const MainContainer = styled.main`
 
 export const SectionContainer = styled.section`
 	width: 900px;
-	background-color: var(--rose-100);
+	/* background-color: var(--rose-100); */
 	border-radius: 25px!important;
 	border: 5px solid var(--gray-100);
 	display: flex;
@@ -36,17 +36,17 @@ export const SectionContainer = styled.section`
   }
 `
 export const ProductContainer = styled.div`
-	background: var(--rose-100);
-	padding-right: 15px;
-	padding-left: 15px;
+	/* background: var(--rose-100); */
+	/* padding-right: 15px; */
+	/* padding-left: 15px; */
 
 	&:first-child {
-		padding-top: 15px;
+		/* padding-top: 15px; */
 		border-top-right-radius: 20px;
 		border-top-left-radius: 20px;
 	}
 	&:last-child {
-		padding-bottom: 15px;
+		/* padding-bottom: 15px; */
 		border-bottom-right-radius: 20px;
 		border-bottom-left-radius: 20px;
 
