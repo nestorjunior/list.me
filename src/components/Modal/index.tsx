@@ -1,6 +1,12 @@
 import React, { Children } from 'react'
 
-import { StyledModal, StyledBackgroundModal, StyledModalButton, StyledModalButtonClose, StyledModalHeader, StyledModalTitle, StyledModalBody, StyledModalFooter } from './styles'
+import { 
+	StyledModal, 
+	StyledBackgroundModal, 
+	StyledCardModal, 
+	StyledModalButtonClose,
+	StyledModalClose 
+} from './styles'
 
 interface ComponentProps {
 	isOpen: boolean;
@@ -14,20 +20,20 @@ export const Modal: React.FC<ComponentProps> = ({isOpen, children, onClose}) => 
 			<>
 				<StyledBackgroundModal>
 					<StyledModal>
-						<StyledModalHeader>
-							<StyledModalTitle>Title Modal</StyledModalTitle>
-							<StyledModalButtonClose className='btn-close' onClick={onClose} />
-						</StyledModalHeader>
-						
-						<StyledModalBody>
-							{children}
-						</StyledModalBody>
-						
-						<StyledModalFooter>
-							<StyledModalButton className='btn btn-secondary' onClick={onClose}>
-								Close
-							</StyledModalButton>
-						</StyledModalFooter>
+						<StyledCardModal className="card mb-4">
+							<div className="card-header">
+								<h5>Title Modal</h5>
+								<StyledModalClose className='btn-close' onClick={onClose} />
+							</div>
+							<div className="card-body">
+								<p>
+									{children}
+								</p>
+							</div>
+							<div className='card-footer'>
+								<StyledModalButtonClose type="button" className="btn ms-auto" onClick={onClose}>Close</StyledModalButtonClose>
+							</div>
+						</StyledCardModal>
 					</StyledModal>
 				</StyledBackgroundModal>
 			</>

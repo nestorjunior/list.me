@@ -39,11 +39,17 @@ export const ProfileCardImage = styled.img`
 export const ProfileCardButton = styled.button`
 	background-color: var(--orange-200);
 	color: #fff;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.5s, color 0.5s;
 	border: 0;
-	font-size: 0.875rem;
+	font-size: 1rem;
+	box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
 	&:hover {
-		background-color: var(--orange-200);
+		background-color: var(--orange-200-hover);
 		color: #fff;
+	}
+	&:active {
+		background-color: var(--orange-200-hover)!important;
+		color: #fff!important;
+		border-color: var(--orange-200-hover)!important;
 	}
 `

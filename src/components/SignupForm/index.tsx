@@ -4,9 +4,7 @@ import { Modal } from '../Modal/index';
 import { 
 	SignupFormContainer,
 	SignupFormStyled,
-	SignupFormTitle,
 	StyledSubmitButton,
-	StyledBoxSubmitButton,
 	StyledTermsLink
 } from './styles'
 
@@ -62,70 +60,71 @@ export function SignupForm() {
 	return (
 		<>
 			<SignupFormContainer>
-				<SignupFormStyled onSubmit={handleSubmit}>
-					<SignupFormTitle>Signup</SignupFormTitle>
-					
-					<div className="formMailUser">
-						<label className='form-label'>Email</label>
-						<input
-							className='form-control'
-							type="email"
-							value={email}
-							placeholder="Email"
-							onChange={(e) => setEmail(e.target.value)}
-							required
-							style={{ marginBottom: '15px' }}
-						/>
-					</div>
+				<div className="col-md-6">
+					<SignupFormStyled className="card mb-4">
+						<div className="card-header">Signup</div>
+						<div className="card-body">
+							<form onSubmit={handleSubmit}>
+								<div className="mb-3">
+									<label className="small mb-1">Email</label>
+									<input 
+										className='form-control'
+										type="email"
+										value={email}
+										placeholder="Email"
+										onChange={(e) => setEmail(e.target.value)}
+										required
+										style={{ marginBottom: '15px' }}
+									/>
+								</div>
 
-					<div className="formPasswordUser">
-						<label className='form-label'>Password</label>
-						<input
-							className='form-control'
-							type="password"
-							placeholder="Password"
-							value={password}
-							onChange={(e) => setPassword(e.target.value)}
-							required
-							style={{ marginBottom: '15px' }}
-						/>
-					</div>
+								<div className="mb-3">
+									<label className="small mb-1">Password</label>
+									<input 
+										className='form-control'
+										type="password"
+										placeholder="Password"
+										value={password}
+										onChange={(e) => setPassword(e.target.value)}
+										required
+										style={{ marginBottom: '15px' }}
+									/>
+								</div>
 
-					<div className="formConfirmPasswordUser">
-						<label className='form-label'>Confirm password</label>
-						<input
-							className='form-control'
-							type="password"
-							placeholder="Confirm password"
-							value={confirmPassword}
-							onChange={(e) => setConfirmPassword(e.target.value)}
-							required
-							style={{ marginBottom: '15px' }}
-						/>
-					</div>
+								<div className="mb-3">
+									<label className="small mb-1">Confirm password</label>
+									<input 
+										className='form-control'
+										type="password"
+										placeholder="Confirm password"
+										value={confirmPassword}
+										onChange={(e) => setConfirmPassword(e.target.value)}
+										required
+										style={{ marginBottom: '15px' }}
+									/>
+								</div>
 
-					<div className="form-check">
-						<input 
-							type="checkbox" 
-							className="form-check-input" 
-							id="termsCheckbox" 
-							checked={agreeToTerms}
-							onChange={(e) => setAgreeToTerms(e.target.checked)}
-							required 
-						/>
-						<label className="form-check-label" htmlFor="termsCheckbox">I agree to the <StyledTermsLink onClick={handleOpenModal}>Terms of Service.</StyledTermsLink></label>
-					</div>
+								<div className="mb-3">
+									<input 
+										type="checkbox" 
+										className="form-check-input" 
+										id="termsCheckbox" 
+										checked={agreeToTerms}
+										onChange={(e) => setAgreeToTerms(e.target.checked)}
+										required 
+									/>
+									<label className="form-check-label" htmlFor="termsCheckbox" style={{ marginLeft: '5px' }}> I agree to the <StyledTermsLink onClick={handleOpenModal}>Terms of Service.</StyledTermsLink></label>
+								</div>
+								
+								{error && <div className="error-message">{error}</div>}
 
-					{error && <div className="error-message">{error}</div>}
+								<StyledSubmitButton type="button" className="btn ms-auto">Save changes</StyledSubmitButton>
+							</form>
+						</div>
+					</SignupFormStyled>
+				</div>
 
-					<StyledBoxSubmitButton>
-						<StyledSubmitButton className='btn btn-primary' type="submit">
-							Submit
-						</StyledSubmitButton>
-					</StyledBoxSubmitButton>
-				</SignupFormStyled>
 			</SignupFormContainer>
-			{/* {showModal && <ModalTermsOfService />} */}
 			
 			<Modal isOpen={openModal} onClose={handleCloseModal}>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam scelerisque dui nibh, nec dapibus odio consectetur non. Vestibulum in odio sit amet nibh vestibulum facilisis eu nec nisl. Nullam rhoncus libero dui, a interdum augue vehicula ut. Etiam rutrum, libero quis sodales aliquet, ipsum purus lacinia magna, id consectetur lacus massa et urna. Curabitur sit amet rutrum dolor. Quisque aliquam erat in ligula tempor tincidunt ut at dui. Mauris sollicitudin magna at quam imperdiet posuere. Aliquam quis lacus sed eros convallis efficitur. Integer id turpis bibendum, sagittis felis et, egestas nunc. Nunc hendrerit elit id libero porttitor, nec efficitur urna congue.</p>

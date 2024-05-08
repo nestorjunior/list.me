@@ -31,8 +31,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 	input:focus{
-		border: var(--blue-200);
-		box-shadow: 0 0 0 .25rem rgba(127, 162, 168, .25);
+		border-color: var(--blue-100)!important;
+		box-shadow: 0 0 0 0.1rem rgba(127, 162, 168, 0.7)!important;
 	}
 
 	label {

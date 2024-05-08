@@ -5,45 +5,42 @@ export const SignupFormContainer = styled.div`
 	justify-content: center;
 	height: 100vh;
 `
-export const SignupFormStyled = styled.form`
-	width: 60vw;
-	max-width: 600px;
-	height: 450px;
-	margin-top: -50px;
+
+export const SignupFormStyled = styled.div`
 	background-color: var(--white-100);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	border-radius: 25px;
 	border: 5px solid var(--gray-100);
-	padding-left: 15px;
-	padding-right: 15px;
+	margin-top: -45px;
+
+	.card-header {
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+
+	@media (min-width: 481px) and (max-width: 767px) {
+    margin-top: auto;
+  }
 
 	@media (min-width: 320px) and (max-width: 480px) {
-    width: 90vw;
-  }
-`
-
-export const SignupFormTitle = styled.h2`
-	margin-bottom: 15px;
-	font-size: 1.5rem;
-	color: var(--blue-200);
-	font-weight: 600;
-`
-export const StyledBoxSubmitButton = styled.div`
-	display: flex;
-	justify-content: flex-end;
+		margin-top: auto;
+	}
 `
 
 export const StyledSubmitButton = styled.button`
 	background-color: var(--orange-200);
 	color: #fff;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.5s, color 0.5s;
 	border: 0;
-	font-size: 0.875rem;
+	font-size: 1rem;
+	box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
 	&:hover {
-		background-color: var(--orange-200);
+		background-color: var(--orange-200-hover);
 		color: #fff;
+	}
+	&:active {
+		background-color: var(--orange-200-hover)!important;
+		color: #fff!important;
+		border-color: var(--orange-200-hover)!important;
 	}
 `
 export const StyledTermsLink = styled.a`

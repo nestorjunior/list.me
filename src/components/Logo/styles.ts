@@ -5,6 +5,10 @@ export const LogoContainer = styled.div`
 	align-items: center;
 	margin-bottom: 10px;
 
+	a {
+		text-decoration: none;
+	}
+
 	@media (min-width: 481px) and (max-width: 767px) {
     justify-content: center;
   }

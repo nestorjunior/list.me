@@ -4,9 +4,7 @@ import './styles';
 import { 
 	LoginFormContainer,
 	LoginFormStyled,
-	LoginFormTitle,
-	LoginBoxSubmitButton,
-	StyledSubmitButton
+	StyledSubmitButton,
 } from './styles'
 
 export function LoginForm () {
@@ -77,42 +75,44 @@ export function LoginForm () {
 
   return (
     <LoginFormContainer>
-      <LoginFormStyled onSubmit={handleSubmit}>
-			<LoginFormTitle>Login</LoginFormTitle>
-        <div className="formEmailUser">
-          <label className='form-label'>Email</label>
-          <input
-						className='form-control'
-            type="text"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-						style={{marginBottom: '15px'}}
-          />
-        </div>
+			<div className="col-md-6">
+				<LoginFormStyled className="card mb-4">
+					<div className="card-header">Login</div>
+					<div className="card-body">
+						<form onSubmit={handleSubmit}>
+							<div className="mb-3">
+								<label className="small mb-1">Email</label>
+								<input 
+									className='form-control'
+									type="email"
+									placeholder="Email"
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									required
+									style={{marginBottom: '15px'}}
+								/>
+							</div>
 
-        <div className="formEmailPassword">
-					<label className='form-label'>Password</label>
-          <input
-						className='form-control'
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-						style={{marginBottom: '15px'}}
-          />
-        </div>
+							<div className="mb-3">
+								<label className="small mb-1">Password</label>
+								<input 
+									className='form-control'
+									type="password"
+									placeholder="Password"
+									value={password}
+									onChange={(e) => setPassword(e.target.value)}
+									required
+									style={{marginBottom: '15px'}}
+								/>
+							</div>
+							
+							{error && <div className="error-message">{error}</div>}
 
-        {error && <div className="error-message">{error}</div>}
-
-        <LoginBoxSubmitButton>
-          <StyledSubmitButton className='btn btn-primary' type="submit">
-            Submit
-          </StyledSubmitButton>
-        </LoginBoxSubmitButton>
-      </LoginFormStyled>
+							<StyledSubmitButton type="button" className="btn ms-auto">Save changes</StyledSubmitButton>
+						</form>
+					</div>
+				</LoginFormStyled>
+			</div>
     </LoginFormContainer>
   );
 };

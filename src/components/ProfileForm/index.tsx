@@ -12,7 +12,6 @@ export function ProfileForm() {
 		<>
 			<ProfileFormContainer className="container-fluid px-4 mt-4">
 				<div className="row">
-
 					<div className="col-xl-4">
 
 						<ProfileFormImageStyled className="card mb-4 mb-xl-0">
@@ -86,7 +85,6 @@ export function ProfileForm() {
 							</div>
 						</ProfileFormAccountStyled>
 					</div>
-
 				</div>
 			</ProfileFormContainer>
 		</>

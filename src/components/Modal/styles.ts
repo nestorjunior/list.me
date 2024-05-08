@@ -14,41 +14,38 @@ export const StyledModal = styled.div`
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;
+`
+export const StyledCardModal = styled.div`
+	background-color: var(--white-100);
 	border-radius: 25px;
 	border: 5px solid var(--gray-100);
-	padding: 25px;
-	background-color: var(--white-100);
-	color: var(--gray-200);
-	width: 600px;	
+	margin-top: -45px;
+
+	.card-header{
+		display: flex;
+		justify-content: space-between;
+	}
+
 `
-export const StyledModalHeader = styled.div`
-	display: flex;
-	justify-content: space-between;
-`
-export const StyledModalTitle = styled.h5`
-	margin-bottom: 15px;
-	font-size: 1.5rem;
-	color: var(--blue-200);
-	font-weight: 600;
-`
-export const StyledModalBody = styled.div`
-	
-`
-export const StyledModalFooter = styled.div`
-	display: flex;
-	justify-content: flex-end;
-`
-export const StyledModalButtonClose = styled.button`
+export const StyledModalClose = styled.button`
 	border: 0;
 	padding: 5px;
 `
-export const StyledModalButton = styled.button`
-	background-color: var(--orange-600);
+export const StyledModalButtonClose = styled.button`
+		background-color: var(--orange-200);
 	color: #fff;
-	transition: background-color 0.5s ease;
+	transition: background-color 0.5s, color 0.5s;
 	border: 0;
+	font-size: 1rem;
+	box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
 	&:hover {
-		background: var(--orange-600-hover);
+		background-color: var(--orange-200-hover);
+		color: #fff;
+	}
+	&:active {
+		background-color: var(--orange-200-hover)!important;
+		color: #fff!important;
+		border-color: var(--orange-200-hover)!important;
 	}
 `
 
