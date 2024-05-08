@@ -1,21 +1,21 @@
 import styled from 'styled-components'
 
 export const CardWrapper = styled.div`
-	padding-right: 25px;
 	height: 230px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	padding: 15px;
 	/* background: var(--rose-100); */
 	border-radius: 25px;
 	border: 6px solid var(--white-100);
 
 	@media (min-width: 481px) and (max-width: 767px) {
-    height: 300px;
+    height: 350px;
   }
 
 	@media (min-width: 320px) and (max-width: 480px) {
-    height: 300px;
+    height: 350px;
   }
 `
 export const CardImage = styled.img`
@@ -34,7 +34,6 @@ export const CardImage = styled.img`
 export const CardContent = styled.div`
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	margin-bottom: 0;
 `
 export const CardTitle = styled.h5`
@@ -63,7 +62,7 @@ export const CardParagraph = styled.p`
 export const CardBoxParagraph = styled.p`
 	color: var(--gray-200);
 	font-size: 1.125rem;
-	font-weight: bold;
+	font-weight: 800;
 	margin-bottom: 0;
 `
 export const CardFooter = styled.div`
@@ -83,11 +82,12 @@ export const CardFooter = styled.div`
 export const CardButton = styled.button`
 	background-color: var(--orange-200);
 	color: #fff;
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.5s, color 0.5s;
 	border: 0;
 	font-size: 0.875rem;
+	box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
 	&:hover {
-		background-color: var(--orange-200);
+		background-color: var(--orange-200-hover);
 		color: #fff;
 	}
 `

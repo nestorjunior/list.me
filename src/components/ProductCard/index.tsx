@@ -46,7 +46,7 @@ export function ProductCard ({
 }:ProductCardProps) {
   return (
 		<CardWrapper className="card">
-			<div className="row g-0">
+			<div className="row">
 				<div className="col-md-3 d-flex justify-content-center">
 					<CardImage src={imageUrl} className="img-fluid" alt={productImageAlt} />
 				</div>
@@ -54,9 +54,7 @@ export function ProductCard ({
 					<CardBody className="card-body">
 						<CardContent>
 							<CardHeader>
-								<CardBoxTitle>
-									<IconThumbTack /> <CardTitle className="card-title"> {productTitle}</CardTitle>
-								</CardBoxTitle>
+								<CardTitle className="card-title"> {productTitle}</CardTitle>
 								<small className="text-body-secondary">{productLastUpdate}</small>
 							</CardHeader>
 							<CardDescription>

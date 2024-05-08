@@ -44,7 +44,7 @@ export function UserCard ({
   return (
 		<>
 		<CardWrapper className='card mb-3'>
-			<div className="row g-0 align-items-center">
+			<div className="row align-items-center">
 				<div className="col-sm-12 col-md-3 d-flex justify-content-center">
 					<CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} />
 				</div>
@@ -67,7 +67,7 @@ export function UserCard ({
 							</CardFollowers>
 						</CardContent>	
 						
-						<CardParagraph className='card-text'> {UserCardNickname}</CardParagraph>
+						<CardParagraph className='card-text mt-10-negative'> {UserCardNickname}</CardParagraph>
 						<CardParagraph className='card-text'> {UserCardOccupation}</CardParagraph>
 						<CardParagraph className="card-text"> {UserCardDescription}.</CardParagraph>
 						<CardParagraph className="card-text"> {UserCardLocation}.</CardParagraph>

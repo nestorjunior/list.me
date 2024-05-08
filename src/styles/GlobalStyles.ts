@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
   body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Lato", sans-serif;
   }
 
 	input:focus{
@@ -37,6 +37,10 @@ export const GlobalStyles = createGlobalStyle`
 
 	label {
 		color: var(--gray-200);
+	}
+
+	.mt-10-negative {
+		margin-top: -10px;
 	}
 
   :root {
@@ -52,6 +56,7 @@ export const GlobalStyles = createGlobalStyle`
     --black-200: #090a0a;
 		--orange-100: #fe9486;
     --orange-200: #de4c5a;
+		--orange-200-hover: #c63341;
 		--rose-100: #fbf6f6
   }
 `;

@@ -11,7 +11,7 @@ export const Header: React.FC<HeaderProps> = (props) => {
 
 	const { height } = props;
 	const headerStyle = {
-		height: height || '400px'
+		height: height || '450px'
 	}
 
 	return(
