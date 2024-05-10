@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const ButtonStyled = styled.button`
-	/* --bs-btn-padding-x: 0.75rem;
-    --bs-btn-padding-y: 0.375rem; */
 	padding: 0.375rem 0.75rem;
 	transition: background-color 0.5s, color 0.5s;
 	border: 0;
