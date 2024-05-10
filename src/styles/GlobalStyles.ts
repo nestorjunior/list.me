@@ -46,6 +46,7 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --blue-100: #d5e8eb;
     --blue-200: #7fa2a8;
+		--blue-200-hover: #658b91;
 		--blue-300: #0000ff;
 		--white-100: #f6f6f8;
     --white-200: #d9d9e7;

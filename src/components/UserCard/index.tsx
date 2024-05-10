@@ -1,3 +1,4 @@
+import { PrimaryButton } from '../Button/style';
 import { IconShare } from '../Icons';
 import { 
 	CardWrapper,
@@ -9,7 +10,6 @@ import {
 	CardBoxParagraph, 
 	CardBoxFollowers,
 	CardFooter,
-	CardButton,
 	CardBoxShareUser,
 	CardBody 
 } from './styles'
@@ -74,8 +74,12 @@ export function UserCard ({
 						
 						<CardFooter>
 							<div>
-								<CardButton type="button" className="btn me-1">{UserCardFollow}</CardButton>
-								<CardButton type="button" className="btn me-1">{UserCardMessage}</CardButton>
+								<PrimaryButton className='me-1'>
+									{UserCardFollow}
+								</PrimaryButton>
+								<PrimaryButton className='me-1'>
+									{UserCardMessage}
+								</PrimaryButton>
 							</div>
 							<CardBoxShareUser>
 								<IconShare />

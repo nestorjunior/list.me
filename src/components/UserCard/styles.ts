@@ -79,18 +79,6 @@ export const CardFooter = styled.div`
 	}
 
 `
-export const CardButton = styled.button`
-	background-color: var(--orange-200);
-	color: #fff;
-	transition: background-color 0.5s, color 0.5s;
-	border: 0;
-	font-size: 0.875rem;
-	box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
-	&:hover {
-		background-color: var(--orange-200-hover);
-		color: #fff;
-	}
-`
 export const CardBoxShareUser = styled.div`
 	display: flex;
 	align-items: center;
