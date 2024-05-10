@@ -4,9 +4,9 @@ import { Modal } from '../Modal/index';
 import { 
 	SignupFormContainer,
 	SignupFormStyled,
-	StyledSubmitButton,
 	StyledTermsLink
 } from './styles'
+import { PrimaryButton } from '../Button/style';
 
 export function SignupForm() {
 	const [email, setEmail] = useState<string>('');
@@ -118,7 +118,7 @@ export function SignupForm() {
 								
 								{error && <div className="error-message">{error}</div>}
 
-								<StyledSubmitButton type="button" className="btn ms-auto">Save changes</StyledSubmitButton>
+								<PrimaryButton>Submit</PrimaryButton>
 							</form>
 						</div>
 					</SignupFormStyled>

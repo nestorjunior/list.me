@@ -1,13 +1,20 @@
+import React, {FormEvent} from 'react';
+import { PrimaryButton } from '../Button/style';
 import './styles';
 import {
 	ProfileFormContainer,
 	ProfileFormImageStyled,
 	ProfileFormAccountStyled,
 	ProfileCardImage,
-	ProfileCardButton
 } from './styles'
 
 export function ProfileForm() {
+
+	const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log('submit')
+  };
+
 	return (
 		<>
 			<ProfileFormContainer className="container-fluid px-4 mt-4">
@@ -20,7 +27,9 @@ export function ProfileForm() {
 								<ProfileCardImage src="https://i.pravatar.cc/150" className="img-fluid" alt="" />
 								<div className="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
 
-								<ProfileCardButton type="button" className="btn me-1">Upload new image</ProfileCardButton>
+								<PrimaryButton type='button'>
+									Upload new image
+								</PrimaryButton>
 							</div>
 						</ProfileFormImageStyled>
 					</div>
@@ -29,23 +38,23 @@ export function ProfileForm() {
 						<ProfileFormAccountStyled className="card mb-4">
 							<div className="card-header">Account Details</div>
 							<div className="card-body">
-								<form>
+								<form onSubmit={handleSubmit}>
 
 									<div className="mb-3">
 										<label className="small mb-1">Username (how your name will appear to other users on the site)</label>
-										<input className="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="username" />
+										<input className="form-control" id="inputUsername" type="text" placeholder="Enter your username" />
 									</div>
 
 									<div className="row gx-3 mb-3">
 
 										<div className="col-md-6">
 											<label className="small mb-1">First name</label>
-											<input className="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="Valerie" />
+											<input className="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
 										</div>
 
 										<div className="col-md-6">
 											<label className="small mb-1">Last name</label>
-											<input className="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna" />
+											<input className="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
 										</div>
 									</div>
 
@@ -53,34 +62,36 @@ export function ProfileForm() {
 
 										<div className="col-md-6">
 											<label className="small mb-1">Organization name</label>
-											<input className="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" value="Start Bootstrap" />
+											<input className="form-control" id="inputOrgName" type="text" placeholder="Enter your organization name" />
 										</div>
 
 										<div className="col-md-6">
 											<label className="small mb-1">Location</label>
-											<input className="form-control" id="inputLocation" type="text" placeholder="Enter your location" value="San Francisco, CA" />
+											<input className="form-control" id="inputLocation" type="text" placeholder="Enter your location" />
 										</div>
 									</div>
 
 									<div className="mb-3">
 										<label className="small mb-1">Email address</label>
-										<input className="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="name@example.com" />
+										<input className="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" />
 									</div>
 
 									<div className="row gx-3 mb-3">
 
 										<div className="col-md-6">
 											<label className="small mb-1">Phone number</label>
-											<input className="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="555-123-4567" />
+											<input className="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" />
 										</div>
 
 										<div className="col-md-6">
 											<label className="small mb-1">Birthday</label>
-											<input className="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="06/10/1988" />
+											<input className="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" />
 										</div>
 									</div>
 
-									<ProfileCardButton type="button" className="btn me-1">Save changes</ProfileCardButton>
+									<PrimaryButton type='submit'>
+										Submit
+									</PrimaryButton>
 								</form>
 							</div>
 						</ProfileFormAccountStyled>

@@ -4,8 +4,8 @@ import './styles';
 import { 
 	LoginFormContainer,
 	LoginFormStyled,
-	StyledSubmitButton,
 } from './styles'
+import { PrimaryButton } from '../Button/style';
 
 export function LoginForm () {
   const [email, setEmail] = useState<string>('');
@@ -108,7 +108,9 @@ export function LoginForm () {
 							
 							{error && <div className="error-message">{error}</div>}
 
-							<StyledSubmitButton type="button" className="btn ms-auto">Save changes</StyledSubmitButton>
+							<PrimaryButton>
+								Save changes
+							</PrimaryButton>
 						</form>
 					</div>
 				</LoginFormStyled>
