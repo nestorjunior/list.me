@@ -9,6 +9,7 @@ export const CardWrapper = styled.div`
 	/* background: var(--rose-100); */
 	border-radius: 25px;
 	border: 6px solid var(--white-100);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
 	@media (min-width: 481px) and (max-width: 767px) {
     height: 350px;

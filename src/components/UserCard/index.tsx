@@ -1,6 +1,8 @@
 import {Button, ButtonGroup} from '@mui/material';
-import ShareIcon from '@mui/icons-material/Share';
+import IconButton from '@mui/material/IconButton';
+import ShareSharpIcon from '@mui/icons-material/ShareSharp';
 import Avatar from '@mui/material/Avatar';
+import Card from '@mui/material/Card';
 
 import { 
 	CardWrapper,
@@ -29,6 +31,10 @@ interface UserCardProps {
 	UserCardFollow: string;
 	UserCardMessage: string;
 } 
+
+function handleClick() {
+	console.log('Share user')
+}
 
 export function UserCard ({
 	UserCardImageUrl,
@@ -86,7 +92,9 @@ export function UserCard ({
 								</ButtonGroup>
 							</div>
 							<CardBoxShareUser>
-								<ShareIcon sx={{ fontSize: 30 }} />
+							<IconButton onClick={handleClick}>
+								<ShareSharpIcon sx={{ fontSize: 30 }} />
+							</IconButton>
 							</CardBoxShareUser>
 						</CardFooter>
 
