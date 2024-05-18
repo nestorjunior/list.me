@@ -4,7 +4,7 @@ import { Header } from "../../components/Header";
 import { Navbar } from "../../components/Navbar";
 import { SignupForm } from "../../components/SignupForm";
 
-export function SignupAccount() {
+export function SignupPage() {
 	return(
 		<>
 			<div className="container-fluid p-x-0">

@@ -3,7 +3,7 @@ import { Navbar } from "../../components/Navbar";
 import { ProfileForm } from "../../components/ProfileForm";
 import { Footer } from "../../components/Footer";
 
-export function Profile() {
+export function ProfilePage() {
 	return (
 		<>
 			<div className="container-fluid">

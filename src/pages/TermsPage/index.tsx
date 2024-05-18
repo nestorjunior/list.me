@@ -1,7 +1,7 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 
-export function Terms() {
+export function TermsPage() {
 	return(
 		<>
 			<div className="container-fluid" style={{marginTop: '50px'}}>	

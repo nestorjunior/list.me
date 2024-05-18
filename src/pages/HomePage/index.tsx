@@ -6,7 +6,7 @@ import { Footer } from '../../components/Footer';
 
 import { MainContainer } from './styles';
 
-export function Home() {
+export function HomePage() {
   return (
     <>
       <MainContainer className="container-fluid">

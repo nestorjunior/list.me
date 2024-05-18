@@ -1,13 +1,13 @@
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 
-export function Cookies() {
+export function PrivacyPage() {
 	return(
 		<>
 			<div className="container-fluid" style={{marginTop: '50px'}}>	
 				<Header height="150px"/>
 				<div style={{padding: '50px 190px'}}>
-					<h2>Cookie Policy</h2>
+					<h2>Privacy Policy</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rutrum pharetra fringilla. Etiam nec turpis eu lorem maximus condimentum vitae nec nibh. Morbi tempor, risus ac congue gravida, ligula sapien lobortis leo, a condimentum lectus est eget sem. Cras eu suscipit lectus, vitae pulvinar mi. Curabitur turpis neque, aliquet pharetra urna in, tempus pretium est. Sed placerat velit eu ipsum molestie mollis. Maecenas rutrum suscipit diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquam odio vitae vulputate sollicitudin</p>
 					<p>Aliquam a eleifend lacus. Vestibulum velit orci, lobortis sed nunc sed, auctor pharetra orci. Vivamus accumsan ornare ante sit amet venenatis. Etiam convallis magna et lorem sagittis efficitur. Donec fermentum sed tellus tristique tempus. Praesent a sem id eros porttitor hendrerit. Nullam sed tempus metus. Suspendisse hendrerit non magna in tincidunt. Nam consequat sem eu justo laoreet eleifend. Fusce id urna magna. Pellentesque finibus enim nec pulvinar pellentesque. Mauris iaculis aliquet ante ac suscipit. Sed vitae gravida erat. In bibendum elit quis dui cursus malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nunc vitae eros blandit suscipit a ut nibh.</p>
 					<p>Duis fringilla ex vitae lacus laoreet, a sodales augue porttitor. Nam commodo orci eu tempus tempus. Sed pellentesque orci vel lectus gravida tempus. Quisque pellentesque molestie velit, nec aliquam neque consectetur ac. Donec sodales quam nec ex ornare bibendum. Aliquam eu velit sem. Quisque posuere nisi eget diam cursus iaculis. Curabitur sit amet consequat sapien. Donec vitae luctus metus, vitae tempor nunc. Nunc vel nunc nulla. Sed porta erat eget lectus tincidunt, a blandit eros vulputate. Vestibulum lobortis porttitor velit, eget placerat purus. Pellentesque sed nisl accumsan nulla gravida ornare.</p>
