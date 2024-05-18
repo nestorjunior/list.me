@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from 'react';
 import { Modal } from '../Modal/index';
+import { Button } from '@mui/material';
 
 import { 
 	SignupFormContainer,
@@ -117,7 +118,7 @@ export function Signup() {
 								
 								{error && <div className="error-message">{error}</div>}
 
-								<PrimaryButton>Submit</PrimaryButton>
+								<Button color='error' variant="contained">Submit</Button>
 							</form>
 						</div>
 					</SignupFormStyled>

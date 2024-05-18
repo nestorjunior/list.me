@@ -1,4 +1,5 @@
 import React, {FormEvent} from 'react';
+import { Button } from '@mui/material';
 import './styles';
 import {
 	ProfileFormContainer,
@@ -26,9 +27,9 @@ export function Profile() {
 								<ProfileCardImage src="https://i.pravatar.cc/150" className="img-fluid" alt="" />
 								<div className="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
 
-								<PrimaryButton type='button'>
+								<Button color='error' variant="contained">
 									Upload new image
-								</PrimaryButton>
+								</Button>
 							</div>
 						</ProfileFormImageStyled>
 					</div>
@@ -88,9 +89,9 @@ export function Profile() {
 										</div>
 									</div>
 
-									<PrimaryButton type='submit'>
+									<Button color='error' variant="contained" type='submit'>
 										Submit
-									</PrimaryButton>
+									</Button>
 								</form>
 							</div>
 						</ProfileFormAccountStyled>
