@@ -87,8 +87,8 @@ export function UserCard ({
 						<CardFooter>
 							<div>
 								<ButtonGroup variant="contained" aria-label="Following and Messagem user">
-									<Button variant="contained">{UserCardFollow}</Button>
-									<Button variant="contained">{UserCardMessage}</Button>
+									<Button color='error' variant="contained">{UserCardFollow}</Button>
+									<Button color='error' variant="contained">{UserCardMessage}</Button>
 								</ButtonGroup>
 							</div>
 							<CardBoxShareUser>
