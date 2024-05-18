@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../ProductCard';
-import { IconChevronDownCircle } from '../Icons'
+// import { IconChevronDownCircle } from '../Icons'
+import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 import './styles'
 
 import { 
@@ -118,7 +119,7 @@ export function Main() {
 			{!showAllProducts && (
 				<ProductShowMore className="text-center">
 					<ProductButtonShowMore onClick={handleShowMore}>
-						<IconChevronDownCircle />
+						<ExpandCircleDownIcon sx={{ fontSize: 50, color: '#de4c5a' }} />
 					</ProductButtonShowMore>
 				</ProductShowMore>
 			)}

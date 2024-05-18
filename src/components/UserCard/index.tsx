@@ -48,11 +48,10 @@ export function UserCard ({
 		<CardWrapper className='card mb-3'>
 			<div className="row align-items-center">
 				<div className="col-sm-12 col-md-3 d-flex justify-content-center">
-					{/* <CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} /> */}
 					<Avatar
 						alt={UserCardImageAlt}
 						src={UserCardImageUrl}
-						sx={{ width: 150, height: 150, border: '5px solid #d5e8eb' }} // Tamanho personalizado
+						sx={{ width: 150, height: 150, border: '5px solid #d5e8eb' }}
 					/>
 				</div>
 				<div className="col-sm-12 col-md-9">

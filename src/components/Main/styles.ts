@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components';
+import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 
 export const MainContainer = styled.main`
 
@@ -17,7 +18,6 @@ export const MainContainer = styled.main`
 		padding-left: 15px;
   }
 `
-
 export const SectionContainer = styled.section`
 	width: 900px;
 	/* background-color: var(--rose-100); */
@@ -72,7 +72,25 @@ export const ProductButtonShowMore = styled.button`
 	padding: 10px 25px;
 	background-color: transparent;
 `
+const jump = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
 
-
-
-
+export const StyledExpandCircleDownIcon = styled(ExpandCircleDownIcon)`
+  cursor: pointer;
+  margin-top: 20px;  
+  font-size: 20px;
+  color: var(--gray-200);
+  margin-top: 5px;
+  font-size: 2rem;
+  margin-right: 0.625rem;
+  animation: ${jump} 1s ease infinite;
+`;
