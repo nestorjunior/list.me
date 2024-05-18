@@ -14,7 +14,7 @@ export function LoginPage () {
 						<Login />
 					</MainContainer>
 				</Header>
-				<Footer/>
+				{/* <Footer/> */}
 			</div>
 		</>
 	)
