@@ -7,7 +7,7 @@ import {
 	ProfileCardImage,
 } from './styles'
 
-export function ProfileForm() {
+export function Profile() {
 
 	const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();

@@ -12,7 +12,7 @@ import {
 	ProductButtonShowMore
 } from './styles'
 
-export function ProductContent() {
+export function Main() {
 	const [showAllProducts, setShowAllProducts] = useState(false);
 	const [marginTop, setMarginTop] = useState('calc(45vh - 550px)');
 

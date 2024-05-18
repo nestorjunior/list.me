@@ -7,7 +7,7 @@ import {
 	StyledTermsLink
 } from './styles'
 
-export function SignupForm() {
+export function Signup() {
 	const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 	const [confirmPassword, setConfirmPassword] = useState<string>('');

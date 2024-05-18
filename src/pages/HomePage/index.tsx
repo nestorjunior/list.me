@@ -1,7 +1,7 @@
 import { Navbar } from '../../components/Navbar';
 import { Header } from '../../components/Header';
 import { UserCard } from '../../components/UserCard';
-import { ProductContent } from '../../components/ProductContent';
+import { Main } from '../../components/Main';
 import { Footer } from '../../components/Footer';
 
 import { MainContainer } from './styles';
@@ -26,7 +26,7 @@ export function HomePage() {
 						UserCardOccupation='Escritora'
 					/>
 				</Header>
-        <ProductContent />
+        <Main />
 				<Footer />
       </MainContainer>
     </>

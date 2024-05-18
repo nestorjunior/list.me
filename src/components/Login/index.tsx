@@ -6,7 +6,7 @@ import {
 	LoginFormStyled,
 } from './styles'
 
-export function LoginForm () {
+export function Login () {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
