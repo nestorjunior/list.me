@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { ProductCard } from '../ProductCard';
-// import { IconChevronDownCircle } from '../Icons'
-import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
-import './styles'
+import { IconChevronDownCircle } from '../Icons'
 
 import { 
 	MainContainer,
 	SectionContainer,
 	ProductContainer,
-	ProductDivider,
 	ProductShowMore,
-	ProductButtonShowMore
+	ProductButtonShowMore,
+	CustomStack,
+	CustomDivider
 } from './styles'
 
 export function Main() {
@@ -104,22 +103,22 @@ export function Main() {
 
 	return (
 		<>
-			<MainContainer className="justify-content-center d-flex">
-				<SectionContainer style={{ marginTop: marginTop }}>
+			<MainContainer>
+				<CustomStack style={{ marginTop: marginTop }}>
 					{products .slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
 							
-						<ProductContainer className='wbox-content-container__product' key={index}>
+						<ProductContainer key={index}>
 							{product}
-							<ProductDivider/>
+							<CustomDivider variant="middle" />
 						</ProductContainer>
 					
 					))}
-				</SectionContainer>
+				</CustomStack>
 			</MainContainer>
 			{!showAllProducts && (
 				<ProductShowMore className="text-center">
 					<ProductButtonShowMore onClick={handleShowMore}>
-						<ExpandCircleDownIcon sx={{ fontSize: 50, color: '#de4c5a' }} />
+						<IconChevronDownCircle />
 					</ProductButtonShowMore>
 				</ProductShowMore>
 			)}

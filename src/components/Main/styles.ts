@@ -1,8 +1,12 @@
 import styled, { keyframes } from 'styled-components';
 import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 
 export const MainContainer = styled.main`
-
+	display: flex;
+	justify-content: center;
+	
 	@media (min-width: 768px) and (max-width: 1024px) {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -26,6 +30,7 @@ export const SectionContainer = styled.section`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
 	@media (min-width: 481px) and (max-width: 767px) {
     
@@ -93,4 +98,25 @@ export const StyledExpandCircleDownIcon = styled(ExpandCircleDownIcon)`
   font-size: 2rem;
   margin-right: 0.625rem;
   animation: ${jump} 1s ease infinite;
+`;
+
+export const CustomStack = styled(Stack)`
+	width: 900px;
+	border-radius: 25px!important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+	@media (min-width: 481px) and (max-width: 767px) {
+    
+  }
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    
+  }
+`
+export const CustomDivider = styled(Divider)`
+  height: 2px;
+	background-color: #e0e0e0;
 `;
