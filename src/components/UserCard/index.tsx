@@ -50,7 +50,7 @@ export function UserCard ({
 				<div className="col-sm-12 col-md-3 d-flex justify-content-center">
 					{/* <CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} /> */}
 					<Avatar
-						alt="John Doe"
+						alt={UserCardImageAlt}
 						src={UserCardImageUrl}
 						sx={{ width: 150, height: 150, border: '5px solid #d5e8eb' }} // Tamanho personalizado
 					/>
