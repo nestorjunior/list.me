@@ -6,7 +6,6 @@ import {
 	SignupFormStyled,
 	StyledTermsLink
 } from './styles'
-import { PrimaryButton } from '../Button/style';
 
 export function SignupForm() {
 	const [email, setEmail] = useState<string>('');

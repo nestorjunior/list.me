@@ -1,13 +1,13 @@
-import Link from '../Link/';
-import { IconCircleChevronRight } from '../Icons';
+import { Button } from '@mui/material';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { NavbarContainer, Container } from './styles'
 
 export function Navbar() {
   return (
     <NavbarContainer>
       <Container>
-				<Link to="/login"><IconCircleChevronRight /> Login</Link>
-				<Link to="/signup"><IconCircleChevronRight /> Signup</Link>
+				<Button color='primary' variant="contained" sx={{ marginRight: 1 }} endIcon={<ArrowForwardIosIcon />}>Login</Button>
+				<Button color='primary' variant="contained" sx={{ marginRight: 1 }} endIcon={<ArrowForwardIosIcon />}>Signup</Button>
       </Container>
     </NavbarContainer>
   );

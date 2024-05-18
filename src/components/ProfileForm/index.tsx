@@ -1,5 +1,4 @@
 import React, {FormEvent} from 'react';
-import { PrimaryButton } from '../Button/style';
 import './styles';
 import {
 	ProfileFormContainer,

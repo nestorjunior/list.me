@@ -1,5 +1,7 @@
-import { PrimaryButton } from '../Button/style';
-import { IconShare } from '../Icons';
+import {Button, ButtonGroup} from '@mui/material';
+import ShareIcon from '@mui/icons-material/Share';
+import Avatar from '@mui/material/Avatar';
+
 import { 
 	CardWrapper,
 	CardImage, 
@@ -46,7 +48,12 @@ export function UserCard ({
 		<CardWrapper className='card mb-3'>
 			<div className="row align-items-center">
 				<div className="col-sm-12 col-md-3 d-flex justify-content-center">
-					<CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} />
+					{/* <CardImage src={UserCardImageUrl} className="img-fluid" alt={UserCardImageAlt} /> */}
+					<Avatar
+						alt="John Doe"
+						src={UserCardImageUrl}
+						sx={{ width: 150, height: 150, border: '5px solid #d5e8eb' }} // Tamanho personalizado
+					/>
 				</div>
 				<div className="col-sm-12 col-md-9">
 					<CardBody>
@@ -74,15 +81,13 @@ export function UserCard ({
 						
 						<CardFooter>
 							<div>
-								<PrimaryButton className='me-1'>
-									{UserCardFollow}
-								</PrimaryButton>
-								<PrimaryButton className='me-1'>
-									{UserCardMessage}
-								</PrimaryButton>
+								<ButtonGroup variant="contained" aria-label="Following and Messagem user">
+									<Button variant="contained">{UserCardFollow}</Button>
+									<Button variant="contained">{UserCardMessage}</Button>
+								</ButtonGroup>
 							</div>
 							<CardBoxShareUser>
-								<IconShare />
+								<ShareIcon sx={{ fontSize: 30 }} />
 							</CardBoxShareUser>
 						</CardFooter>
 

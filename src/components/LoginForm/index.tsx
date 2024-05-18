@@ -5,7 +5,6 @@ import {
 	LoginFormContainer,
 	LoginFormStyled,
 } from './styles'
-import { PrimaryButton } from '../Button/style';
 
 export function LoginForm () {
   const [email, setEmail] = useState<string>('');
