@@ -75,20 +75,9 @@ export function IconLike () {
 
 export function IconPaperPlane () {
 	return(
-		<Box
-			sx={{
-				backgroundColor: '#db3c4b',
-				borderRadius: '50%',
-				padding: 1,
-				display: 'flex',
-				justifyContent: 'center',
-				alignItems: 'center',
-			}}
-		>
-			<IconButton aria-label="Hint" style={{padding: '0'}}>
-				<StyledIconPaperPlane icon={faPaperPlane} style={{ color: 'white' }} />
-			</IconButton>
-		</Box>
+		<IconButton aria-label="Hint">
+			<StyledIconPaperPlane icon={faPaperPlane} />
+		</IconButton>
 	)
 }
 

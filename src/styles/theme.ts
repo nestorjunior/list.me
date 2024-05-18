@@ -4,7 +4,8 @@ import { createTheme } from '@mui/material/styles';
 // Definindo as cores da paleta
 const palette = {
   primary: {
-    main: '#6ca8b1',
+		// main: '#6ca8b1',
+		main: '#de4c5a',
     light: '#eaf9fb',
     dark: '#2c6e78',
   },
