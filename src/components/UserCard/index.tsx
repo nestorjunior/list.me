@@ -1,6 +1,6 @@
 import {Button, ButtonGroup} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
-import ShareSharpIcon from '@mui/icons-material/ShareSharp';
+import { IconShare } from '../Icons';
 import Avatar from '@mui/material/Avatar';
 import Card from '@mui/material/Card';
 
@@ -93,7 +93,7 @@ export function UserCard ({
 							</div>
 							<CardBoxShareUser>
 							<IconButton onClick={handleClick}>
-								<ShareSharpIcon sx={{ fontSize: 30 }} />
+								<IconShare />
 							</IconButton>
 							</CardBoxShareUser>
 						</CardFooter>

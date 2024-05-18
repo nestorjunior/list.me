@@ -109,7 +109,7 @@ export function Main() {
 							
 						<ProductContainer key={index}>
 							{product}
-							<CustomDivider variant="middle" />
+							{/* <CustomDivider variant="middle" /> */}
 						</ProductContainer>
 					
 					))}

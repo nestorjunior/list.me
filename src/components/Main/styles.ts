@@ -25,12 +25,12 @@ export const MainContainer = styled.main`
 export const SectionContainer = styled.section`
 	width: 900px;
 	/* background-color: var(--rose-100); */
-	border-radius: 25px!important;
-	border: 5px solid var(--gray-100);
+	/* border-radius: 25px!important;
+	border: 5px solid var(--gray-100); */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
 
 	@media (min-width: 481px) and (max-width: 767px) {
     
@@ -102,11 +102,11 @@ export const StyledExpandCircleDownIcon = styled(ExpandCircleDownIcon)`
 
 export const CustomStack = styled(Stack)`
 	width: 900px;
-	border-radius: 25px!important;
+	/* border-radius: 25px; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	/* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
 
 	@media (min-width: 481px) and (max-width: 767px) {
     

@@ -5,10 +5,12 @@ export const CardWrapper = styled.div`
 	border-radius: 25px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	margin-bottom: 10px;
 `
 export const CardImage = styled.img`
 	border-radius: 10%;
-	border: 5px solid var(--gray-100);
+	border: 3px solid var(--gray-100);
 	/* box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); */
 	@media (min-width: 320px) and (max-width: 480px) {
 		width: 6.25rem;
