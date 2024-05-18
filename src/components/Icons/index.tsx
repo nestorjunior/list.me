@@ -1,3 +1,6 @@
+import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box';
+
 import { 
 	faLink, 
 	faFileLines, 
@@ -32,85 +35,116 @@ import {
 
 export function IconLink() {
   return (
-    <StyledIconLink icon={faLink} />
+    <IconButton style={{padding: '2px'}}>
+			<StyledIconLink icon={faLink} />
+		</IconButton>
   );
 }
 
 export function IconFileLines() {
   return (
-    <StyledIconFileLines icon={faFileLines} />
+    <IconButton style={{padding: '2px'}}>
+			<StyledIconFileLines icon={faFileLines} />
+		</IconButton>
   );
 }
 
 export function IconCircleChevronRight() {
   return (
-    <StyledIconCircleChevronRight icon={faCircleChevronRight} />
+    <IconButton style={{padding: '2px'}}>
+			<StyledIconCircleChevronRight icon={faCircleChevronRight} />
+		</IconButton>
   );
 }
 
 export function IconHeart () {
 	return(
-		<StyledIconHeart icon={faHeart} />
+		<IconButton style={{padding: '2px'}}>
+			<StyledIconHeart icon={faHeart} />
+		</IconButton>
 	)
 }
 
 export function IconLike () {
 	return(
-		<>
+		<IconButton style={{padding: '2px'}}>
 			<StyledIconThumbsUp icon={faThumbsUp} />
-		</>
+		</IconButton>
 	)
 }
 
 export function IconPaperPlane () {
 	return(
-		<>
-			<StyledIconPaperPlane icon={faPaperPlane} />
-		</>
+		<Box
+			sx={{
+				backgroundColor: '#db3c4b',
+				borderRadius: '50%',
+				padding: 1,
+				display: 'flex',
+				justifyContent: 'center',
+				alignItems: 'center',
+			}}
+		>
+			<IconButton aria-label="Hint" style={{padding: '0'}}>
+				<StyledIconPaperPlane icon={faPaperPlane} style={{ color: 'white' }} />
+			</IconButton>
+		</Box>
 	)
 }
 
 export function IconShare() {
 	return(
-		<>
+		<IconButton style={{padding: '2px'}}>
 			<StyledIconsShareNodes icon={faShareNodes} />
-		</>
+		</IconButton>
 	)
 }
 
 export function IconStar () {
 	return(
-		<StyledIconStar icon={faStar} />
+		<IconButton style={{padding: '2px'}}>
+			<StyledIconStar icon={faStar} />
+		</IconButton>
 	)
 }
 
 export function IconThumbTack () {
 	return(
-		<StyledIconThumbTack icon={faThumbTack} />
+		<IconButton style={{padding: '2px'}}>
+			<StyledIconThumbTack icon={faThumbTack} />
+		</IconButton>
 	)
 }
 
 export function IconSun () {
 	return(
-		<StyledIconSun icon={faSun} />
+		<IconButton style={{padding: '2px'}}>
+			<StyledIconSun icon={faSun} />
+		</IconButton>
 	)
 }
 
 export function IconMoon () {
 	return(
-		<StyledIconMoon icon={faMoon} />
+		<IconButton style={{padding: '2px'}}>
+			<StyledIconMoon icon={faMoon} />
+		</IconButton>
 	)
 }
 
 export function IconChevronDown() {
   return (
-    <StyledIconChevronDown icon={faChevronDown} />
+		<IconButton style={{padding: '2px'}}>
+    	<StyledIconChevronDown icon={faChevronDown} />
+		</IconButton>
   );
 }
 
 export function IconChevronDownCircle() {
   return (
-    <StyledIconChevronDownCircle icon={faCircleChevronDown} />
+		<IconButton style={{padding: '2px'}}>
+    	<StyledIconChevronDownCircle icon={faCircleChevronDown} />
+		</IconButton>
   );
 }
 
