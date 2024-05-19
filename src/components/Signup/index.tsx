@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from 'react';
 import { Modal } from '../Modal/index';
 import { Box, Button, TextField, Typography } from '@mui/material';
+import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
 
 import { 
 	SignupFormContainer,
@@ -140,50 +141,74 @@ export function Signup() {
 						width: '100%',
 						maxWidth: '400px',
 						backgroundColor: '#f4f5f6',
-						padding: '10px',
+						padding: '20px',
 						borderRadius: '25px',
 						border: '6px solid var(--white-100)',
 						boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',
 					}}
 				>
-					<Typography variant="h5" align="center">
-						Cadastro
-					</Typography>
-					<TextField
-						label="Nome"
-						variant="outlined"
-						fullWidth
-						required
-					/>
-					<TextField
-						label="Email"
-						variant="outlined"
-						fullWidth
-						required
-					/>
-					<TextField
-						label="Senha"
-						type="password"
-						variant="outlined"
-						fullWidth
-						required
-					/>
-					<TextField
-						label="Confirmar Senha"
-						type="password"
-						variant="outlined"
-						fullWidth
-						required
-					/>
-					<Button
-						type="submit"
-						variant="contained"
-						color="primary"
-						fullWidth
-					>
-						Cadastrar
-					</Button>
-				</Box>
+				<Typography variant="h5" align="center" sx={{ mt: 0 }}>
+					Signup
+				</Typography>
+				<TextField
+					label="Email"
+					variant="outlined"
+					fullWidth
+					required
+				/>
+				<TextField
+					label="Senha"
+					type="password"
+					variant="outlined"
+					fullWidth
+					required
+				/>
+				<TextField
+					label="Repetir Senha"
+					type="password"
+					variant="outlined"
+					fullWidth
+					required
+				/>
+				<Button
+					type="submit"
+					variant="contained"
+					color="primary"
+					fullWidth
+				>
+					Cadastre-se
+				</Button>
+				<Typography variant="body2" align="center" sx={{ mt: 0 }}>
+					<a href="#">Já tem uma conta? Conecte-se</a>
+				</Typography>
+				<Typography variant="body2" align="center" sx={{ mt: 0 }}>
+				Ao se cadastrar, você concorda com nossos<a href="#">Termos, Política de Privacidade e Política de Cookies.</a>
+				</Typography>
+				<Button
+					variant="contained"
+					color="primary"
+					fullWidth
+					startIcon={<GoogleIcon />}
+					sx={{ backgroundColor: '#4285F4', color: '#fff', '&:hover': { backgroundColor: '#357ae8' } }}
+					onClick={() => {
+						console.log('Login Google')
+					}}
+				>
+					Entrar com Google
+				</Button>
+				<Button
+					variant="contained"
+					color="secondary"
+					fullWidth
+					startIcon={<InstagramIcon />}
+					sx={{ backgroundColor: '#E1306C', color: '#fff', '&:hover': { backgroundColor: '#c1265c' } }}
+					onClick={() => {
+						console.log('Login Instagram')
+					}}
+				>
+					Entrar com Instagram
+				</Button>
+			</Box>
 		</>
 	)
 }
