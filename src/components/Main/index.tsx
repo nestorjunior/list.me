@@ -105,21 +105,21 @@ export function Main() {
 		<>
 			<MainContainer>
 				<CustomStack style={{ marginTop: marginTop }}>
-					{products .slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
+					{products.slice(0, showAllProducts ? products.length : 4) .map((product, index) => (
 							
 						<ProductContainer key={index}>
 							{product}
-							{/* <CustomDivider variant="middle" /> */}
 						</ProductContainer>
 					
 					))}
 				</CustomStack>
 			</MainContainer>
-			{!showAllProducts && (
+			
+			{products.length > 0 && !showAllProducts && (
 				<ProductShowMore className="text-center">
-					<ProductButtonShowMore onClick={handleShowMore}>
-						<IconChevronDownCircle />
-					</ProductButtonShowMore>
+						<ProductButtonShowMore onClick={handleShowMore}>
+								<IconChevronDownCircle />
+						</ProductButtonShowMore>
 				</ProductShowMore>
 			)}
 		</>
