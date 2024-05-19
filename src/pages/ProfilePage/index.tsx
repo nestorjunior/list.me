@@ -1,6 +1,6 @@
-import { Header } from "../../components/Header";
 import { Navbar } from "../../components/Navbar";
 import { Profile } from "../../components/Profile";
+import { MainContainer } from './styles';
 import { Footer } from "../../components/Footer";
 
 export function ProfilePage() {
@@ -8,9 +8,10 @@ export function ProfilePage() {
 		<>
 			<div className="container-fluid">
 				<Navbar/>
-				<Header height="250px"/>
-				<Profile/>
-				<Footer />
+				<MainContainer>
+					<Profile />
+				</MainContainer>
+				<Footer/>
 			</div>
 		</>
 	)
