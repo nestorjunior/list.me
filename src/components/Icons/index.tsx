@@ -1,5 +1,4 @@
 import IconButton from '@mui/material/IconButton';
-import Box from '@mui/material/Box';
 
 import { 
 	faLink, 
@@ -35,105 +34,79 @@ import {
 
 export function IconLink() {
   return (
-    <IconButton style={{padding: '2px'}}>
-			<StyledIconLink icon={faLink} />
-		</IconButton>
+    <StyledIconLink icon={faLink} />
   );
 }
 
 export function IconFileLines() {
   return (
-    <IconButton style={{padding: '2px'}}>
-			<StyledIconFileLines icon={faFileLines} />
-		</IconButton>
+    <StyledIconFileLines icon={faFileLines} />
   );
 }
 
 export function IconCircleChevronRight() {
   return (
-    <IconButton style={{padding: '2px'}}>
-			<StyledIconCircleChevronRight icon={faCircleChevronRight} />
-		</IconButton>
+    <StyledIconCircleChevronRight icon={faCircleChevronRight} />
   );
 }
 
 export function IconHeart () {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconHeart icon={faHeart} />
-		</IconButton>
+		<StyledIconHeart icon={faHeart} />
 	)
 }
 
 export function IconLike () {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconThumbsUp icon={faThumbsUp} />
-		</IconButton>
+		<StyledIconThumbsUp icon={faThumbsUp} />
 	)
 }
 
 export function IconPaperPlane () {
 	return(
-		<IconButton aria-label="Hint">
-			<StyledIconPaperPlane icon={faPaperPlane} />
-		</IconButton>
+		<StyledIconPaperPlane icon={faPaperPlane} />
 	)
 }
 
 export function IconShare() {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconsShareNodes icon={faShareNodes} />
-		</IconButton>
+		<StyledIconsShareNodes icon={faShareNodes} />
 	)
 }
 
 export function IconStar () {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconStar icon={faStar} />
-		</IconButton>
+		<StyledIconStar icon={faStar} />
 	)
 }
 
 export function IconThumbTack () {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconThumbTack icon={faThumbTack} />
-		</IconButton>
+		<StyledIconThumbTack icon={faThumbTack} />
 	)
 }
 
 export function IconSun () {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconSun icon={faSun} />
-		</IconButton>
+		<StyledIconSun icon={faSun} />
 	)
 }
 
 export function IconMoon () {
 	return(
-		<IconButton style={{padding: '2px'}}>
-			<StyledIconMoon icon={faMoon} />
-		</IconButton>
+		<StyledIconMoon icon={faMoon} />
 	)
 }
 
 export function IconChevronDown() {
   return (
-		<IconButton style={{padding: '2px'}}>
-    	<StyledIconChevronDown icon={faChevronDown} />
-		</IconButton>
+		<StyledIconChevronDown icon={faChevronDown} />
   );
 }
 
 export function IconChevronDownCircle() {
   return (
-		<IconButton style={{padding: '2px'}}>
-    	<StyledIconChevronDownCircle icon={faCircleChevronDown} />
-		</IconButton>
+		<StyledIconChevronDownCircle icon={faCircleChevronDown} />
   );
 }
 
