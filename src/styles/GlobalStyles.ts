@@ -27,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
   body {
-    font-family: "Lato", sans-serif;
+		font-family: "Roboto Condensed", sans-serif;
   }
 
 	input:focus{

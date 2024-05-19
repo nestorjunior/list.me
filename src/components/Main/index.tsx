@@ -46,7 +46,7 @@ export function Main() {
 		<ProductCard
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
-			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content.'
 			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
@@ -62,7 +62,7 @@ export function Main() {
 		<ProductCard
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
-			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content.'
 			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
@@ -78,7 +78,7 @@ export function Main() {
 		<ProductCard
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
-			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content.'
 			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'
@@ -94,7 +94,7 @@ export function Main() {
 		<ProductCard
 			imageUrl='https://i.pravatar.cc/150'
 			productTitle='Livro Ariano Suassuna'
-			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer'
+			productDescription='This is a wider card with supporting text below as a natural lead-in to additional content.'
 			productLink='https://www.wbox.com/a672js'
 			productTags='livros'
 			productLastUpdate='Last updated 7 months ago'

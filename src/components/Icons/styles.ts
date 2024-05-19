@@ -81,7 +81,7 @@ export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
   cursor: pointer;
 	background-color: var(--orange-200);
 	padding: 10px;
-	border-radius: 50%;
+	border-radius: 50px;
   color: white;
 	transition: all 0.5s ease-in-out;
 	&:hover {

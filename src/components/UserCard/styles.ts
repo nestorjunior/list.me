@@ -6,17 +6,16 @@ export const CardWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	padding: 15px;
-	/* background: var(--rose-100); */
 	border-radius: 25px;
 	border: 6px solid var(--white-100);
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
 	@media (min-width: 481px) and (max-width: 767px) {
-    height: 350px;
+    height: 370px;
   }
 
 	@media (min-width: 320px) and (max-width: 480px) {
-    height: 350px;
+    height: 370px;
   }
 `
 export const CardImage = styled.img`
@@ -83,6 +82,14 @@ export const CardFooter = styled.div`
 export const CardBoxShareUser = styled.div`
 	display: flex;
 	align-items: center;
+
+	@media (min-width: 481px) and (max-width: 767px) {
+    margin-left: 10px;
+  }
+
+	@media (min-width: 320px) and (max-width: 480px) {
+		margin-left: 10px;
+	}
 `
 
 export const CardBody = styled.div`

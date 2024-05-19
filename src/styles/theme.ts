@@ -33,7 +33,7 @@ const palette = {
 const theme = createTheme({
   palette: palette,
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif',
+    fontFamily: 'Roboto Condensed, sans-serif',
     h1: {
       fontSize: '2.5rem',
     },
