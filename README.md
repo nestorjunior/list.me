@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wishbox-description.png?token=GHSAT0AAAAAACSGB7XBYIQWSH53IBTHT3OKZSK3N5A" alt="Logo Wishbox">
+  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wishbox-description.png?token=GHSAT0AAAAAACSGB7XBDAA22J44SLBV6NZ6ZSK3XBA" alt="Logo Wishbox">
 </p>
 
 # About Wishbox
