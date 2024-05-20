@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { Box, Button, TextField, Typography, IconButton } from '@mui/material';
 import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
 
