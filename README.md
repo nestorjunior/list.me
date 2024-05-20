@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wishbox-description.png?token=GHSAT0AAAAAACSGB7XBDAA22J44SLBV6NZ6ZSK3XBA" alt="Logo Wishbox">
+  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wishbox-banner.png?token=GHSAT0AAAAAACSGB7XBDAA22J44SLBV6NZ6ZSK3XBA" alt="Banner Logo Wishbox">
 </p>
 
 # About Wishbox
@@ -31,22 +31,26 @@ Clone the repository to your local development environment:
 ```
 https://github.com/decooliveira/wishorama-web.git
 ```
+In the file: vite.config.ts you need to comment on the line:
+```bash
+base: '/wishorama-web/',
+```
 
 Then type the command: 
-
 ```bash
 npm install
 ```
+
 And in the sequence:
 ```bash
 npm run dev
 ```
 
 It will be loaded in the browser at the URL:
-
 ```bash
 http://localhost:5173/
 ```
+
 
 ## Contributors
 This project exists thanks to all the people who contribute.
