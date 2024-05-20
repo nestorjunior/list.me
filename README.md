@@ -1,8 +1,6 @@
-<div style="text-align:center">
+<p align="center">
   <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wishbox-description.png?token=GHSAT0AAAAAACSGB7XBYIQWSH53IBTHT3OKZSK3N5A" alt="Logo Wishbox">
-</div>
-
-
+</p>
 
 # About Wishbox
 
@@ -53,13 +51,15 @@ http://localhost:5173/
 ## Contributors
 This project exists thanks to all the people who contribute.
 
-[![Deco Oliveira](https://github.com/decooliveira.png?size=100)](https://github.com/decooliveira/)
+[![Deco Oliveira](https://github.com/decooliveira.png?size=50)](https://github.com/decooliveira/)
+
 [Deco Oliveira](https://github.com/decooliveira/)
 
-[![Nestor Pereira](https://github.com/nestorjunior.png?size=100)](https://github.com/nestorjunior)
+[![Nestor Pereira](https://github.com/nestorjunior.png?size=50)](https://github.com/nestorjunior)
+
 [Nestor Pereira](https://github.com/nestorjunior)
 
-[![Eduardo Marrane](https://github.com/eduardo-marrane.png?size=100)](https://github.com/eduardo-marrane)
+[![Eduardo Marrane](https://github.com/eduardo-marrane.png?size=50)](https://github.com/eduardo-marrane)
 
 ## License
 
