@@ -1,4 +1,4 @@
-import { Card, CardContent, CardActions, Button, Typography, Box } from '@mui/material';
+import { Card, CardContent, CardActions, Button, Typography } from '@mui/material';
 import { Apple as AppleIcon, Android as AndroidIcon } from '@mui/icons-material';
 
 export function DownloadAppCard() {

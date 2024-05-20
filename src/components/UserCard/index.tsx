@@ -1,12 +1,9 @@
-import { Button, ButtonGroup } from '@mui/material';
-import IconButton from '@mui/material/IconButton';
+import { Button } from '@mui/material';
 import { IconShare } from '../Icons';
 import Avatar from '@mui/material/Avatar';
-import Card from '@mui/material/Card';
 
 import {
 	CardWrapper,
-	CardImage,
 	CardContent,
 	CardTitle,
 	CardFollowers,

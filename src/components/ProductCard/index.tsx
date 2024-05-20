@@ -2,7 +2,6 @@ import { IconPaperPlane } from '../Icons';
 import { IconStar } from '../Icons';
 import { IconHeart } from '../Icons';
 import { IconLike } from '../Icons';
-import { IconThumbTack } from '../Icons'
 import { IconFileLines } from '../Icons'
 import { IconLink } from '../Icons';
 
@@ -14,7 +13,6 @@ import {
 	CardBody,
 	CardContent,
 	CardHeader,
-	CardBoxTitle,
 	CardTitle,
 	CardDescription,
 	CardParagraphDescription,

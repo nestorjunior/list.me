@@ -1,4 +1,3 @@
-import React, {FormEvent} from 'react';
 import { Box, Typography, Avatar, Button, Card, CardContent, CardActions, TextField, Grid } from '@mui/material';
 
 export function Profile() {

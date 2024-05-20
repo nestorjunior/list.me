@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ProductCard } from '../ProductCard';
 import { IconChevronDownCircle } from '../Icons'
 
 import { 
 	MainContainer,
-	SectionContainer,
 	ProductContainer,
 	ProductShowMore,
 	ProductButtonShowMore,
-	CustomStack,
-	CustomDivider
+	CustomStack
 } from './styles'
 
 export function Main() {
