@@ -27,7 +27,7 @@ Typescript: 5.2.2
 ```
 ## Installation
 
-Clone the repository to your local development environment, 
+Clone the repository to your local development environment: 
 ```
 https://github.com/decooliveira/wishorama-web.git
 ```
@@ -39,7 +39,7 @@ npm install
 ```
 And in the sequence:
 ```bash
-npm install
+npm run dev
 ```
 
 It will be loaded in the browser at the URL:
