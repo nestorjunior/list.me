@@ -1,37 +1,72 @@
-// src/theme.js
 import { createTheme } from '@mui/material/styles';
 
-// Definindo as cores da paleta
-const palette = {
-  primary: {
-		// main: '#6ca8b1',
-		main: '#de4c5a',
-    light: '#eaf9fb',
-    dark: '#2c6e78',
-  },
-  secondary: {
-    main: '#868a8e',
-    light: '#f4f5f6',
-    dark: '#4d576',
-  },
-  error: {
-    main: '#db3c4b',
-    light: '#ffeaed',
-    dark: '#980b22',
-  },
-  background: {
-    default: '#ffffff',
-    paper: '#f4f5f6',
-  },
-  text: {
-    primary: '#000000',
-    secondary: '#868a8e',
-  },
+// Definindo paletas de cores
+const blueColors = {
+  50: '#eaf9fb',
+  100: '#dfedf0',
+  200: '#c0d9de',
+  300: '#9cc5cb',
+  400: '#80b3bb',
+  500: '#6ca8b1',
+  600: '#60a3ae',
+  700: '#4e8e99',
+  800: '#417f88',
+  900: '#2c6e78',
 };
 
-// Criando o tema
+const grayColors = {
+  50: '#f4f5f6',
+  100: '#e7e7e7',
+  200: '#cccccc',
+  300: '#b0b1b1',
+  400: '#97999b',
+  500: '#868a8e',
+  600: '#7e8389',
+  700: '#6b7077',
+  800: '#5e646b',
+  900: '#4d576',
+};
+
+const redColors = {
+  50: '#ffeaed',
+  100: '#fed5d9',
+  200: '#f2aab1',
+  300: '#e87c87',
+  400: '#e05562',
+  500: '#db3c4b',
+  600: '#da2d40',
+  700: '#c21f31',
+  800: '#ad182b',
+  900: '#980b22',
+};
+
+// Criando o tema com as cores fornecidas
 const theme = createTheme({
-  palette: palette,
+  palette: {
+    primary: {
+      main: blueColors[500],
+      light: blueColors[50],
+      dark: blueColors[900],
+    },
+    secondary: {
+      main: grayColors[500],
+      light: grayColors[50],
+      dark: grayColors[900],
+    },
+    error: {
+      main: redColors[500],
+      light: redColors[50],
+      dark: redColors[900],
+    },
+    background: {
+      default: '#ffffff',
+      paper: grayColors[50],
+    },
+    text: {
+      primary: '#000000',
+      secondary: grayColors[500],
+    },
+  },
   typography: {
     fontFamily: 'Roboto Condensed, sans-serif',
     h1: {
@@ -60,18 +95,77 @@ const theme = createTheme({
     },
   },
   components: {
-    MuiButtonGroup: {
+    MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: '8px', // Customiza o border radius do ButtonGroup
-          border: `1px solid ${palette.error.main}`, // Define uma borda personalizada
+          borderRadius: 8,
+          textTransform: 'none',
         },
-        grouped: {
-          '&:not(:last-of-type)': {
-            borderColor: `${palette.error.light}`,
+        containedPrimary: {
+          backgroundColor: blueColors[500],
+          color: '#fff',
+          '&:hover': {
+            backgroundColor: blueColors[700],
           },
-          '&:not(:first-of-type)': {
-            borderColor: `${palette.error.main}`,
+        },
+        containedSecondary: {
+          backgroundColor: grayColors[500],
+          color: '#fff',
+          '&:hover': {
+            backgroundColor: grayColors[700],
+          },
+        },
+        outlinedPrimary: {
+          borderColor: blueColors[500],
+          color: blueColors[500],
+          '&:hover': {
+            borderColor: blueColors[700],
+            backgroundColor: blueColors[50],
+          },
+        },
+        outlinedSecondary: {
+          borderColor: grayColors[500],
+          color: grayColors[500],
+          '&:hover': {
+            borderColor: grayColors[700],
+            backgroundColor: grayColors[50],
+          },
+        },
+        textPrimary: {
+          color: blueColors[500],
+          '&:hover': {
+            backgroundColor: blueColors[50],
+          },
+        },
+        textSecondary: {
+          color: grayColors[500],
+          '&:hover': {
+            backgroundColor: grayColors[50],
+          },
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: grayColors[700], 
+          textDecoration: 'none',
+          '&:hover': {
+            color: grayColors[900], 
+            textDecoration: 'underline',
+          },
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          a: {
+            color: blueColors[700],
+            textDecoration: 'none',
+            '&:hover': {
+              color: blueColors[900],
+            },
           },
         },
       },

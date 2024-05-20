@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wb-banner.png?token=GHSAT0AAAAAACSGB7XBCNE3NZLDDUFNLNKKZSLIABQ" alt="Banner Logo Wishbox">
+  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wb-banner.png?token=GHSAT0AAAAAACSGB7XAOXHV7WZW2U54R2U4ZSLLOYQ" alt="Banner Logo Wishbox">
 </p>
 
 # About Wishbox
@@ -30,10 +30,6 @@ Typescript: 5.2.2
 Clone the repository to your local development environment: 
 ```
 https://github.com/decooliveira/wishorama-web.git
-```
-In the file: vite.config.ts you need to comment on the line:
-```bash
-base: '/wishorama-web/',
 ```
 
 Then type the command: 
