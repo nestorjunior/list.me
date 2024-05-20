@@ -1,4 +1,8 @@
-![Descrição da imagem](/wishbox-description.png)
+<div style="text-align:center">
+  <img src="https://raw.githubusercontent.com/decooliveira/wishorama-web/master/public/wishbox-description.png?token=GHSAT0AAAAAACSGB7XBYIQWSH53IBTHT3OKZSK3N5A" alt="Logo Wishbox">
+</div>
+
+
 
 # About Wishbox
 
@@ -56,8 +60,6 @@ This project exists thanks to all the people who contribute.
 [Nestor Pereira](https://github.com/nestorjunior)
 
 [![Eduardo Marrane](https://github.com/eduardo-marrane.png?size=100)](https://github.com/eduardo-marrane)
-
-[Eduardo Marrane](https://github.com/eduardo-marrane)
 
 ## License
 
