@@ -1,7 +1,7 @@
 {
   "name": "wishorama-web",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -41,6 +41,7 @@
     "sass": "^1.75.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.6",
-    "vite-plugin-sass": "^0.1.0"
+    "vite-plugin-sass": "^0.1.0",
+		"gh-pages": "^3.2.3"
   }
 }

@@ -9,6 +9,9 @@ import { TermsPage } from '../pages/TermsPage';
 import { CookiesPage } from '../pages/CookiesPage';
 import { HelpCenterPage } from '../pages/HelpCenterPage';
 import { AboutPage } from '../pages/AboutPage';
+import { NotFoundPage } from '../pages/NotFoundPage';
+
+
 
 export const AppRoutes = () => {
   return (
@@ -22,6 +25,7 @@ export const AppRoutes = () => {
 			<Route path="/terms" element={<TermsPage />} />
 			<Route path="/cookies" element={<CookiesPage />} />
 			<Route path="/help" element={<HelpCenterPage />} />
+			<Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );
 };
