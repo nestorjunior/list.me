@@ -7,7 +7,7 @@ export const CardWrapper = styled.div`
 	justify-content: center;
 	padding: 15px;
 	border-radius: 25px;
-	border: 6px solid var(--white-100);
+	border: none;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
 	@media (min-width: 481px) and (max-width: 767px) {
@@ -18,19 +18,6 @@ export const CardWrapper = styled.div`
     height: 370px;
   }
 `
-export const CardImage = styled.img`
-	object-fit: cover;
-	border-radius: 50%;
-	border: 5px solid var(--blue-100);
-
-	@media (min-width: 481px) and (max-width: 767px) {
-    width: 6.25rem;
-  }
-
-	@media (min-width: 320px) and (max-width: 480px) {
-		width: 6.25rem;
-	}
-`
 export const CardContent = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -38,7 +25,7 @@ export const CardContent = styled.div`
 `
 export const CardTitle = styled.h5`
 	font-size: 1.6rem;
-	color: var(--blue-200);
+	color: var(--blue-700);
 	font-weight: 600;
 `
 export const CardFollowers = styled.div`
@@ -55,14 +42,14 @@ export const CardBoxFollowers = styled.span`
 	}
 `
 export const CardParagraph = styled.p`
-	color: var(--gray-200);
+	color: var(--gray-500);
 	font-size: 1rem;
 	font-weight: 400;
 `
 export const CardBoxParagraph = styled.p`
-	color: var(--gray-200);
-	font-size: 1.125rem;
-	font-weight: 800;
+	color: var(--gray-500);
+	font-size: 1.2rem;
+	font-weight: 600;
 	margin-bottom: 0;
 `
 export const CardFooter = styled.div`

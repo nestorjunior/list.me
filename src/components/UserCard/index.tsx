@@ -79,8 +79,8 @@ export function UserCard({
 
 							<CardFooter>
 								<div>
-									<Button color='error' variant="contained" sx={{ mr: 1 }}>{UserCardFollow}</Button>
-									<Button color='error' variant="contained">{UserCardMessage}</Button>
+									<Button style={{ backgroundColor: '#e05562' }} variant="contained" sx={{ mr: 1 }}>{UserCardFollow}</Button>
+									<Button style={{ backgroundColor: '#e05562' }} variant="contained">{UserCardMessage}</Button>
 								</div>
 								<CardBoxShareUser>
 									<IconShare />

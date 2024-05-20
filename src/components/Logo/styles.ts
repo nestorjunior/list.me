@@ -5,10 +5,6 @@ export const LogoContainer = styled.div`
 	align-items: center;
 	margin-bottom: 10px;
 
-	a {
-		text-decoration: none;
-	}
-
 	@media (min-width: 481px) and (max-width: 767px) {
     justify-content: center;
   }
@@ -17,12 +13,14 @@ export const LogoContainer = styled.div`
     justify-content: center;
   }
 
+	a {
+		text-decoration: none;
+	}
 `
 export const TitleContainer = styled.h1`
 	font-size: 2.5rem;
-	color: var(--blue-200);
 	font-weight: bolder;
-
+	color: var(--blue-700);
 	&::after {
 		font-weight: lighter;
 		content: " |";
@@ -31,10 +29,9 @@ export const TitleContainer = styled.h1`
 	@media (min-width: 320px) and (max-width: 480px) {
     font-size: 1.6rem;
   }
-
 `
 export const DescriptionContainer = styled.span`
 	font-size: 1.2em;
-	color: var(--blue-200);
 	margin-top: 5px;
+	color: var(--blue-500);
 `

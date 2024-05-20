@@ -22,7 +22,18 @@ export function FeedbackButton() {
 
   return (
     <>
-      <Fab color="primary" aria-label="feedback" onClick={handleOpen}>
+      <Fab 
+				sx={{ 
+					backgroundColor: '#e05562', 
+					color: '#fff',
+					'&:hover': {
+						backgroundColor: '#db3c4b',
+					} 
+				}} 
+				aria-label="feedback" 
+				onClick={handleOpen}
+			>
+
         <FeedbackIcon />
       </Fab>
       <Modal open={open} onClose={handleClose}>
@@ -30,7 +41,7 @@ export function FeedbackButton() {
           <form onSubmit={handleSubmit}>
             <TextField
               fullWidth
-              label="Seu Feedback"
+              label="Your Feedback"
               multiline
               rows={4}
               variant="outlined"
@@ -39,11 +50,31 @@ export function FeedbackButton() {
               required
             />
             <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'flex-end' }}>
-              <Button onClick={handleClose} color="secondary">
+              <Button
+								sx={{
+									backgroundColor: '#e05562',
+									'&:hover': {
+										backgroundColor: '#db3c4b',
+									}
+								}}
+								onClick={handleClose} 
+								variant="contained"
+							>
                 Cancel
               </Button>
-              <Button type="submit" color="primary" variant="contained" style={{ marginLeft: '16px' }}>
-                Send your feedback.
+              
+							<Button
+								sx={{
+									backgroundColor: '#4e8e99',
+									'&:hover': {
+										backgroundColor: '#417f88',
+									}
+								}}
+								type="submit" 
+								variant="contained" 
+								style={{ marginLeft: '16px' }}
+								>
+                Send
               </Button>
             </div>
           </form>

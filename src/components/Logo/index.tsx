@@ -9,7 +9,11 @@ export function Logo() {
 					wishbox
 				</TitleContainer>
 			</Link>
-			<DescriptionContainer className='ml-2'>dream, share, connect</DescriptionContainer>
+			<DescriptionContainer 
+				className='ml-2'
+			>
+				dream, share, connect
+			</DescriptionContainer>
 		</LogoContainer>
   )
 }

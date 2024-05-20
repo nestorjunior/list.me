@@ -20,7 +20,7 @@ export const StyledIconLink = styled(FontAwesomeIcon).attrs({
 	icon: faLink
 })`
 	cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 `;
@@ -29,7 +29,7 @@ export const StyledIconFileLines = styled(FontAwesomeIcon).attrs({
 	icon: faFileLines
 })`
 	cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-right: 0.625rem;
@@ -39,7 +39,7 @@ export const StyledIconCircleChevronRight = styled(FontAwesomeIcon).attrs({
 	icon: faCircleChevronRight
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	font-size: 1rem;
 	transition: all 0.5s ease-in-out;
 	&:hover {
@@ -51,7 +51,7 @@ export const StyledIconHeart = styled(FontAwesomeIcon).attrs({
 	icon: faHeart
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-right: 0.625rem;
@@ -65,7 +65,7 @@ export const StyledIconThumbsUp = styled(FontAwesomeIcon).attrs({
 	icon: faThumbsUp
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-right: 0.625rem;
@@ -79,14 +79,14 @@ export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
 	icon: faPaperPlane
 })`
   cursor: pointer;
-	background-color: #db3c42;
+	background-color: var(--red-400);
 	padding: 10px;
 	border-radius: 50px;
   color: white;
 	transition: all 0.5s ease-in-out;
 	&:hover {
 		transform: scale(1.2);
-		background-color: #980b22;
+		background-color: var(--red-500);
 	}
 `;	
 
@@ -94,7 +94,7 @@ export const StyledIconsShareNodes = styled(FontAwesomeIcon).attrs({
 	icon: faShareNodes
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1.40rem;
 	margin-right: 0.625rem;
@@ -108,7 +108,7 @@ export const StyledIconStar = styled(FontAwesomeIcon).attrs({
 	icon: faStar
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-right: 0.625rem;
@@ -122,7 +122,7 @@ export const StyledIconThumbTack = styled(FontAwesomeIcon).attrs({
 	icon: faThumbTack
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-right: 0.625rem;
@@ -132,7 +132,7 @@ export const StyledIconSun = styled(FontAwesomeIcon).attrs({
 	icon: faSun
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-left: 0.625rem;
@@ -142,7 +142,7 @@ export const StyledIconMoon = styled(FontAwesomeIcon).attrs({
 	icon: faMoon
 })`
   cursor: pointer;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 1rem;
 	margin-left: 0.625rem;
@@ -167,7 +167,7 @@ export const StyledIconChevronDown = styled(FontAwesomeIcon).attrs({
 	cursor: pointer;
   margin-top: 20px;  
   font-size: 20px;
-  color: var(--gray-200);
+  color: var(--gray-900);
 	margin-top: 5px;
 	font-size: 2rem;
 	margin-right: 0.625rem;
@@ -180,7 +180,7 @@ export const StyledIconChevronDownCircle = styled(FontAwesomeIcon).attrs({
 	cursor: pointer;
   margin-top: 20px;  
   font-size: 20px;
-  color: #db3c42;
+  color: var(--red-400);;
 	margin-top: 5px;
 	font-size: 2.3rem;
 	margin-right: 0.625rem;

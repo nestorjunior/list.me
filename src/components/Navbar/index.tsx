@@ -1,7 +1,6 @@
-import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { NavbarContainer, Container } from './styles';
 import { LogoSmaller } from '../LogoSmaller';
-import { Link } from '@mui/material';
 
 export function Navbar() {
   const location = useLocation();
@@ -17,26 +16,8 @@ export function Navbar() {
     <NavbarContainer>
       <Container>
 				{renderLogo()}
-        <Link 
-          component={RouterLink} 
-          to="/login" 
-          color="primary"
-          display="flex"
-          alignItems="center"
-          style={{ textDecoration: 'none', marginRight: 16 }}
-        >
-          Login
-        </Link>
-        <Link 
-          component={RouterLink} 
-          to="/signup" 
-          color="primary"
-          display="flex"
-          alignItems="center"
-          style={{ textDecoration: 'none' }}
-        >
-          Signup
-        </Link>
+        <a href="/login" style={{ marginRight: '5px' }}>Login</a>
+				<a href="/signup" style={{ marginRight: '5px' }}>Signup</a>
       </Container>
     </NavbarContainer>
   );

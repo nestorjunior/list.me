@@ -12,7 +12,7 @@ export const CardImage = styled.img`
 	max-width: 100%;
 	height: auto;
 	border-radius: 10%;
-	border: 3px solid var(--gray-100);
+	border: 3px solid var(--gray-200);
 	@media (min-width: 320px) and (max-width: 480px) {
 		width: 6.25rem;
 	}
@@ -43,7 +43,7 @@ export const CardBoxTitle = styled.div`
 	align-items: baseline;
 `
 export const CardTitle = styled.h5`
-	color: var(--gray-200);
+	color: var(--gray-400);
 	font-weight: 600;
 	font-size: 1.5rem;
 `
@@ -52,17 +52,17 @@ export const CardDescription = styled.div`
 	align-items: baseline;
 `
 export const CardParagraphDescription = styled.p`
-	color: var(--gray-200);
+	color: var(--gray-400);
 	font-weight: normal;
 	font-size: 1rem;
 `
 export const CardLink = styled.div`
 	a {
-		color: var(--gray-200);
+		color: var(--gray-400);
 		transition: background-color 0.5s, color 0.5s;
 		font-size: 1rem;
 		&:hover {
-			color: var(--gray-200);
+			color: var(--gray-500);
 			text-decoration: underline;
 		}
 	}
@@ -74,13 +74,13 @@ export const CardFooter = styled.div`
 `
 export const CardTags = styled.div`
 	a {
-		color: var(--blue-300);
+		color: blue;
 		transition: background-color 0.5s, color 0.5s;
 		font-size: 0.875rem;
 		text-decoration: none;
 		margin-right: 5px;
 		&:hover {
-			color: var(--blue-300);
+			color: blue;
 			text-decoration: underline;
 		}
 	}

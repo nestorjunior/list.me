@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Fab from '@mui/material/Fab';
 
 export const FabButton = styled(Fab)`
+	border: 1px solid red;
   position: absolute;
   bottom: 0px;
   right: 16px;

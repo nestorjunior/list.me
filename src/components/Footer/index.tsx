@@ -7,8 +7,6 @@ export function Footer() {
 			<hr />
 			<FooterContainer className="footer mt-auto py-3 bg-light">
 				<div className="container text-center" style={{ display: 'flex', flexDirection: 'column' }}>
-					{/* <h5>Wishbox 2024, All rights reserved.</h5>
-					<hr/> */}
 					<span>
 						<a href="/about" style={{ marginRight: '5px' }}>About</a>
 						<a href="/help" style={{ marginRight: '5px' }}>Help Center</a>

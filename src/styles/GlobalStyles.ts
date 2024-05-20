@@ -30,34 +30,51 @@ export const GlobalStyles = createGlobalStyle`
 		font-family: "Roboto Condensed", sans-serif;
   }
 
-	input:focus{
-		border-color: var(--blue-100)!important;
-		box-shadow: 0 0 0 0.1rem rgba(127, 162, 168, 0.7)!important;
-	}
-
-	label {
-		color: var(--gray-200);
-	}
-
-	.mt-10-negative {
-		margin-top: -10px;
+	a {
+		font-weight: 700;
+		font-size: 0.875rem;
+		color: var(--gray-900);
+		line-height: 1.75;
+		text-transform: uppercase;
+		padding: 6px 8px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 
   :root {
-    --blue-100: #d5e8eb;
-    --blue-200: #7fa2a8;
-		--blue-200-hover: #658b91;
-		--blue-300: #0000ff;
-		--white-100: #f6f6f8;
-    --white-200: #d9d9e7;
-		--gray-100: #e5e5e5;
-		--gray-200: #212529bf;
-    --gray-300: #212529;
-		--black-100: #525656;
-    --black-200: #090a0a;
-		--orange-100: #fe9486;
-    --orange-200: #de4c5a;
-		--orange-200-hover: #c63341;
-		--rose-100: #fbf6f6
+    --blue-50: #d5e8eb;
+    --blue-100: #dfedf0;
+    --blue-200: #c0d9de;
+    --blue-300: #9cc5cb;
+    --blue-400: #80b3bb;
+    --blue-500: #6ca8b1;
+    --blue-600: #60a3ae;
+    --blue-700: #4e8e99;
+    --blue-800: #417f88;
+    --blue-900: #2c6e78;
+
+    --gray-50: #f4f5f6;
+    --gray-100: #e7e7e7;
+    --gray-200: #cccccc;
+    --gray-300: #b0b1b1;
+    --gray-400: #97999b;
+    --gray-500: #868a8e;
+    --gray-600: #7e8389;
+    --gray-700: #6b7077;
+    --gray-800: #5e646b;
+    --gray-900: #212529bf;
+
+    --red-50: #ffeaed;
+    --red-100: #fed5d9;
+    --red-200: #f2aab1;
+    --red-300: #e87c87;
+    --red-400: #e05562;
+    --red-500: #db3c4b;
+    --red-600: #da2d40;
+    --red-700: #c21f31;
+    --red-800: #ad182b;
+    --red-900: #980b22;
   }
-`;
+`
