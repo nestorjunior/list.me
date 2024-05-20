@@ -79,13 +79,14 @@ export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
 	icon: faPaperPlane
 })`
   cursor: pointer;
-	background-color: var(--orange-200);
+	background-color: #db3c42;
 	padding: 10px;
 	border-radius: 50px;
   color: white;
 	transition: all 0.5s ease-in-out;
 	&:hover {
 		transform: scale(1.2);
+		background-color: #980b22;
 	}
 `;	
 
@@ -179,7 +180,7 @@ export const StyledIconChevronDownCircle = styled(FontAwesomeIcon).attrs({
 	cursor: pointer;
   margin-top: 20px;  
   font-size: 20px;
-  color: var(--orange-200);
+  color: #db3c42;
 	margin-top: 5px;
 	font-size: 2.3rem;
 	margin-right: 0.625rem;

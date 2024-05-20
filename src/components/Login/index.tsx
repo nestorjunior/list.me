@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from 'react';
 import { Box, Button, TextField, Typography, IconButton } from '@mui/material';
 import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
+// import { LoginFormBox } from './styles';
 
 export function Login () {
   const [email, setEmail] = useState<string>('');
@@ -70,7 +71,7 @@ export function Login () {
 
   return (
 		<>
-			<Box component="form" sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: '100%', maxWidth: '400px', backgroundColor: '#f4f5f6', padding: '5px', borderRadius: '25px', border: '6px solid var(--white-100)', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)'}} onSubmit={handleSubmit}>
+			<LoginFormBox component="form" sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: '100%', maxWidth: '400px', backgroundColor: '#f4f5f6', padding: '5px', borderRadius: '25px', border: '6px solid var(--white-100)', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)'}} onSubmit={handleSubmit}>
 				<Typography variant="h5" align="center">Login</Typography>
 				
 				<TextField value={email} onChange={(e) => setEmail(e.target.value)} label="Email" variant="outlined" fullWidth required/>
@@ -90,7 +91,7 @@ export function Login () {
 						<InstagramIcon />
 					</IconButton>
 				</Box>
-			</Box>
+			</LoginFormBox>
 		</>
   );
 };

@@ -5,6 +5,7 @@ export const FabButton = styled(Fab)`
   position: absolute;
   bottom: 0px;
   right: 16px;
+	border: 1px solid green;
 `;
 
 export const FeedbackModal = styled.div`

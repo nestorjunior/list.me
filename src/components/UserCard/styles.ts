@@ -37,7 +37,7 @@ export const CardContent = styled.div`
 	margin-bottom: 0;
 `
 export const CardTitle = styled.h5`
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	color: var(--blue-200);
 	font-weight: 600;
 `

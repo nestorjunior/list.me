@@ -19,7 +19,7 @@ export const LogoContainer = styled.div`
 
 `
 export const TitleContainer = styled.h1`
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: var(--blue-200);
 	font-weight: bolder;
 
@@ -34,7 +34,7 @@ export const TitleContainer = styled.h1`
 
 `
 export const DescriptionContainer = styled.span`
-	font-size: 1em;
+	font-size: 1.2em;
 	color: var(--blue-200);
 	margin-top: 5px;
 `

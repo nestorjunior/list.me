@@ -8,4 +8,9 @@ export const NavbarContainer = styled.nav`
 export const Container = styled.div`
 	display: flex;
 	justify-content: flex-end;
+
+	button {
+		color: #212529bf;
+	}
+
 `
