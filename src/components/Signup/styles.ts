@@ -1,7 +1,11 @@
-// import styled from 'styled-components'
+import styled from 'styled-components'
+import { Button } from '@mui/material';
 
-// // export const SignupFormContainer = styled.div`
-// // 	display: flex;
-// // 	justify-content: center;
-// // 	height: 100vh;
-// // `
+export const StyledButton = styled(Button)`
+  width: 100%;
+	color: #fff!important;
+	background-color: var(--red-500)!important;
+	&:hover {
+		background-color: var(--red-700)!important;
+	}
+`;

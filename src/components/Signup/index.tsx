@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
-import { Box, Button, TextField, Typography, IconButton } from '@mui/material';
+import { Box, TextField, Typography, IconButton } from '@mui/material';
 import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
-
+import { StyledButton } from './styles';
 
 export function Signup() {
 	const [email, setEmail] = useState<string>('');
@@ -38,15 +38,107 @@ export function Signup() {
 
 	return (
 		<>
-			<Box component="form" sx={{ display: 'flex', flexDirection: 'column', gap: 2, width: '100%', maxWidth: '400px', backgroundColor: '#f4f5f6', padding: '5px', borderRadius: '25px', border: '6px solid var(--white-100)', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)'}} onSubmit={handleSubmit}>
+			<Box 
+				component="form" 
+				sx={{ 
+					display: 'flex', 
+					flexDirection: 'column', 
+					gap: 1, 
+					width: '100%', 
+					maxWidth: '400px', 
+					backgroundColor: '#f4f5f6', 
+					padding: '15px', 
+					borderRadius: '25px', 
+					border: '6px solid var(--white-100)', 
+					boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)' 
+				}} 
+				onSubmit={handleSubmit}
+				>
 				<Typography variant="h5" align="center">Signup</Typography>
 				
-				<TextField value={email} onChange={(e) => setEmail(e.target.value)} label="Email" variant="outlined" fullWidth required/>
-				<TextField value={password} onChange={(e) => setPassword(e.target.value)} label="Password" type="password" variant="outlined" fullWidth required />
-				<TextField label="Confirm Password" type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} variant="outlined" fullWidth required />
+				<TextField 
+					value={email} 
+					onChange={(e) => setEmail(e.target.value)} 
+					label="Email" 
+					fullWidth 
+					required 
+					sx={{
+						'& .MuiOutlinedInput-root': {
+							'&.Mui-focused fieldset': {
+								borderColor: '#5e646b',
+							},
+							'&.Mui-focused input': {
+								color: '#5e646b', 
+							},
+							'& input::placeholder': {
+								color: '#5e646b', 
+								opacity: 1, 
+							},
+						},
+						'& .MuiInputLabel-root': {
+							'&.Mui-focused': {
+								color: '#5e646b', 
+							},
+						},
+					}}
+				/>
+				<TextField 
+					value={password} 
+					onChange={(e) => setPassword(e.target.value)} 
+					label="Password" 
+					type="password"
+					fullWidth 
+					required 
+					sx={{
+						'& .MuiOutlinedInput-root': {
+							'&.Mui-focused fieldset': {
+								borderColor: '#5e646b',
+							},
+							'&.Mui-focused input': {
+								color: '#5e646b', 
+							},
+							'& input::placeholder': {
+								color: '#5e646b', 
+								opacity: 1, 
+							},
+						},
+						'& .MuiInputLabel-root': {
+							'&.Mui-focused': {
+								color: '#5e646b', 
+							},
+						},
+					}}
+				/>
+				<TextField 
+					value={password} 
+					onChange={(e) => setConfirmPassword(e.target.value)}
+					label="Password" 
+					type="password"
+					fullWidth 
+					required 
+					sx={{
+						'& .MuiOutlinedInput-root': {
+							'&.Mui-focused fieldset': {
+								borderColor: '#5e646b',
+							},
+							'&.Mui-focused input': {
+								color: '#5e646b', 
+							},
+							'& input::placeholder': {
+								color: '#5e646b', 
+								opacity: 1, 
+							},
+						},
+						'& .MuiInputLabel-root': {
+							'&.Mui-focused': {
+								color: '#5e646b', 
+							},
+						},
+					}}
+				/>
 
 				{error && <div className="error-message">{error}</div>}
-				<Button type="submit" variant="contained" color="primary" fullWidth>Register</Button>
+				<StyledButton type="submit" fullWidth>Register</StyledButton>
 				
 				<Typography variant="body2" align="center" sx={{ mt: 0 }}>
 					<a href="#">Already have an account? Log in.</a>

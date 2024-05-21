@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box, Button, TextField, Typography, IconButton } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 export const StyledLoginForm = styled(Box)`
 	border: 2px solid green;
@@ -28,26 +28,4 @@ export const StyledButton = styled(Button)`
 	&:hover {
 		background-color: var(--red-700)!important;
 	}
-`;
-
-// export const StyledTextField = styled(TextField)`
-//   width: 100%;
-// `;
-
-// export const ErrorMessage = styled.div`
-//   color: red;
-// `;
-
-// export const StyledLink = styled.a`
-//   text-align: center;
-// `;
-
-// export const SocialMediaBox = styled(Box)`
-//   display: flex;
-//   justify-content: center;
-//   gap: 1;
-// `;
-
-export const StyledIconButton = styled(IconButton)`
-  // Adicione estilos adicionais conforme necessário
 `;
