@@ -74,13 +74,13 @@ export const CardFooter = styled.div`
 `
 export const CardTags = styled.div`
 	a {
-		color: blue;
+		color: #4344FF;
 		transition: background-color 0.5s, color 0.5s;
 		font-size: 0.875rem;
 		text-decoration: none;
 		margin-right: 5px;
 		&:hover {
-			color: blue;
+			color: #4344FF;
 			text-decoration: underline;
 		}
 	}

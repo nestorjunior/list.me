@@ -25,7 +25,7 @@ export const CardContent = styled.div`
 `
 export const CardTitle = styled.h5`
 	font-size: 1.6rem;
-	color: var(--blue-700);
+	color: var(--blue-900);
 	font-weight: 600;
 `
 export const CardFollowers = styled.div`
