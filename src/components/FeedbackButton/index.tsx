@@ -48,6 +48,25 @@ export function FeedbackButton() {
               value={message}
               onChange={(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => setMessage(e.target.value)}
               required
+							sx={{
+								'& .MuiOutlinedInput-root': {
+									'&.Mui-focused fieldset': {
+										borderColor: '#5e646b',
+									},
+									'&.Mui-focused input': {
+										color: '#5e646b', 
+									},
+									'& input::placeholder': {
+										color: '#5e646b', 
+										opacity: 1, 
+									},
+								},
+								'& .MuiInputLabel-root': {
+									'&.Mui-focused': {
+										color: '#5e646b', 
+									},
+								},
+							}}
             />
             <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'flex-end' }}>
               <Button
