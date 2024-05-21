@@ -26,7 +26,12 @@ export const GlobalStyles = createGlobalStyle`
 		height: auto;
 	}
 
+	h1 {
+		font-family: "Roboto Condensed", sans-serif;
+	}
+
   body {
+		/* font-family: "Roboto", sans-serif; */
 		font-family: "Roboto Condensed", sans-serif;
   }
 
