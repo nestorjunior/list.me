@@ -24,10 +24,10 @@ export function FeedbackButton() {
     <>
       <Fab 
 				sx={{ 
-					backgroundColor: '#e05562', 
+					backgroundColor: '#ff3f25', 
 					color: '#fff',
 					'&:hover': {
-						backgroundColor: '#db3c4b',
+						backgroundColor: '#ff3f25',
 					} 
 				}} 
 				aria-label="feedback" 
@@ -71,9 +71,9 @@ export function FeedbackButton() {
             <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'flex-end' }}>
               <Button
 								sx={{
-									backgroundColor: '#e05562',
+									backgroundColor: '#ff3f25',
 									'&:hover': {
-										backgroundColor: '#db3c4b',
+										backgroundColor: '#ff3f25',
 									}
 								}}
 								onClick={handleClose} 

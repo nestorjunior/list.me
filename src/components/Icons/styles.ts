@@ -150,11 +150,10 @@ export const StyledIconChevronDown = styled(FontAwesomeIcon).attrs({
 	icon: faChevronDown
 })`
 	cursor: pointer;
-  margin-top: 20px;  
-  font-size: 20px;
+  margin-top: 20px;
   color: var(--gray-900);
 	margin-top: 5px;
-	font-size: 2rem;
+	font-size: 3rem;
 	margin-right: 0.625rem;
 	animation: ${jump} 1s ease infinite;
 `;
@@ -165,76 +164,76 @@ export const StyledIconChevronDownCircle = styled(FontAwesomeIcon).attrs({
 	cursor: pointer;
   margin-top: 20px;  
   font-size: 20px;
-  color: var(--red-400);;
+  color: var(--orange-base);;
 	margin-top: 5px;
-	font-size: 2.3rem;
+	font-size: 2.8rem;
 	margin-right: 0.625rem;
 	animation: ${jump} 1s ease infinite;
 `;
 
-const pulseAnimation = keyframes`
-  from {
-    transform: translate3d(-50%, -50%, 0) scale(1);
-    opacity: 0.6;
-  }
-  
-  to {
-    transform: translate3d(-50%, -50%, 0) scale(1.6);
-    opacity: 0;
-  }
-`;
+// SIMPLE EFFECT
+// export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
+// 	icon: faPaperPlane
+// })`
+//   cursor: pointer;
+// 	background-color: var(--red-400);
+// 	padding: 10px;
+// 	border-radius: 50px;
+//   color: white;
+// 	transition: all 0.5s ease-in-out;
+// 	&:hover {
+// 		transform: scale(1.2);
+// 		background-color: var(--red-500);
+// 	}
+// `;
 
-const bubbleAnimation = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  
-  50% {
-    transform: scale(1.1);
-  }
-  
-  100% {
-    transform: scale(1);
-  }
-`;
-
+// PLUS EFFECT
 export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
-	icon: faPaperPlane
+  icon: faPaperPlane
 })`
-  cursor: pointer;
-	background-color: var(--red-400);
-	padding: 10px;
-	border-radius: 50px;
+  position: relative;
+  background-color: var(--orange-base);
+  border-radius: 4em;
+  font-size: 16px; 
   color: white;
-	transform: scale(1);
-	/* transition: all 0.5s ease-in-out; */
-	/* transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s; */
-	&::before {
-		content: '';
+  padding: 0.6em;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transition-duration: 0.1s;
+    background-color: var(--orange-500); 
+		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &:after {
+    content: "";
     display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: #1DE9B6;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0) scale(1);
-    border-radius: 50%;
-    opacity: .6;
-	}
-	&:hover {
-		animation: ${bubbleAnimation} .2s ease-in-out;
-		&:before{
-			animation: ${pulseAnimation} 1s ease-in-out;
-		}
-		/* transform: scale(1.2);
-		background-color: var(--red-500); */
-		/* transition-duration: 0.1s;
-  	background-color: #3A3A3A; */
-	}
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
 
-	.fa-paper-plane {
-		transform: translate3d(-50%, -50%, 0)
-	}
-`;	
+  &:active:after {
+    box-shadow: 0 0 0 0 white;
+    opacity: 1;
+    transition: 0s;
+  }
+
+  &:active {
+    top: 1px;
+  }
+`;

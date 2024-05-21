@@ -55,12 +55,16 @@ export const CardParagraphDescription = styled.p`
 	color: var(--gray-400);
 	font-weight: normal;
 	font-size: 1rem;
+	margin-bottom: 5px!important;
 `
 export const CardLink = styled.div`
 	a {
 		color: var(--gray-400);
 		transition: background-color 0.5s, color 0.5s;
 		font-size: 1rem;
+		text-transform: none;
+		padding-left: 0;
+		font-weight: 500;
 		&:hover {
 			color: var(--gray-500);
 			text-decoration: underline;
@@ -74,13 +78,15 @@ export const CardFooter = styled.div`
 `
 export const CardTags = styled.div`
 	a {
-		color: #4344FF;
+		color: #0032FF;
 		transition: background-color 0.5s, color 0.5s;
-		font-size: 0.875rem;
+		font-size: 1rem;
 		text-decoration: none;
 		margin-right: 5px;
+		font-weight: 500;
+		text-transform: none;
 		&:hover {
-			color: #4344FF;
+			color: #0032FF;
 			text-decoration: underline;
 		}
 	}
