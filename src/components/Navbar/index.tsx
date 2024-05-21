@@ -1,14 +1,14 @@
 import { useLocation } from 'react-router-dom';
 import { NavbarContainer, Container } from './styles';
-import { LogoSmaller } from '../LogoSmaller';
+import { LogoSecondary } from '../LogoSecondary';
 
 export function Navbar() {
   const location = useLocation();
 
 	const renderLogo = () => {
-    if (location.pathname === '/login' || location.pathname === '/signup') {
-      return <LogoSmaller />
-    }
+    if (location.pathname !== '/') {
+			return <LogoSecondary />
+		}
     return null;
   };
 

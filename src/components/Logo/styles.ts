@@ -15,6 +15,9 @@ export const LogoContainer = styled.div`
 
 	a {
 		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
 	}
 `
 export const TitleContainer = styled.h1`
