@@ -1,7 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { Box, Button, TextField, Typography, IconButton } from '@mui/material';
 import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
-// import { LoginFormBox } from './styles';
+import { StyledTypography, StyledButton } from './styles';
 
 export function Login() {
 	const [email, setEmail] = useState<string>('');
@@ -80,7 +80,7 @@ export function Login() {
 					width: '100%', 
 					maxWidth: '400px', 
 					backgroundColor: '#f4f5f6', 
-					padding: '5px', 
+					padding: '15px', 
 					borderRadius: '25px', 
 					border: '6px solid var(--white-100)', 
 					boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)' 
@@ -88,12 +88,63 @@ export function Login() {
 				onSubmit={handleSubmit}
 				>
 				
-				<Typography variant="h5" align="center">Login</Typography>
+				<StyledTypography variant="h5" align="center">Login</StyledTypography>
 
-				<TextField value={email} onChange={(e) => setEmail(e.target.value)} label="Email" variant="outlined" fullWidth required />
-				<TextField value={password} onChange={(e) => setPassword(e.target.value)} label="Senha" type="password" variant="outlined" fullWidth required />
+				<TextField 
+					value={email} 
+					onChange={(e) => setEmail(e.target.value)} 
+					label="Email" 
+					fullWidth 
+					required 
+					sx={{
+						'& .MuiOutlinedInput-root': {
+							'&.Mui-focused fieldset': {
+								borderColor: '#5e646b',
+							},
+							'&.Mui-focused input': {
+								color: '#5e646b', 
+							},
+							'& input::placeholder': {
+								color: '#5e646b', 
+								opacity: 1, 
+							},
+						},
+						'& .MuiInputLabel-root': {
+							'&.Mui-focused': {
+								color: '#5e646b', 
+							},
+						},
+					}}
+				/>
+				<TextField 
+					value={password} 
+					onChange={(e) => setPassword(e.target.value)} 
+					label="Password" 
+					type="password"
+					fullWidth 
+					required 
+					sx={{
+						'& .MuiOutlinedInput-root': {
+							'&.Mui-focused fieldset': {
+								borderColor: '#5e646b',
+							},
+							'&.Mui-focused input': {
+								color: '#5e646b', 
+							},
+							'& input::placeholder': {
+								color: '#5e646b', 
+								opacity: 1, 
+							},
+						},
+						'& .MuiInputLabel-root': {
+							'&.Mui-focused': {
+								color: '#5e646b', 
+							},
+						},
+					}}
+				/>
 				{error && <div className="error-message">{error}</div>}
-				<Button type="submit" variant="contained" color="primary" fullWidth>Entrar</Button>
+				<StyledButton type="submit" fullWidth>Enter</StyledButton>
 
 				<Typography variant="body2" align="center" sx={{ mt: 0 }}>
 					<a href="#">Forgot password?</a>

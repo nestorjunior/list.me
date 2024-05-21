@@ -15,9 +15,20 @@ export const StyledLoginForm = styled(Box)`
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 `;
 
-// export const StyledTypography = styled(Typography)`
-//   text-align: center;
-// `;
+export const StyledTypography = styled(Typography)`
+	font-size: 1.6rem;
+	color: var(--gray-900);
+	font-weight: 600!important;
+`;
+
+export const StyledButton = styled(Button)`
+  width: 100%;
+	color: #fff!important;
+	background-color: var(--red-500)!important;
+	&:hover {
+		background-color: var(--red-700)!important;
+	}
+`;
 
 // export const StyledTextField = styled(TextField)`
 //   width: 100%;
@@ -25,10 +36,6 @@ export const StyledLoginForm = styled(Box)`
 
 // export const ErrorMessage = styled.div`
 //   color: red;
-// `;
-
-// export const StyledButton = styled(Button)`
-//   width: 100%;
 // `;
 
 // export const StyledLink = styled.a`

@@ -1,12 +1,5 @@
 import styled from 'styled-components'
 
-// a {
-// 	text-decoration: none;
-// 	&:hover{
-// 		text-decoration: none;
-// 	}
-// }
-
 export const TitleContainer = styled.h1`
 	font-size: 1.5rem;
 	font-weight: bolder;
