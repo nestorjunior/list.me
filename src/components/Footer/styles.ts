@@ -5,7 +5,6 @@ export const FooterContainer = styled.footer`
   font-size: 14px;
   display: flex;
   flex-direction: row;
-  align-items: center; 
-  padding: 16px; 
+  align-items: center;
   position: relative;
 `
