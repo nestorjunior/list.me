@@ -75,21 +75,6 @@ export const StyledIconThumbsUp = styled(FontAwesomeIcon).attrs({
 	}
 `;
 
-export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
-	icon: faPaperPlane
-})`
-  cursor: pointer;
-	background-color: var(--red-400);
-	padding: 10px;
-	border-radius: 50px;
-  color: white;
-	transition: all 0.5s ease-in-out;
-	&:hover {
-		transform: scale(1.2);
-		background-color: var(--red-500);
-	}
-`;	
-
 export const StyledIconsShareNodes = styled(FontAwesomeIcon).attrs({
 	icon: faShareNodes
 })`
@@ -186,3 +171,70 @@ export const StyledIconChevronDownCircle = styled(FontAwesomeIcon).attrs({
 	margin-right: 0.625rem;
 	animation: ${jump} 1s ease infinite;
 `;
+
+const pulseAnimation = keyframes`
+  from {
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    opacity: 0.6;
+  }
+  
+  to {
+    transform: translate3d(-50%, -50%, 0) scale(1.6);
+    opacity: 0;
+  }
+`;
+
+const bubbleAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  
+  50% {
+    transform: scale(1.1);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+`;
+
+export const StyledIconPaperPlane = styled(FontAwesomeIcon).attrs({
+	icon: faPaperPlane
+})`
+  cursor: pointer;
+	background-color: var(--red-400);
+	padding: 10px;
+	border-radius: 50px;
+  color: white;
+	transform: scale(1);
+	/* transition: all 0.5s ease-in-out; */
+	/* transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; */
+	&::before {
+		content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1DE9B6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1);
+    border-radius: 50%;
+    opacity: .6;
+	}
+	&:hover {
+		animation: ${bubbleAnimation} .2s ease-in-out;
+		&:before{
+			animation: ${pulseAnimation} 1s ease-in-out;
+		}
+		/* transform: scale(1.2);
+		background-color: var(--red-500); */
+		/* transition-duration: 0.1s;
+  	background-color: #3A3A3A; */
+	}
+
+	.fa-paper-plane {
+		transform: translate3d(-50%, -50%, 0)
+	}
+`;	
