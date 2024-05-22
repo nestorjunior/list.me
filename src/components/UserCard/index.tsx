@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import { IconShare } from "../Icons";
 import Avatar from "@mui/material/Avatar";
-import { Skeleton } from "@mui/material";
 
 import {
   CardWrapper,
@@ -44,89 +42,76 @@ export function UserCard({
   UserCardFollow,
   UserCardMessage,
 }: UserCardProps) {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);
-
   return (
     <>
       <CardWrapper className="card mb-3">
         <div className="row align-items-center">
           <div className="col-sm-12 col-md-3 d-flex justify-content-center">
-            {isLoading ? (
-              <Skeleton variant="rectangular" width={150} height={150} />
-            ) : (
-              <Avatar
-                alt={UserCardImageAlt}
-                src={UserCardImageUrl}
-                sx={{ width: 150, height: 150, border: "5px solid #d5e8eb" }}
-              />
-            )}
+            <Avatar
+              alt={UserCardImageAlt}
+              src={UserCardImageUrl}
+              sx={{ width: 150, height: 150, border: "5px solid #d5e8eb" }}
+            />
           </div>
           <div className="col-sm-12 col-md-9">
-						{isLoading ? ( <Skeleton variant="rectangular" width={650} height={180} />) : (
-							<CardBody>
-								<CardContent>
-									<CardTitle> {UserCardName}</CardTitle>
-									<CardFollowers>
-										<CardBoxFollowers>
-											<CardBoxParagraph>
-												{UserCardFollowingCount}
-											</CardBoxParagraph>
-											<small className="text-body-secondary">Following</small>
-										</CardBoxFollowers>
+            <CardBody>
+              <CardContent>
+                <CardTitle> {UserCardName}</CardTitle>
+                <CardFollowers>
+                  <CardBoxFollowers>
+                    <CardBoxParagraph>
+                      {UserCardFollowingCount}
+                    </CardBoxParagraph>
+                    <small className="text-body-secondary">Following</small>
+                  </CardBoxFollowers>
 
-										<CardBoxFollowers>
-											<CardBoxParagraph>
-												{UserCardFollowersCount}
-											</CardBoxParagraph>
-											<small className="text-body-secondary">Followers</small>
-										</CardBoxFollowers>
-									</CardFollowers>
-								</CardContent>
+                  <CardBoxFollowers>
+                    <CardBoxParagraph>
+                      {UserCardFollowersCount}
+                    </CardBoxParagraph>
+                    <small className="text-body-secondary">Followers</small>
+                  </CardBoxFollowers>
+                </CardFollowers>
+              </CardContent>
 
-								<CardParagraph className="card-text mt-10-negative">
-									{" "}
-									{UserCardNickname}
-								</CardParagraph>
-								<CardParagraph className="card-text">
-									{" "}
-									{UserCardOccupation}
-								</CardParagraph>
-								<CardParagraph className="card-text">
-									{" "}
-									{UserCardDescription}.
-								</CardParagraph>
-								<CardParagraph className="card-text">
-									{" "}
-									{UserCardLocation}.
-								</CardParagraph>
+              <CardParagraph className="card-text mt-10-negative">
+                {" "}
+                {UserCardNickname}
+              </CardParagraph>
+              <CardParagraph className="card-text">
+                {" "}
+                {UserCardOccupation}
+              </CardParagraph>
+              <CardParagraph className="card-text">
+                {" "}
+                {UserCardDescription}.
+              </CardParagraph>
+              <CardParagraph className="card-text">
+                {" "}
+                {UserCardLocation}.
+              </CardParagraph>
 
-								<CardFooter>
-									<div>
-										<Button
-											style={{ backgroundColor: "#ff3f25" }}
-											variant="contained"
-											sx={{ mr: 1 }}
-										>
-											{UserCardFollow}
-										</Button>
-										<Button
-											style={{ backgroundColor: "#ff3f25" }}
-											variant="contained"
-										>
-											{UserCardMessage}
-										</Button>
-									</div>
-									<CardBoxShareUser>
-										<IconShare />
-									</CardBoxShareUser>
-								</CardFooter>
-							</CardBody>
-						)}
+              <CardFooter>
+                <div>
+                  <Button
+                    style={{ backgroundColor: "#ff3f25" }}
+                    variant="contained"
+                    sx={{ mr: 1 }}
+                  >
+                    {UserCardFollow}
+                  </Button>
+                  <Button
+                    style={{ backgroundColor: "#ff3f25" }}
+                    variant="contained"
+                  >
+                    {UserCardMessage}
+                  </Button>
+                </div>
+                <CardBoxShareUser>
+                  <IconShare />
+                </CardBoxShareUser>
+              </CardFooter>
+            </CardBody>
           </div>
         </div>
       </CardWrapper>
