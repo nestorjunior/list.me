@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLink,
@@ -11,8 +11,6 @@ import {
   faThumbTack,
   faSun,
   faMoon,
-  faChevronDown,
-  faCircleChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const StyledIconLink = styled(FontAwesomeIcon).attrs({
@@ -130,42 +128,4 @@ export const StyledIconMoon = styled(FontAwesomeIcon).attrs({
   margin-top: 5px;
   font-size: 1rem;
   margin-left: 0.625rem;
-`;
-
-// Function that affects the icon: show more products.
-const jump = keyframes`
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-`;
-
-export const StyledIconChevronDown = styled(FontAwesomeIcon).attrs({
-  icon: faChevronDown,
-})`
-  cursor: pointer;
-  margin-top: 20px;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 3rem;
-  margin-right: 0.625rem;
-  animation: ${jump} 1s ease infinite;
-`;
-
-export const StyledIconChevronDownCircle = styled(FontAwesomeIcon).attrs({
-  icon: faCircleChevronDown,
-})`
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 20px;
-  color: var(--orange-base);
-  margin-top: 5px;
-  font-size: 2.8rem;
-  margin-right: 0.625rem;
-  animation: ${jump} 1s ease infinite;
 `;

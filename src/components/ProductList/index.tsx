@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { IconChevronDownCircle } from "../Icons";
+// import { IconChevronDownCircle } from "../Icons";
 import { ProductCard } from "../ProductCard";
 
 import {
   ProductContainer,
   ProductShowMore,
   ProductButtonShowMore,
+	StyledExpandCircleDownIcon
 } from "./styles";
 
 export function ProductList() {
@@ -69,7 +70,7 @@ export function ProductList() {
       {products.length > 0 && !showAllProducts && (
         <ProductShowMore className="text-center">
           <ProductButtonShowMore onClick={handleShowMoreProducts}>
-            <IconChevronDownCircle />
+            <StyledExpandCircleDownIcon />
           </ProductButtonShowMore>
         </ProductShowMore>
       )}

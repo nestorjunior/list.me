@@ -16,12 +16,14 @@ export const ProductShowMore = styled.div`
   margin-top: 20px;
   background-color: transparent;
 `;
+
 export const ProductButtonShowMore = styled.button`
   border: 0;
   width: 150px;
   padding: 10px 25px;
   background-color: transparent;
 `;
+
 const jump = keyframes`
   0% {
     transform: translateY(0);
@@ -38,7 +40,7 @@ export const StyledExpandCircleDownIcon = styled(ExpandCircleDownIcon)`
   cursor: pointer;
   margin-top: 20px;
   font-size: 20px;
-  color: var(--gray-200);
+  color: var(--orange-500);
   margin-top: 5px;
   font-size: 2rem;
   margin-right: 0.625rem;
