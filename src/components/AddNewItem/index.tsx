@@ -1,15 +1,12 @@
-// src/components/FeedbackButton.tsx
 import React, { useState } from "react";
 import Fab from "@mui/material/Fab";
-// import FeedbackIcon from '@mui/icons-material/Feedback';
-// import AddCircleIcon from '@mui/icons-material/AddCircle';
 import ControlPointIcon from "@mui/icons-material/ControlPoint";
 import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { FeedbackModal } from './styles';
+import { FeedbackModal } from "./styles";
 
-export function AddNewItemButton() {
+export function AddNewItem() {
   const [open, setOpen] = useState(false);
   const [message, setMessage] = useState("");
 

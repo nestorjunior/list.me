@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { Logo } from '../Logo';
 import { HeaderWrapper, HeaderContainer, HeaderSection } from './styles'
-import { AddNewItemButton } from '../AddNewItemButton';
+import { AddNewItem } from '../AddNewItem';
 
 interface HeaderProps {
   children: ReactNode;
@@ -17,7 +17,7 @@ export function Header({ children }: HeaderProps) {
 							<HeaderSection className='col-sm-12 col-md-12'>
 								<div style={{ display: 'flex', justifyContent: 'space-between' }}>
 									<Logo/>
-									<AddNewItemButton />
+									<AddNewItem />
 								</div>
 								{children}
 							</HeaderSection>

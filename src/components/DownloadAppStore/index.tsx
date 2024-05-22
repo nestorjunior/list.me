@@ -1,7 +1,7 @@
 import { Card, CardContent, CardActions, Button, Typography } from '@mui/material';
 import { Apple as AppleIcon, Android as AndroidIcon } from '@mui/icons-material';
 
-export function DownloadAppCard() {
+export function DownloadAppStore() {
 	return(
 		<>
 			<Card sx={{ maxWidth: 345, margin: '0 auto', padding: 2, borderRadius: '25px', border: '6px solid var(--white-100)', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)' }}>
