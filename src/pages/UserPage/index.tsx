@@ -1,14 +1,19 @@
 import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
-import { MainContainer } from './styles';
+import { MainContainer, CustomStack } from './styles';
+import { ProductList } from "../../components/ProductList";
+import { AddNewItem } from "../../components/AddNewItem";
 
 export function UserPage() {
 	return(
 		<>
-			<div className="container-fluid">
+			<div className="container-fluid px-0">
 				<Navbar/>
 				<MainContainer>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, aperiam in corporis odit dolorum eligendi facilis placeat dolores aspernatur id iste, ullam quidem voluptatem. Rem, placeat. Eaque a similique reprehenderit?</p>						
+					<CustomStack>
+						<AddNewItem/>
+						<ProductList />
+					</CustomStack>
 				</MainContainer>
 				<Footer/>
 			</div>

@@ -9,7 +9,7 @@ export function AboutPage () {
 
 	return(
 		<>
-			<div className="container-fluid">
+			<div className="container-fluid px-0">
 				<Navbar/>
 				<MainContainer>
 					<Card sx={{ maxWidth: 800, margin: 'auto', marginTop: 4, padding: 2, borderRadius: 4, boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)' }}>

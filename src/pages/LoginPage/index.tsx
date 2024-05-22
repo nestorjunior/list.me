@@ -6,7 +6,7 @@ import { MainContainer } from './styles';
 export function LoginPage () {
 	return(
 		<>
-			<div className="container-fluid">
+			<div className="container-fluid px-0">
 				<Navbar/>
 				<MainContainer>
 					<Login />

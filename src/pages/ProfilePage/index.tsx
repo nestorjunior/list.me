@@ -6,7 +6,7 @@ import { Footer } from "../../components/Footer";
 export function ProfilePage() {
 	return (
 		<>
-			<div className="container-fluid">
+			<div className="container-fluid px-0">
 				<Navbar/>
 				<MainContainer>
 					<Profile />

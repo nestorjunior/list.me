@@ -4,7 +4,6 @@ import { FooterContainer } from "./styles"
 export function Footer() {
   return(
 		<>
-			<hr />
 			<FooterContainer className="footer mt-auto py-3 bg-light">
 				<div className="container text-center" style={{ display: 'flex', flexDirection: 'column' }}>
 					<span>

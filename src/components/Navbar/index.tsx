@@ -19,7 +19,7 @@ export function Navbar() {
 				{renderLogo()}
         <a href="/login" style={{ marginRight: '5px' }}>Login</a>
 				<a href="/signup" style={{ marginRight: '5px' }}>Signup</a>
-				<UserMenu/>
+				{/* <UserMenu/> */}
       </Container>
     </NavbarContainer>
   );

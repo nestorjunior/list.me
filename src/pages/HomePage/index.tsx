@@ -11,7 +11,7 @@ export function HomePage() {
     <>
       <MainContainer className="container-fluid">
         <Navbar />
-        <Header height=''>
+        <Header>
 					<UserCard
 						UserCardImageUrl='https://i.pravatar.cc/150'
 						UserCardImageAlt='Nome usuário'

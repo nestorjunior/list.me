@@ -23,6 +23,9 @@ export function AddNewItem() {
     <>
       <Fab
         sx={{
+					marginTop: '5px',
+					marginBottom: '10px',
+					marginLeft: 'auto',
           backgroundColor: "#ff3f25",
           color: "#fff",
           "&:hover": {

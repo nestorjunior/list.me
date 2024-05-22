@@ -7,4 +7,5 @@ export const FooterContainer = styled.footer`
   flex-direction: row;
   align-items: center;
   position: relative;
+	background-color: var(--gray-100)!important;
 `
