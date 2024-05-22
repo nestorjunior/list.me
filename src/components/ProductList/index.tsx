@@ -8,7 +8,7 @@ import {
   ProductButtonShowMore,
 } from "./styles";
 
-export function Product() {
+export function ProductList() {
   const [showAllProducts, setShowAllProducts] = useState(false);
 
   const handleShowMoreProducts = () => {

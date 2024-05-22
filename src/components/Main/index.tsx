@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Product } from "../Product";
+import { ProductList } from "../ProductList";
 import { MainContainer, CustomStack } from "./styles";
 
 export function Main() {
@@ -23,7 +23,7 @@ export function Main() {
     <>
       <MainContainer>
         <CustomStack style={{ marginTop: marginTop }}>
-          <Product />
+          <ProductList />
         </CustomStack>
       </MainContainer>
     </>
