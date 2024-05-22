@@ -37,12 +37,13 @@ const jump = keyframes`
 `;
 
 export const StyledExpandCircleDownIcon = styled(ExpandCircleDownIcon)`
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 20px;
-  color: var(--orange-500);
-  margin-top: 5px;
-  font-size: 2rem;
-  margin-right: 0.625rem;
-  animation: ${jump} 1s ease infinite;
+  &&{
+		cursor: pointer;
+		color: var(--orange-500);
+		font-size: 4rem;
+		animation: ${jump} 1s ease infinite;
+		&:hover {
+			color: var(--orange-600);
+		}
+	}
 `;

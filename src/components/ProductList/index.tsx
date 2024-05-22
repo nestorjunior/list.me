@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-// import { IconChevronDownCircle } from "../Icons";
+import { useState } from "react";
 import { ProductCard } from "../ProductCard";
 
 import {

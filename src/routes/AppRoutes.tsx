@@ -9,6 +9,7 @@ import { CookiesPage } from '../pages/CookiesPage';
 import { HelpCenterPage } from '../pages/HelpCenterPage';
 import { AboutPage } from '../pages/AboutPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
+import { UserPage } from '../pages/UserPage';
 
 export const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ export const AppRoutes = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
 			<Route path="/profile" element={<ProfilePage />} />
+			<Route path="/user" element={<UserPage />} />
 			<Route path="/privacy" element={<PrivacyPage />} />
 			<Route path="/terms" element={<TermsPage />} />
 			<Route path="/cookies" element={<CookiesPage />} />

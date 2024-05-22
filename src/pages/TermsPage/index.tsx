@@ -1,5 +1,5 @@
-import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
+import { Footer } from "../../components/Footer";
 import { MainContainer } from './styles';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 import content from '../../utils/content.json'
