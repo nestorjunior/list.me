@@ -20,8 +20,7 @@ import {
 	StyledIconFileLines, 
 	StyledIconCircleChevronRight, 
 	StyledIconHeart, 
-	StyledIconThumbsUp, 
-	StyledIconPaperPlane, 
+	StyledIconThumbsUp,
 	StyledIconsShareNodes,
 	StyledIconStar,
 	StyledIconThumbTack,
@@ -63,12 +62,6 @@ export function IconHeart () {
 export function IconLike () {
 	return(
 		<StyledIconThumbsUp icon={faThumbsUp} />
-	)
-}
-
-export function IconPaperPlane () {
-	return(
-		<StyledIconPaperPlane icon={faPaperPlane} />
 	)
 }
 
