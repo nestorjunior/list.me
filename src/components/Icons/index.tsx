@@ -1,116 +1,77 @@
-import { 
-	faLink, 
-	faFileLines, 
-	faCircleChevronRight, 
-	faHeart, 
-	faThumbsUp, 
-	faPaperPlane, 
-	faShareNodes,
-	faStar,
-	faThumbTack,
-	faSun,
-	faMoon,
-	faChevronDown,
-	faCircleChevronDown,
-	faCirclePlus
-} from '@fortawesome/free-solid-svg-icons';
+import {
+  faLink,
+  faFileLines,
+  faCircleChevronRight,
+  faHeart,
+  faThumbsUp,
+  faShareNodes,
+  faStar,
+  faThumbTack,
+  faSun,
+  faMoon,
+  faChevronDown,
+  faCircleChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 
-import { 
-	StyledIconLink, 
-	StyledIconFileLines, 
-	StyledIconCircleChevronRight, 
-	StyledIconHeart, 
-	StyledIconThumbsUp,
-	StyledIconsShareNodes,
-	StyledIconStar,
-	StyledIconThumbTack,
-	StyledIconSun,
-	StyledIconMoon,
-	StyledIconChevronDown,
-	StyledIconChevronDownCircle,
-	StyledIconCirclePlus 
-} from './styles';
-
-interface IconButtonProps {
-  onClick: () => void;
-}
+import {
+  StyledIconLink,
+  StyledIconFileLines,
+  StyledIconCircleChevronRight,
+  StyledIconHeart,
+  StyledIconThumbsUp,
+  StyledIconsShareNodes,
+  StyledIconStar,
+  StyledIconThumbTack,
+  StyledIconSun,
+  StyledIconMoon,
+  StyledIconChevronDown,
+  StyledIconChevronDownCircle,
+} from "./styles";
 
 export function IconLink() {
-  return (
-    <StyledIconLink icon={faLink} />
-  );
+  return <StyledIconLink icon={faLink} />;
 }
 
 export function IconFileLines() {
-  return (
-    <StyledIconFileLines icon={faFileLines} />
-  );
+  return <StyledIconFileLines icon={faFileLines} />;
 }
 
 export function IconCircleChevronRight() {
-  return (
-    <StyledIconCircleChevronRight icon={faCircleChevronRight} />
-  );
+  return <StyledIconCircleChevronRight icon={faCircleChevronRight} />;
 }
 
-export function IconHeart () {
-	return(
-		<StyledIconHeart icon={faHeart} />
-	)
+export function IconHeart() {
+  return <StyledIconHeart icon={faHeart} />;
 }
 
-export function IconLike () {
-	return(
-		<StyledIconThumbsUp icon={faThumbsUp} />
-	)
+export function IconLike() {
+  return <StyledIconThumbsUp icon={faThumbsUp} />;
 }
 
 export function IconShare() {
-	return(
-		<StyledIconsShareNodes icon={faShareNodes} />
-	)
+  return <StyledIconsShareNodes icon={faShareNodes} />;
 }
 
-export function IconStar () {
-	return(
-		<StyledIconStar icon={faStar} />
-	)
+export function IconStar() {
+  return <StyledIconStar icon={faStar} />;
 }
 
-export function IconThumbTack () {
-	return(
-		<StyledIconThumbTack icon={faThumbTack} />
-	)
+export function IconThumbTack() {
+  return <StyledIconThumbTack icon={faThumbTack} />;
 }
 
-export function IconSun () {
-	return(
-		<StyledIconSun icon={faSun} />
-	)
+export function IconSun() {
+  return <StyledIconSun icon={faSun} />;
 }
 
-export function IconMoon () {
-	return(
-		<StyledIconMoon icon={faMoon} />
-	)
+export function IconMoon() {
+  return <StyledIconMoon icon={faMoon} />;
 }
 
 export function IconChevronDown() {
-  return (
-		<StyledIconChevronDown icon={faChevronDown} />
-  );
+  return <StyledIconChevronDown icon={faChevronDown} />;
 }
 
 export function IconChevronDownCircle() {
-  return (
-		<StyledIconChevronDownCircle icon={faCircleChevronDown} />
-  );
+  return <StyledIconChevronDownCircle icon={faCircleChevronDown} />;
 }
-
-export function IconCirclePlus({onclick}: IconButtonProps) {
-  return (
-		<StyledIconCirclePlus icon={faCirclePlus} />
-  );
-}
-
-
