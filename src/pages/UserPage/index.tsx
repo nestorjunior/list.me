@@ -1,22 +1,20 @@
 import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
-import { MainContainer, CustomStack } from './styles';
+import { PageContainer, MainContainer, CustomStack } from './styles'; // Certifique-se de que o caminho esteja correto
 import { ProductList } from "../../components/ProductList";
 import { AddNewItem } from "../../components/AddNewItem";
 
 export function UserPage() {
-	return(
-		<>
-			<div className="container-fluid px-0">
-				<Navbar/>
-				<MainContainer>
-					<CustomStack>
-						<AddNewItem/>
-						<ProductList />
-					</CustomStack>
-				</MainContainer>
-				<Footer/>
-			</div>
-		</>
-	)
+    return (
+        <PageContainer>
+            <Navbar />
+            <MainContainer>
+                <CustomStack>
+                    <AddNewItem />
+                    <ProductList />
+                </CustomStack>
+            </MainContainer>
+            <Footer />
+        </PageContainer>
+    );
 }
