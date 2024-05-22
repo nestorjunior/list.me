@@ -1,0 +1,36 @@
+{
+  "aboutPage": {
+    "title": "Sobre Nós",
+    "description": "Saiba mais sobre nossa empresa e nossa missão."
+  },
+
+  "cookiesPage": {
+    "title": "Política de Cookies",
+    "description": "Leia nossa política de cookies para entender como usamos cookies em nosso site."
+  },
+
+  "helpCenterPage": {
+    "title": "Central de Ajuda",
+    "description": "Encontre respostas para suas perguntas na nossa central de ajuda."
+  },
+
+  "notFoundPage": {
+    "title": "Página não encontrada",
+    "description": "A página que você está procurando não foi encontrada."
+  },
+
+  "privacyPage": {
+    "title": "Política de Privacidade",
+    "description": "Saiba mais sobre nossa política de privacidade e como protegemos seus dados."
+  },
+
+  "termsPage": {
+    "title": "Termos de Serviço",
+    "description": "Leia nossos termos de serviço para entender as regras de uso do nosso site."
+  },
+
+  "contactPage": {
+    "title": "Contate-nos",
+    "description": "Entre em contato conosco para mais informações."
+  }
+}

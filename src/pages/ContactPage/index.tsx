@@ -4,8 +4,8 @@ import { MainContainer } from './styles';
 import { Box, Typography, Card, CardContent } from '@mui/material';
 import content from '../../utils/content.json'
 
-export function CookiesPage () {
-	const { title, description } = content.cookiesPage;
+export function ContactPage () {
+	const { title, description } = content.contactPage;
 
 	return(
 		<>
