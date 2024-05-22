@@ -1,6 +1,4 @@
-import { Button } from "@mui/material";
 import { IconShare } from "../Icons";
-import Avatar from "@mui/material/Avatar";
 
 import {
   CardWrapper,
@@ -13,6 +11,8 @@ import {
   CardFooter,
   CardBoxShareUser,
   CardBody,
+	StyledImage,
+	StyledButton
 } from "./styles";
 
 interface UserCardProps {
@@ -47,10 +47,9 @@ export function UserCard({
       <CardWrapper className="card mb-3">
         <div className="row align-items-center">
           <div className="col-sm-12 col-md-3 d-flex justify-content-center">
-            <Avatar
+            <StyledImage
               alt={UserCardImageAlt}
               src={UserCardImageUrl}
-              sx={{ width: 150, height: 150, border: "5px solid #d5e8eb" }}
             />
           </div>
           <div className="col-sm-12 col-md-9">
@@ -93,19 +92,12 @@ export function UserCard({
 
               <CardFooter>
                 <div>
-                  <Button
-                    style={{ backgroundColor: "#ff3f25" }}
-                    variant="contained"
-                    sx={{ mr: 1 }}
-                  >
+                  <StyledButton variant="contained">
                     {UserCardFollow}
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: "#ff3f25" }}
-                    variant="contained"
-                  >
+                  </StyledButton>
+                  <StyledButton variant="contained">
                     {UserCardMessage}
-                  </Button>
+                  </StyledButton>
                 </div>
                 <CardBoxShareUser>
                   <IconShare />

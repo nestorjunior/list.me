@@ -13,7 +13,6 @@ import {
   faMoon,
   faChevronDown,
   faCircleChevronDown,
-  faCirclePlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const StyledIconLink = styled(FontAwesomeIcon).attrs({

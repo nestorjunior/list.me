@@ -49,13 +49,12 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
   :root {
-		--orange-base: #ff3f25;
 		--orange-50: #ffe9e6;
     --orange-100: #ffd2ce;
     --orange-200: #ffa49b;
     --orange-300: #ff7263;
     --orange-400: #ff4936;
-    --orange-500: #ff2e18;
+    --orange-500: #ff3f25;
     --orange-600: #ff1f07;
     --orange-700: #e41000;
     --orange-800: #cc0700;
@@ -71,7 +70,6 @@ export const GlobalStyles = createGlobalStyle`
     --blue-700: #4e8e99;
     --blue-800: #417f88;
 		--blue-900: #7FA2A8;
-    /* --blue-900: #2c6e78; */
 
     --gray-50: #f4f5f6;
     --gray-100: #e7e7e7;

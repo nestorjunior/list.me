@@ -7,7 +7,7 @@ export const StyledContainerHintButton = styled(FontAwesomeIcon).attrs({
   icon: faPaperPlane
 })`
   position: relative;
-  background-color: var(--orange-base);
+  background-color: var(--orange-500); 
   border-radius: 4em;
   font-size: 16px; 
   color: white;
@@ -24,7 +24,7 @@ export const StyledContainerHintButton = styled(FontAwesomeIcon).attrs({
 
   &:hover {
     transition-duration: 0.1s;
-    background-color: var(--orange-500); 
+    background-color: var(--orange-600); 
 		box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   }
 

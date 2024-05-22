@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import { Button } from "@mui/material";
 
 export const CardWrapper = styled.div`
 	height: 230px;
@@ -78,7 +79,6 @@ export const CardBoxShareUser = styled.div`
 		margin-left: 10px;
 	}
 `
-
 export const CardBody = styled.div`
 	@media (min-width: 481px) and (max-width: 767px) {
     padding-top: 0;
@@ -88,3 +88,20 @@ export const CardBody = styled.div`
 		padding-top: 0;
 	}
 `
+export const StyledImage = styled.img`
+  width: 150px;
+  height: 150px;
+	border-radius: 50%;
+  border: 5px solid var(--blue-100);
+`;
+export const StyledButton = styled(Button)`
+	&& {
+		background-color: var(--orange-500);
+		&:hover {
+			background-color: var(--orange-600);
+		}
+		&:first-child {
+			margin-right: 5px;
+		}
+	}
+`;
