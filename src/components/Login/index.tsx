@@ -141,7 +141,7 @@ export function Login() {
 							required
             />
 						
-						{/* {error && <div className="error-message">{error}</div>} */}
+						{error && <div className="error-message">{error}</div>}
 
             <Button type='submit' variant="contained" color="primary" size="large">
               Login
