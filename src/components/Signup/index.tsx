@@ -1,12 +1,34 @@
 // import { FormEvent, useState } from 'react';
-// import { Box, TextField, Typography, IconButton } from '@mui/material';
-// import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
-// import { StyledButton } from './styles';
-import React from 'react';
-import { Card, CardContent, Typography, TextField, Box, Button, Grid, CardActions } from '@mui/material';
-import { Google as GoogleIcon, Instagram as InstagramIcon } from '@mui/icons-material';
+import {
+  Card,
+  CardContent,
+  Typography,
+  Box,
+  TextField,
+  Button,
+} from "@mui/material";
+import { styled } from "styled-components";
+import GoogleIcon from "@mui/icons-material/Google";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
+const StyledCard = styled(Card)`
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+  border-radius: 16px !important;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+`;
 
 export function Signup() {
+
+	const handleGoogleLogin = () => {
+    console.log("Google login");
+  };
+
+  const handleInstagramLogin = () => {
+    console.log("Instagram login");
+  };
+	
 	// const [email, setEmail] = useState<string>('');
   // const [password, setPassword] = useState<string>('');
 	// const [confirmPassword, setConfirmPassword] = useState<string>('');
@@ -39,15 +61,15 @@ export function Signup() {
 	// 	return password.length >= 6;
 	// }
 
-	const handleGoogleSignup = () => {
-    // Implementação do cadastro com Google
-    console.log("Google signup");
-  };
+	// const handleGoogleSignup = () => {
+  //   // Implementação do cadastro com Google
+  //   console.log("Google signup");
+  // };
 
-  const handleInstagramSignup = () => {
-    // Implementação do cadastro com Instagram
-    console.log("Instagram signup");
-  };
+  // const handleInstagramSignup = () => {
+  //   // Implementação do cadastro com Instagram
+  //   console.log("Instagram signup");
+  // };
 
 	return (
 		<>
@@ -172,59 +194,67 @@ export function Signup() {
 				</Typography>
 
 			</Box> */}
-			<Card sx={{ maxWidth: 400, margin: 'auto', marginTop: 4, padding: 2, borderRadius: 4, boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)' }}>
-				<CardContent>
-					<Typography variant="h5" align="center" gutterBottom>
-						Sign Up
-					</Typography>
-					<Box sx={{ maxWidth: 300, margin: 'auto', display: 'flex', flexDirection: 'column', gap: 2 }}>
-						<TextField
-							fullWidth
-							label="Username"
-							variant="outlined"
-							size="small"
-							placeholder="Enter your username"
-							margin="normal"
-						/>
-						<TextField
-							fullWidth
-							label="Email"
-							variant="outlined"
-							size="small"
-							type="email"
-							placeholder="Enter your email"
-							margin="normal"
-						/>
-						<TextField
-							fullWidth
-							label="Password"
-							variant="outlined"
-							size="small"
-							type="password"
-							placeholder="Enter your password"
-							margin="normal"
-						/>
-						<TextField
-							fullWidth
-							label="Confirm Password"
-							variant="outlined"
-							size="small"
-							type="password"
-							placeholder="Confirm your password"
-							margin="normal"
-						/>
-						<Button variant="contained" color="primary" size="large">
-							Sign Up
-						</Button>
-						<Button variant="contained" color="error" onClick={handleGoogleSignup} startIcon={<GoogleIcon />} size="large">
-							Sign up with Google
-						</Button>
-						<Button variant="contained" color="secondary" onClick={handleInstagramSignup} startIcon={<InstagramIcon />} size="large">
-							Sign up with Instagram
-						</Button>
-					</Box>
-				</CardContent>
-			</Card>
+			<StyledCard>
+        <CardContent>
+          <Typography
+            variant="h5"
+            align="center"
+            gutterBottom
+            sx={{ color: "#212529bf", fontWeight: "bold" }}
+          >
+            Login
+          </Typography>
+          <Box
+            sx={{
+              maxWidth: 600,
+              margin: "auto",
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+            }}
+          >
+            <TextField
+              fullWidth
+              label="Email"
+              variant="outlined"
+              size="small"
+              type="email"
+              placeholder="Enter your email"
+              margin="normal"
+            />
+            <TextField
+              fullWidth
+              label="Password"
+              variant="outlined"
+              size="small"
+              type="password"
+              placeholder="Enter your password"
+              margin="normal"
+            />
+            <Button variant="contained" color="primary" size="large">
+              Login
+            </Button>
+            <Button
+              variant="contained"
+              color="error"
+              onClick={handleGoogleLogin}
+              startIcon={<GoogleIcon />}
+              size="large"
+            >
+              Login with Google
+            </Button>
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={handleInstagramLogin}
+              startIcon={<InstagramIcon />}
+              size="large"
+            >
+              Login with Instagram
+            </Button>
+          </Box>
+        </CardContent>
+      </StyledCard>
 		</>
 	)
 }
