@@ -19,11 +19,11 @@ export const AppRoutes = () => {
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignupPage />} />
 			<Route path="/profile" element={<ProfilePage />} />
-			<Route path="/user" element={<UserPage />} />
 			<Route path="/privacy" element={<PrivacyPage />} />
 			<Route path="/terms" element={<TermsPage />} />
 			<Route path="/cookies" element={<CookiesPage />} />
 			<Route path="/help" element={<HelpCenterPage />} />
+			<Route path="/user" element={<UserPage />} />
 			<Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );

@@ -1,28 +1,29 @@
+import { WrapContainer, MainContainer } from './styles';
 import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
 import { ProductList } from "../../components/ProductList";
 import { AddNewItem } from "../../components/AddNewItem";
-import Stack from "@mui/material/Stack";
-import { PageContainer, MainContainer } from './styles';
+import Box from '@mui/material/Box';
+
 
 export function UserPage() {
-    return (
-        <PageContainer>
-            <Navbar />
-            <MainContainer>
-							<Stack
-								sx={{
-									width: '900px',
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'center',
-								}}
-							>
-								<AddNewItem />
-								<ProductList />
-							</Stack>
-            </MainContainer>
-            <Footer />
-        </PageContainer>
-    );
+	return(
+		<>
+			<WrapContainer>
+				<Navbar/>
+				<MainContainer>
+					<Box
+						width={900}
+						display="flex"
+						flexDirection="column"
+						justifyContent="center"
+					>
+						<AddNewItem/>
+						<ProductList/>
+					</Box>
+				</MainContainer>
+				<Footer/>
+			</WrapContainer>
+		</>
+	)
 }

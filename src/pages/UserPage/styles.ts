@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
-export const PageContainer = styled.div`
+export const WrapContainer = styled.div`
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+		min-height: 100vh;
 `;
 
 export const MainContainer = styled.main`
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #d5e8eb;
+  display: flex;
+	flex: 1;
+	justify-content: center;
+  align-items: center;
+  background-color: #d5e8eb;
 `;
 
