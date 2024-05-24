@@ -10,6 +10,7 @@ import { HelpCenterPage } from '../pages/HelpCenterPage';
 import { AboutPage } from '../pages/AboutPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { UserPage } from '../pages/UserPage';
+import { ContactPage } from '../pages/ContactPage';
 
 export const AppRoutes = () => {
   return (
@@ -24,6 +25,7 @@ export const AppRoutes = () => {
 			<Route path="/cookies" element={<CookiesPage />} />
 			<Route path="/help" element={<HelpCenterPage />} />
 			<Route path="/user" element={<UserPage />} />
+			<Route path="/contact" element={<ContactPage />} />
 			<Route path="*" element={<NotFoundPage/>} />
     </Routes>
   );

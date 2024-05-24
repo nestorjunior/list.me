@@ -6,4 +6,5 @@ export const MainContainer = styled.div`
 	align-items: center;
 	background-color: #d5e8eb;
 	height: 100vh;
+	padding: 10px;
 `;

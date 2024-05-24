@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-	resolve: {
+  resolve: {
     alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
       '@fortawesome/react-fontawesome': '@fortawesome/react-fontawesome',
       '@fortawesome/free-solid-svg-icons': '@fortawesome/free-solid-svg-icons',
     },

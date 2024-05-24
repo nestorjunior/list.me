@@ -1,36 +1,36 @@
 {
   "aboutPage": {
-    "title": "Sobre Nós",
-    "description": "Saiba mais sobre nossa empresa e nossa missão."
+    "title": "About Us",
+    "description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   },
 
   "cookiesPage": {
-    "title": "Política de Cookies",
-    "description": "Leia nossa política de cookies para entender como usamos cookies em nosso site."
+    "title": "Cookies Policy",
+		"description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   },
 
   "helpCenterPage": {
-    "title": "Central de Ajuda",
-    "description": "Encontre respostas para suas perguntas na nossa central de ajuda."
+    "title": "Help Center",
+    "description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   },
 
   "notFoundPage": {
-    "title": "Página não encontrada",
-    "description": "A página que você está procurando não foi encontrada."
+    "title": "Page not found",
+    "description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   },
 
   "privacyPage": {
-    "title": "Política de Privacidade",
-    "description": "Saiba mais sobre nossa política de privacidade e como protegemos seus dados."
+    "title": "Privacy Policy",
+    "description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   },
 
   "termsPage": {
-    "title": "Termos de Serviço",
-    "description": "Leia nossos termos de serviço para entender as regras de uso do nosso site."
+    "title": "Service Terms",
+    "description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   },
 
   "contactPage": {
-    "title": "Contate-nos",
-    "description": "Entre em contato conosco para mais informações."
+    "title": "Contact us",
+    "description": "Duis tellus erat, tempus sed neque ut, blandit imperdiet nisi. Duis rhoncus lorem eget ex ornare, id lobortis ipsum vestibulum. Curabitur eu commodo massa. Maecenas fermentum lectus sapien, ac aliquam ante varius semper. Curabitur risus turpis, fringilla vel venenatis aliquam, dapibus auctor eros. Nulla fermentum nibh vitae ornare auctor. Suspendisse non turpis dapibus, molestie velit sit amet, elementum mauris."
   }
 }
