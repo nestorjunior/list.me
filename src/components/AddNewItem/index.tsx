@@ -18,7 +18,6 @@ export function AddNewItem() {
     console.log(message);
     handleClose();
   };
-
   return (
     <>
       <Fab
