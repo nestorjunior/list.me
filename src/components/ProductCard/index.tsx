@@ -2,7 +2,6 @@ import { HintButton } from "../HintButton";
 import {
   IconStar,
   IconHeart,
-  IconLike,
   IconFileLines,
   IconLink,
 } from "../Icons";
@@ -75,7 +74,6 @@ export function ProductCard({
                 <a href="#">{`#${productTags}`}</a>
               </CardTags>
               <CardReactions>
-                <IconLike />
                 <IconHeart />
                 <IconStar />
                 <HintButton />
