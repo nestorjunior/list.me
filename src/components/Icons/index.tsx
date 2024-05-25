@@ -9,6 +9,7 @@ import {
   faThumbTack,
   faSun,
   faMoon,
+	faCirclePlus
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -22,6 +23,7 @@ import {
   StyledIconThumbTack,
   StyledIconSun,
   StyledIconMoon,
+	StyledIconCirclePlus,
 } from "./styles";
 
 export function IconLink() {
@@ -62,4 +64,8 @@ export function IconSun() {
 
 export function IconMoon() {
   return <StyledIconMoon icon={faMoon} />;
+}
+
+export function IconCirclePlus() {
+  return <StyledIconCirclePlus icon={faCirclePlus} />;
 }

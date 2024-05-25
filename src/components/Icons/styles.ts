@@ -11,6 +11,7 @@ import {
   faThumbTack,
   faSun,
   faMoon,
+	faCirclePlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const StyledIconLink = styled(FontAwesomeIcon).attrs({
@@ -122,6 +123,16 @@ export const StyledIconSun = styled(FontAwesomeIcon).attrs({
 
 export const StyledIconMoon = styled(FontAwesomeIcon).attrs({
   icon: faMoon,
+})`
+  cursor: pointer;
+  color: var(--gray-900);
+  margin-top: 5px;
+  font-size: 1rem;
+  margin-left: 0.625rem;
+`;
+
+export const StyledIconCirclePlus = styled(FontAwesomeIcon).attrs({
+  icon: faCirclePlus,
 })`
   cursor: pointer;
   color: var(--gray-900);

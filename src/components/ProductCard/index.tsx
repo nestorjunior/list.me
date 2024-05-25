@@ -1,9 +1,9 @@
 import { HintButton } from "../HintButton";
 import {
-  IconStar,
   IconHeart,
   IconFileLines,
   IconLink,
+	IconCirclePlus
 } from "../Icons";
 import {
   CardWrapper,
@@ -75,7 +75,7 @@ export function ProductCard({
               </CardTags>
               <CardReactions>
                 <IconHeart />
-                <IconStar />
+                <IconCirclePlus />
                 <HintButton />
               </CardReactions>
             </CardFooter>
