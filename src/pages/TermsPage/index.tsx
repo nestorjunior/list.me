@@ -9,7 +9,7 @@ export function TermsPage () {
 
 	return(
 		<>
-			<div className="container-fluid px-0">
+			<div className="container-fluid">
 				<Navbar/>
 				<MainContainer>
 					<Card sx={{ maxWidth: 800, margin: 'auto', marginTop: 4, padding: 2, borderRadius: 4, boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)' }}>

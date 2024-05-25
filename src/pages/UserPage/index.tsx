@@ -8,21 +8,23 @@ import Box from "@mui/material/Box";
 export function UserPage() {
   return (
     <>
-      <WrapContainer>
-        <Navbar />
-        <MainContainer>
-          <Box
-            width={900}
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-          >
-            <AddNewItem />
-            <ProductList />
-          </Box>
-        </MainContainer>
-        <Footer />
-      </WrapContainer>
+			<WrapContainer>
+				<Navbar/>
+				<MainContainer>
+					<Box
+							width="100%"
+							maxWidth={900}
+							display="flex"
+							flexDirection="column"
+							justifyContent="center"
+							boxSizing="border-box"
+						>
+							<AddNewItem />
+							<ProductList />
+						</Box>
+				</MainContainer>
+				<Footer/>
+			</WrapContainer>
     </>
   );
 }

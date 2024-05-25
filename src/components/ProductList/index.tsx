@@ -24,38 +24,38 @@ export function ProductList() {
       productTags="roupas"
       productLastUpdate="Last updated 3 mins ago"
     />,
-    <ProductCard
-      imageUrl="https://i.pravatar.cc/150"
-      productTitle="Livro Érico Veríssimo"
-      productDescription="This is a wider card with supporting text below as a natural lead-in to additional content."
-      productLink="https://www.wbox.com/a672js"
-      productTags="livros"
-      productLastUpdate="Last updated 7 months ago"
-    />,
-    <ProductCard
-      imageUrl="https://i.pravatar.cc/150"
-      productTitle="Cuia de chimarrão + bomba"
-      productDescription="Cuia modelo coquinho clara"
-      productLink="https://www.wbox.com/a672js"
-      productTags="roupas"
-      productLastUpdate="Last updated 3 mins ago"
-    />,
-    <ProductCard
-      imageUrl="https://i.pravatar.cc/150"
-      productTitle="iPhone XR"
-      productDescription="Text below as a natural lead-in to additional content."
-      productLink="https://www.wbox.com/a672js"
-      productTags="mobile"
-      productLastUpdate="Last updated 7 months ago"
-    />,
-    <ProductCard
-      imageUrl="https://i.pravatar.cc/150"
-      productTitle="Camiseta Insider"
-      productDescription="Preta, tamanho P, Gola V"
-      productLink="https://www.wbox.com/a672js"
-      productTags="roupas"
-      productLastUpdate="Last updated 3 mins ago"
-    />,
+    // <ProductCard
+    //   imageUrl="https://i.pravatar.cc/150"
+    //   productTitle="Livro Érico Veríssimo"
+    //   productDescription="This is a wider card with supporting text below as a natural lead-in to additional content."
+    //   productLink="https://www.wbox.com/a672js"
+    //   productTags="livros"
+    //   productLastUpdate="Last updated 7 months ago"
+    // />,
+    // <ProductCard
+    //   imageUrl="https://i.pravatar.cc/150"
+    //   productTitle="Cuia de chimarrão + bomba"
+    //   productDescription="Cuia modelo coquinho clara"
+    //   productLink="https://www.wbox.com/a672js"
+    //   productTags="roupas"
+    //   productLastUpdate="Last updated 3 mins ago"
+    // />,
+    // <ProductCard
+    //   imageUrl="https://i.pravatar.cc/150"
+    //   productTitle="iPhone XR"
+    //   productDescription="Text below as a natural lead-in to additional content."
+    //   productLink="https://www.wbox.com/a672js"
+    //   productTags="mobile"
+    //   productLastUpdate="Last updated 7 months ago"
+    // />,
+    // <ProductCard
+    //   imageUrl="https://i.pravatar.cc/150"
+    //   productTitle="Camiseta Insider"
+    //   productDescription="Preta, tamanho P, Gola V"
+    //   productLink="https://www.wbox.com/a672js"
+    //   productTags="roupas"
+    //   productLastUpdate="Last updated 3 mins ago"
+    // />,
   ];
 
   return (
