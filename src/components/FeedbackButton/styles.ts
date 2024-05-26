@@ -14,7 +14,7 @@ export const FeedbackModal = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 600px;
   background-color: #fff;
   box-shadow: 24px;
   padding: 32px;

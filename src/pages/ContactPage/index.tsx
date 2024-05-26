@@ -6,7 +6,7 @@ import { MainContainer } from './styles';
 export function ContactPage () {
 	return(
 		<>
-			<div className="container-fluid">
+			<div>
 				<Navbar/>
 				<MainContainer>
 					<ContactUs />

@@ -7,7 +7,7 @@ import { MainContainer } from './styles';
 export function SignupPage() {
 	return(
 		<>
-			<div className="container-fluid">
+			<div>
 				<Navbar/>
 				<MainContainer>
 					<Signup />

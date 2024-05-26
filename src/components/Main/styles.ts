@@ -20,6 +20,7 @@ export const MainContainer = styled.main`
     padding-left: 15px;
   }
 `;
+
 export const SectionContainer = styled.section`
   width: 900px;
   display: flex;
@@ -32,6 +33,7 @@ export const SectionContainer = styled.section`
   @media (min-width: 320px) and (max-width: 480px) {
   }
 `;
+
 export const CustomStack = styled(Stack)`
   width: 900px;
   display: flex;

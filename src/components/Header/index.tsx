@@ -10,7 +10,7 @@ interface HeaderProps {
 export function Header({ children }: HeaderProps) {
 	return(
 		<>
-			<HeaderWrapper className="container-fluid">
+			<HeaderWrapper>
 				<div className="row">
 					<div className='col-sm-12 px-0'>
 						<HeaderContainer style={{ height: '450px' }}>

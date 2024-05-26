@@ -9,7 +9,7 @@ import { MainContainer } from './styles';
 export function HomePage() {
   return (
     <>
-      <MainContainer className="container-fluid p-0">
+      <MainContainer>
         <Navbar />
         <Header>
 					<UserCard

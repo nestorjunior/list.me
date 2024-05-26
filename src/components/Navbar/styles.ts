@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavbarContainer = styled.nav`
-	padding: 10px 5px;
+	padding: 15px 25px;
 `
 export const Container = styled.div`
 	display: flex;
@@ -12,5 +12,4 @@ export const Container = styled.div`
     margin-right: auto;
 		text-decoration: none;
   }
-
 `
