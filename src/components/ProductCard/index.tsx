@@ -1,10 +1,8 @@
+import { useState } from "react";
 import { HintButton } from "../HintButton";
-import {
-  IconHeart,
-  IconFileLines,
-  IconLink,
-	IconCirclePlus
-} from "../Icons";
+import { ShareHintDialog } from "../ShareHintDialog";
+
+import { IconHeart, IconFileLines, IconLink, IconCirclePlus } from "../Icons";
 import {
   CardWrapper,
   CardImage,
@@ -30,6 +28,12 @@ interface ProductCardProps {
   productLastUpdate?: string;
 }
 
+interface User {
+  id: number;
+  name: string;
+  avatarUrl: string;
+}
+
 export function ProductCard({
   imageUrl,
   productTitle,
@@ -39,6 +43,28 @@ export function ProductCard({
   productImageAlt,
   productLastUpdate,
 }: ProductCardProps) {
+  const users: User[] = [
+    {
+      id: 1,
+      name: "Deco Oliveira",
+      avatarUrl: "https://via.placeholder.com/40",
+    },
+    {
+      id: 2,
+      name: "Eduardo Marrane",
+      avatarUrl: "https://via.placeholder.com/40",
+    },
+    {
+      id: 3,
+      name: "Willian Bernardo",
+      avatarUrl: "https://via.placeholder.com/40",
+    },
+  ];
+
+  const handleSelectUser = (user: User) => {
+    console.log("Usuário selecionado:", user);
+  };
+
   return (
     <CardWrapper className="card">
       <div className="row">
@@ -76,7 +102,7 @@ export function ProductCard({
               <CardReactions>
                 <IconHeart />
                 <IconCirclePlus />
-                <HintButton />
+                <HintButton users={users} onSelectUser={handleSelectUser} />
               </CardReactions>
             </CardFooter>
           </CardBody>
