@@ -31,8 +31,8 @@ export const GlobalStyles = createGlobalStyle`
 	}
 
   body {
-		/* font-family: "Roboto", sans-serif; */
 		font-family: "Roboto Condensed", sans-serif;
+		overflow-x: hidden;
   }
 
 	a {
