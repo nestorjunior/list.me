@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HintButton } from "../HintButton";
 import { ShareHintDialog } from "../ShareHintDialog";
 
-import { IconHeart, IconFileLines, IconLink, IconCirclePlus } from "../Icons";
+import { IconHeart, IconFileLines, IconLink, IconCirclePlus, IconStar } from "../Icons";
 import {
   CardWrapper,
   CardImage,
@@ -102,6 +102,7 @@ export function ProductCard({
               <CardReactions>
                 <IconHeart />
                 <IconCirclePlus />
+								<IconStar/>
                 <HintButton users={users} onSelectUser={handleSelectUser} />
               </CardReactions>
             </CardFooter>

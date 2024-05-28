@@ -1,17 +1,4 @@
-import {
-  faLink,
-  faFileLines,
-  faCircleChevronRight,
-  faHeart,
-  faThumbsUp,
-  faShareNodes,
-  faStar,
-  faThumbTack,
-  faSun,
-  faMoon,
-	faCirclePlus
-} from "@fortawesome/free-solid-svg-icons";
-
+import React from "react";
 import {
   StyledIconLink,
   StyledIconFileLines,
@@ -23,49 +10,27 @@ import {
   StyledIconThumbTack,
   StyledIconSun,
   StyledIconMoon,
-	StyledIconCirclePlus,
+  StyledIconCirclePlus,
 } from "./styles";
 
-export function IconLink() {
-  return <StyledIconLink icon={faLink} />;
-}
+type IconComponentProps = {
+  className?: string;
+};
 
-export function IconFileLines() {
-  return <StyledIconFileLines icon={faFileLines} />;
-}
+type IconComponent = React.ComponentType<IconComponentProps>;
 
-export function IconCircleChevronRight() {
-  return <StyledIconCircleChevronRight icon={faCircleChevronRight} />;
-}
+const createIconComponent = (Component: IconComponent) => () => <Component />;
 
-export function IconHeart() {
-  return <StyledIconHeart icon={faHeart} />;
-}
-
-export function IconLike() {
-  return <StyledIconThumbsUp icon={faThumbsUp} />;
-}
-
-export function IconShare() {
-  return <StyledIconsShareNodes icon={faShareNodes} />;
-}
-
-export function IconStar() {
-  return <StyledIconStar icon={faStar} />;
-}
-
-export function IconThumbTack() {
-  return <StyledIconThumbTack icon={faThumbTack} />;
-}
-
-export function IconSun() {
-  return <StyledIconSun icon={faSun} />;
-}
-
-export function IconMoon() {
-  return <StyledIconMoon icon={faMoon} />;
-}
-
-export function IconCirclePlus() {
-  return <StyledIconCirclePlus icon={faCirclePlus} />;
-}
+export const IconLink = createIconComponent(StyledIconLink);
+export const IconFileLines = createIconComponent(StyledIconFileLines);
+export const IconCircleChevronRight = createIconComponent(
+  StyledIconCircleChevronRight
+);
+export const IconHeart = createIconComponent(StyledIconHeart);
+export const IconLike = createIconComponent(StyledIconThumbsUp);
+export const IconShare = createIconComponent(StyledIconsShareNodes);
+export const IconStar = createIconComponent(StyledIconStar);
+export const IconThumbTack = createIconComponent(StyledIconThumbTack);
+export const IconSun = createIconComponent(StyledIconSun);
+export const IconMoon = createIconComponent(StyledIconMoon);
+export const IconCirclePlus = createIconComponent(StyledIconCirclePlus);

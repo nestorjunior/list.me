@@ -98,12 +98,6 @@ export const CardReactions = styled.div`
 	justify-content: center;
 
 	svg {
-		cursor: pointer;
-		font-size: 1.25rem;
 		margin-right: 0.625rem;
-		transition: all .1s ease-in-out;
-		&:hover {
-			transform: scale(1.2);
-		}
 	}
 `

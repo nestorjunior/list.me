@@ -28,12 +28,31 @@ export function UserList({ users, onSelect }:UserListProps) {
 		<>
 			<Box sx={{ border: '0', padding: '15px', width: '300px', borderRadius: '25px', backgroundColor: 'transparent',  }}>
 				<TextField
-					label="Search user"
+					label="Hint this"
 					variant="outlined"
 					fullWidth
 					margin="normal"
 					value={searchTerm}
 					onChange={handleSearchChange}
+					sx={{
+						'& .MuiOutlinedInput-root': {
+							'&.Mui-focused fieldset': {
+								borderColor: '#5e646b',
+							},
+							'&.Mui-focused input': {
+								color: '#5e646b', 
+							},
+							'& input::placeholder': {
+								color: '#5e646b', 
+								opacity: 1, 
+							},
+						},
+						'& .MuiInputLabel-root': {
+							'&.Mui-focused': {
+								color: '#5e646b', 
+							},
+						},
+					}}
 				/>
 				<List>
 					{filteredUsers.map((user) => (

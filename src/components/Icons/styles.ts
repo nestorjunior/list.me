@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLink,
@@ -11,132 +11,39 @@ import {
   faThumbTack,
   faSun,
   faMoon,
-	faCirclePlus,
+  faCirclePlus,
+  IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 
-export const StyledIconLink = styled(FontAwesomeIcon).attrs({
-  icon: faLink,
-})`
+const baseIconStyle = css`
   cursor: pointer;
   color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-`;
-
-export const StyledIconFileLines = styled(FontAwesomeIcon).attrs({
-  icon: faFileLines,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-right: 0.625rem;
-`;
-
-export const StyledIconCircleChevronRight = styled(FontAwesomeIcon).attrs({
-  icon: faCircleChevronRight,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: all 0.5s ease-in-out;
+	
   &:hover {
     transform: scale(1.2);
   }
 `;
 
-export const StyledIconHeart = styled(FontAwesomeIcon).attrs({
-  icon: faHeart,
+const createStyledIcon = (
+  icon: IconDefinition,
+  additionalStyles = css``
+) => styled(FontAwesomeIcon).attrs({
+  icon,
 })`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-right: 0.625rem;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: scale(1.2);
-  }
+  ${baseIconStyle}
+  ${additionalStyles}
 `;
 
-export const StyledIconThumbsUp = styled(FontAwesomeIcon).attrs({
-  icon: faThumbsUp,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-right: 0.625rem;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
-
-export const StyledIconsShareNodes = styled(FontAwesomeIcon).attrs({
-  icon: faShareNodes,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1.4rem;
-  margin-right: 0.625rem;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
-
-export const StyledIconStar = styled(FontAwesomeIcon).attrs({
-  icon: faStar,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-right: 0.625rem;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: scale(1.2);
-  }
-`;
-
-export const StyledIconThumbTack = styled(FontAwesomeIcon).attrs({
-  icon: faThumbTack,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-right: 0.625rem;
-`;
-
-export const StyledIconSun = styled(FontAwesomeIcon).attrs({
-  icon: faSun,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-left: 0.625rem;
-`;
-
-export const StyledIconMoon = styled(FontAwesomeIcon).attrs({
-  icon: faMoon,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-left: 0.625rem;
-`;
-
-export const StyledIconCirclePlus = styled(FontAwesomeIcon).attrs({
-  icon: faCirclePlus,
-})`
-  cursor: pointer;
-  color: var(--gray-900);
-  margin-top: 5px;
-  font-size: 1rem;
-  margin-left: 0.625rem;
-`;
+export const StyledIconLink = createStyledIcon(faLink);
+export const StyledIconFileLines = createStyledIcon(faFileLines);
+export const StyledIconCircleChevronRight = createStyledIcon(faCircleChevronRight);
+export const StyledIconHeart = createStyledIcon(faHeart);
+export const StyledIconThumbsUp = createStyledIcon(faThumbsUp);
+export const StyledIconsShareNodes = createStyledIcon(faShareNodes);
+export const StyledIconStar = createStyledIcon(faStar);
+export const StyledIconThumbTack = createStyledIcon(faThumbTack);
+export const StyledIconSun = createStyledIcon(faSun);
+export const StyledIconMoon = createStyledIcon(faMoon);
+export const StyledIconCirclePlus = createStyledIcon(faCirclePlus);
