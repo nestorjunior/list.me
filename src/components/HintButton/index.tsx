@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Popover } from "@mui/material";
-import { UserList } from '../UserList';
-import { StyledHintIcon, StyledFontAwesomeIcon } from "./styles";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { Button, Popover } from "@mui/material";
+import { UserList } from '../UserList';
+import { StyledContainerHintButton } from "./styles";
+import { useState } from "react";
 
 interface User {
   id: number;
@@ -16,38 +16,38 @@ interface HintButtonProps {
 }
 
 export function HintButton({ users, onSelectUser }: HintButtonProps) {
-  const [anchorEl, setAnchorEl] = useState<HTMLDivElement | null>(null);
+	const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+	const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = () => {
+	const handleClose = () => {
     setAnchorEl(null);
   };
 
-  const open = Boolean(anchorEl);
+	const open = Boolean(anchorEl);
   const id = open ? 'user-list-popover' : undefined;
 
   return (
     <>
-      <StyledHintIcon aria-describedby={id} onClick={handleClick}>
-        <StyledFontAwesomeIcon icon={faPaperPlane} />
-      </StyledHintIcon>
+			<Button aria-describedby={id} onClick={handleClick} sx={{ padding: '0', minWidth: '0' }}>
+				<StyledContainerHintButton icon={faPaperPlane} />
+      </Button>
       <Popover
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: 'center',
-          horizontal: 'right',
-        }}
-        transformOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-      >
+				id={id}
+				open={open}
+				anchorEl={anchorEl}
+				onClose={handleClose}
+				anchorOrigin={{
+					vertical: 'center',
+					horizontal: 'right',
+				}}
+				transformOrigin={{
+					vertical: 'bottom',
+					horizontal: 'left',
+				}}
+			>
         <UserList users={users} onSelect={onSelectUser} />
       </Popover>
     </>
