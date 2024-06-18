@@ -1,5 +1,13 @@
-import { useState } from 'react';
-import { List, ListItem, ListItemAvatar, Avatar, ListItemText, TextField, Box } from '@mui/material';
+import {
+	Avatar,
+	Box,
+	List,
+	ListItem,
+	ListItemAvatar,
+	ListItemText,
+	TextField,
+} from "@mui/material";
+import { useState } from "react";
 
 interface User {
 	id: number;
@@ -12,21 +20,28 @@ interface UserListProps {
 	onSelect: (user: User) => void;
 }
 
-export function UserList({ users, onSelect }:UserListProps) {
-
-	const [searchTerm, setSearchTerm] = useState('');
+export function UserList({ users, onSelect }: UserListProps) {
+	const [searchTerm, setSearchTerm] = useState("");
 
 	const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
-  };
+		setSearchTerm(event.target.value);
+	};
 
-	const filteredUsers = users.filter(user =>
-    user.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+	const filteredUsers = users.filter((user) =>
+		user.name.toLowerCase().includes(searchTerm.toLowerCase()),
+	);
 
-	return(
+	return (
 		<>
-			<Box sx={{ border: '0', padding: '15px', width: '300px', borderRadius: '25px', backgroundColor: 'transparent',  }}>
+			<Box
+				sx={{
+					border: "0",
+					padding: "15px",
+					width: "300px",
+					borderRadius: "25px",
+					backgroundColor: "transparent",
+				}}
+			>
 				<TextField
 					label="Hint this"
 					variant="outlined"
@@ -35,21 +50,21 @@ export function UserList({ users, onSelect }:UserListProps) {
 					value={searchTerm}
 					onChange={handleSearchChange}
 					sx={{
-						'& .MuiOutlinedInput-root': {
-							'&.Mui-focused fieldset': {
-								borderColor: '#5e646b',
+						"& .MuiOutlinedInput-root": {
+							"&.Mui-focused fieldset": {
+								borderColor: "#5e646b",
 							},
-							'&.Mui-focused input': {
-								color: '#5e646b', 
+							"&.Mui-focused input": {
+								color: "#5e646b",
 							},
-							'& input::placeholder': {
-								color: '#5e646b', 
-								opacity: 1, 
+							"& input::placeholder": {
+								color: "#5e646b",
+								opacity: 1,
 							},
 						},
-						'& .MuiInputLabel-root': {
-							'&.Mui-focused': {
-								color: '#5e646b', 
+						"& .MuiInputLabel-root": {
+							"&.Mui-focused": {
+								color: "#5e646b",
 							},
 						},
 					}}
@@ -61,7 +76,7 @@ export function UserList({ users, onSelect }:UserListProps) {
 							component="div"
 							role="button"
 							onClick={() => onSelect(user)}
-							style={{ cursor: 'pointer' }}
+							style={{ cursor: "pointer" }}
 						>
 							<ListItemAvatar>
 								<Avatar src={user.avatarUrl} />
@@ -72,5 +87,5 @@ export function UserList({ users, onSelect }:UserListProps) {
 				</List>
 			</Box>
 		</>
-	)
+	);
 }

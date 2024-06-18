@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { createGlobalStyle } from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const GlobalStyles = createGlobalStyle`
 	html {
@@ -93,4 +93,4 @@ export const GlobalStyles = createGlobalStyle`
     --red-800: #ad182b;
     --red-900: #980b22;
   }
-`
+`;

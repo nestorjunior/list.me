@@ -1,17 +1,16 @@
-import { useState } from 'react';
 import {
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  Button,
-  List,
-  ListItem,
-  ListItemText,
+	Button,
+	Checkbox,
+	Dialog,
+	DialogActions,
+	DialogContent,
+	DialogTitle,
+	List,
+	ListItem,
 	ListItemButton,
-  Checkbox
-} from '@mui/material';
-
+	ListItemText,
+} from "@mui/material";
+import { useState } from "react";
 
 interface User {
 	id: number;
@@ -25,27 +24,32 @@ interface ShareHintDialog {
 	users: User[];
 }
 
-export function ShareHintDialog({ open, onClose, onShare, users }: ShareHintDialog) {
+export function ShareHintDialog({
+	open,
+	onClose,
+	onShare,
+	users,
+}: ShareHintDialog) {
 	const [selectedUsers, setSelectedUsers] = useState<User[]>([]);
 
 	const handleToggle = (user: User) => {
-		const currentIndex = selectedUsers.findIndex(u => u.id === user.id);
+		const currentIndex = selectedUsers.findIndex((u) => u.id === user.id);
 		const newSelectedUsers = [...selectedUsers];
 
 		if (currentIndex === -1) {
 			newSelectedUsers.push(user);
-		}else {
-			newSelectedUsers.splice(currentIndex, 1)
+		} else {
+			newSelectedUsers.splice(currentIndex, 1);
 		}
-		setSelectedUsers(newSelectedUsers)
-	}
+		setSelectedUsers(newSelectedUsers);
+	};
 
 	const handleShare = () => {
 		onShare(selectedUsers);
 		onClose();
-	}
+	};
 
-	return(
+	return (
 		<>
 			<Dialog open={open} onClose={onClose}>
 				<DialogTitle>Share with users</DialogTitle>
@@ -54,7 +58,7 @@ export function ShareHintDialog({ open, onClose, onShare, users }: ShareHintDial
 						{users.map((user) => (
 							<ListItemButton key={user.id} onClick={() => handleToggle(user)}>
 								<Checkbox
-									checked={selectedUsers.some(u => u.id === user.id)}
+									checked={selectedUsers.some((u) => u.id === user.id)}
 								/>
 								<ListItemText primary={user.name} />
 							</ListItemButton>
@@ -63,9 +67,11 @@ export function ShareHintDialog({ open, onClose, onShare, users }: ShareHintDial
 				</DialogContent>
 				<DialogActions>
 					<Button onClick={onClose}>Cancel</Button>
-					<Button onClick={handleShare} color="primary">Share</Button>
+					<Button onClick={handleShare} color="primary">
+						Share
+					</Button>
 				</DialogActions>
 			</Dialog>
 		</>
-	)
+	);
 }

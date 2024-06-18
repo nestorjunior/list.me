@@ -1,14 +1,12 @@
-import { TitleContainer } from './styles';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { TitleContainer } from "./styles";
 
 export function LogoSecondary() {
-  return(
-    <>
+	return (
+		<>
 			<Link to="/">
-				<TitleContainer>
-					wishbox
-				</TitleContainer>
+				<TitleContainer>wishbox</TitleContainer>
 			</Link>
 		</>
-  )
+	);
 }

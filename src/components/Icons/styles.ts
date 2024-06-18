@@ -1,19 +1,19 @@
-import styled, { css } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faLink,
-  faFileLines,
-  faCircleChevronRight,
-  faHeart,
-  faThumbsUp,
-  faShareNodes,
-  faStar,
-  faThumbTack,
-  faSun,
-  faMoon,
-  faCirclePlus,
-  IconDefinition,
+	type IconDefinition,
+	faCircleChevronRight,
+	faCirclePlus,
+	faFileLines,
+	faHeart,
+	faLink,
+	faMoon,
+	faShareNodes,
+	faStar,
+	faSun,
+	faThumbTack,
+	faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled, { css } from "styled-components";
 
 const baseIconStyle = css`
   cursor: pointer;
@@ -27,10 +27,10 @@ const baseIconStyle = css`
 `;
 
 const createStyledIcon = (
-  icon: IconDefinition,
-  additionalStyles = css``
+	icon: IconDefinition,
+	additionalStyles = css``,
 ) => styled(FontAwesomeIcon).attrs({
-  icon,
+	icon,
 })`
   ${baseIconStyle}
   ${additionalStyles}
@@ -38,7 +38,8 @@ const createStyledIcon = (
 
 export const StyledIconLink = createStyledIcon(faLink);
 export const StyledIconFileLines = createStyledIcon(faFileLines);
-export const StyledIconCircleChevronRight = createStyledIcon(faCircleChevronRight);
+export const StyledIconCircleChevronRight =
+	createStyledIcon(faCircleChevronRight);
 export const StyledIconHeart = createStyledIcon(faHeart);
 export const StyledIconThumbsUp = createStyledIcon(faThumbsUp);
 export const StyledIconsShareNodes = createStyledIcon(faShareNodes);

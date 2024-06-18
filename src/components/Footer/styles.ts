@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
 	padding: 15px 25px;
@@ -9,4 +9,4 @@ export const FooterContainer = styled.footer`
   align-items: center;
   position: relative;
 	background-color: var(--gray-100)!important;
-`
+`;

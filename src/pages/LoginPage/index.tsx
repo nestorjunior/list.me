@@ -1,18 +1,18 @@
 import { Footer } from "../../components/Footer";
+import { Login } from "../../components/Login";
 import { Navbar } from "../../components/Navbar";
-import { Login } from "../../components/Login"
-import { MainContainer } from './styles';
+import { MainContainer } from "./styles";
 
-export function LoginPage () {
-	return(
+export function LoginPage() {
+	return (
 		<>
 			<div>
-				<Navbar/>
+				<Navbar />
 				<MainContainer>
 					<Login />
 				</MainContainer>
-				<Footer/>
+				<Footer />
 			</div>
 		</>
-	)
+	);
 }

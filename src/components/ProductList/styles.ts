@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
+import styled, { keyframes } from "styled-components";
 
 export const ProductContainer = styled.div`
   &:first-child {

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography } from "@mui/material";
+import styled from "styled-components";
 
 // export const StyledLoginForm = styled(Box)`
 // 	border: 2px solid green;

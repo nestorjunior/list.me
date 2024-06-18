@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Button } from '@mui/material';
+import { Button } from "@mui/material";
+import styled from "styled-components";
 
 export const StyledButton = styled(Button)`
   width: 100%;

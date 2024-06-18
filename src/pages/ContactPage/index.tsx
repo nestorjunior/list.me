@@ -1,18 +1,18 @@
+import { ContactUs } from "../../components/ContactUs";
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
-import { ContactUs } from "../../components/ContactUs"
-import { MainContainer } from './styles';
+import { MainContainer } from "./styles";
 
-export function ContactPage () {
-	return(
+export function ContactPage() {
+	return (
 		<>
 			<div>
-				<Navbar/>
+				<Navbar />
 				<MainContainer>
 					<ContactUs />
 				</MainContainer>
-				<Footer/>
+				<Footer />
 			</div>
 		</>
-	)
+	);
 }

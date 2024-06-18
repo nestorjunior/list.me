@@ -1,20 +1,20 @@
-import React from "react";
+import type React from "react";
 import {
-  StyledIconLink,
-  StyledIconFileLines,
-  StyledIconCircleChevronRight,
-  StyledIconHeart,
-  StyledIconThumbsUp,
-  StyledIconsShareNodes,
-  StyledIconStar,
-  StyledIconThumbTack,
-  StyledIconSun,
-  StyledIconMoon,
-  StyledIconCirclePlus,
+	StyledIconCircleChevronRight,
+	StyledIconCirclePlus,
+	StyledIconFileLines,
+	StyledIconHeart,
+	StyledIconLink,
+	StyledIconMoon,
+	StyledIconStar,
+	StyledIconSun,
+	StyledIconThumbTack,
+	StyledIconThumbsUp,
+	StyledIconsShareNodes,
 } from "./styles";
 
 type IconComponentProps = {
-  className?: string;
+	className?: string;
 };
 
 type IconComponent = React.ComponentType<IconComponentProps>;
@@ -24,7 +24,7 @@ const createIconComponent = (Component: IconComponent) => () => <Component />;
 export const IconLink = createIconComponent(StyledIconLink);
 export const IconFileLines = createIconComponent(StyledIconFileLines);
 export const IconCircleChevronRight = createIconComponent(
-  StyledIconCircleChevronRight
+	StyledIconCircleChevronRight,
 );
 export const IconHeart = createIconComponent(StyledIconHeart);
 export const IconLike = createIconComponent(StyledIconThumbsUp);

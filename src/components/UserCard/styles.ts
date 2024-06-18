@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { Button } from "@mui/material";
+import styled from "styled-components";
 
 export const CardWrapper = styled.div`
 	height: 230px;
@@ -18,21 +18,21 @@ export const CardWrapper = styled.div`
 	@media (min-width: 320px) and (max-width: 480px) {
     height: 370px;
   }
-`
+`;
 export const CardContent = styled.div`
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0;
-`
+`;
 export const CardTitle = styled.h5`
 	font-size: 1.6rem;
 	color: var(--blue-900);
 	font-weight: 600;
-`
+`;
 export const CardFollowers = styled.div`
 	display: flex;
 	justify-content: space-between;
-`
+`;
 export const CardBoxFollowers = styled.span`
 	text-align: center;
 	&:first-child {
@@ -41,18 +41,18 @@ export const CardBoxFollowers = styled.span`
 	&:last-child {
 		margin-right: 0.625rem;
 	}
-`
+`;
 export const CardParagraph = styled.p`
 	color: var(--gray-500);
 	font-size: 1rem;
 	font-weight: 400;
-`
+`;
 export const CardBoxParagraph = styled.p`
 	color: var(--gray-500);
 	font-size: 1.2rem;
 	font-weight: 600;
 	margin-bottom: 0;
-`
+`;
 export const CardFooter = styled.div`
 	display: flex;
 	justify-content: space-between;
@@ -66,7 +66,7 @@ export const CardFooter = styled.div`
 		justify-content: center;
 	}
 
-`
+`;
 export const CardBoxShareUser = styled.div`
 	display: flex;
 	align-items: center;
@@ -78,7 +78,7 @@ export const CardBoxShareUser = styled.div`
 	@media (min-width: 320px) and (max-width: 480px) {
 		margin-left: 10px;
 	}
-`
+`;
 export const CardBody = styled.div`
 	@media (min-width: 481px) and (max-width: 767px) {
     padding-top: 0;
@@ -87,7 +87,7 @@ export const CardBody = styled.div`
 	@media (min-width: 320px) and (max-width: 480px) {
 		padding-top: 0;
 	}
-`
+`;
 export const StyledImage = styled.img`
   width: 150px;
   height: 150px;

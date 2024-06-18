@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const TitleContainer = styled.h1`
 	font-size: 1.5rem;
@@ -8,4 +8,4 @@ export const TitleContainer = styled.h1`
 	@media (min-width: 320px) and (max-width: 480px) {
     font-size: 1rem;
   }
-`
+`;

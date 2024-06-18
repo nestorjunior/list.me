@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
   padding-top: 0;
@@ -42,4 +42,3 @@ export const HeaderSection = styled.section`
   }
 
 `;
-

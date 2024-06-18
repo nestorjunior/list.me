@@ -1,0 +1,13 @@
+{
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "lineWidth": 80,
+    "indentStyle": "tab",
+    "indentWidth": 2
+  },
+  "files": {
+    "ignore": ["node_modules"]
+  }
+}

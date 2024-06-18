@@ -1,19 +1,15 @@
-import { LogoContainer, TitleContainer, DescriptionContainer } from './styles'
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { DescriptionContainer, LogoContainer, TitleContainer } from "./styles";
 
 export function Logo() {
-  return(
-    <LogoContainer>
+	return (
+		<LogoContainer>
 			<Link to="/">
-				<TitleContainer>
-					wishbox
-				</TitleContainer>
+				<TitleContainer>wishbox</TitleContainer>
 			</Link>
-			<DescriptionContainer 
-				className='ml-2'
-			>
+			<DescriptionContainer className="ml-2">
 				dream, share, connect
 			</DescriptionContainer>
 		</LogoContainer>
-  )
+	);
 }

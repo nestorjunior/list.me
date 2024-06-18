@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import Stack from "@mui/material/Stack";
+import styled from "styled-components";
 
 export const MainContainer = styled.main`
   display: flex;

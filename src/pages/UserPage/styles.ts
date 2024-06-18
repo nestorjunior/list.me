@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const WrapContainer = styled.div`
     display: flex;
@@ -17,4 +17,3 @@ export const MainContainer = styled.main`
 	width: 100%;
 	box-sizing: border-box;
 `;
-

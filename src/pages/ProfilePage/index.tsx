@@ -1,18 +1,18 @@
+import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 import { Profile } from "../../components/Profile";
-import { MainContainer } from './styles';
-import { Footer } from "../../components/Footer";
+import { MainContainer } from "./styles";
 
 export function ProfilePage() {
 	return (
 		<>
 			<div>
-				<Navbar/>
+				<Navbar />
 				<MainContainer>
 					<Profile />
 				</MainContainer>
-				<Footer/>
+				<Footer />
 			</div>
 		</>
-	)
+	);
 }

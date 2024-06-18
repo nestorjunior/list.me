@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import Fab from '@mui/material/Fab';
+import Fab from "@mui/material/Fab";
+import styled from "styled-components";
 
 export const FabButton = styled(Fab)`
 	border: 1px solid red;

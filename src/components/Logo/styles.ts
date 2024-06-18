@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const LogoContainer = styled.div`
 	display: flex;
@@ -19,7 +19,7 @@ export const LogoContainer = styled.div`
 			text-decoration: none;
 		}
 	}
-`
+`;
 export const TitleContainer = styled.h1`
 	font-size: 2.5rem;
 	font-weight: bolder;
@@ -32,9 +32,9 @@ export const TitleContainer = styled.h1`
 	@media (min-width: 320px) and (max-width: 480px) {
     font-size: 1.6rem;
   }
-`
+`;
 export const DescriptionContainer = styled.span`
 	font-size: 1.2em;
 	margin-top: 5px;
 	color: var(--blue-900);
-`
+`;

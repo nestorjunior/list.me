@@ -1,19 +1,18 @@
-
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
 import { Signup } from "../../components/Signup";
-import { MainContainer } from './styles';
+import { MainContainer } from "./styles";
 
 export function SignupPage() {
-	return(
+	return (
 		<>
 			<div>
-				<Navbar/>
+				<Navbar />
 				<MainContainer>
 					<Signup />
 				</MainContainer>
-				<Footer/>
+				<Footer />
 			</div>
 		</>
-	)
+	);
 }
