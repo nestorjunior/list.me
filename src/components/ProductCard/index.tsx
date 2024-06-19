@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { HintButton } from "../HintButton";
-import { ShareHintDialog } from "../ShareHintDialog";
 
 import {
 	IconCirclePlus,
@@ -97,13 +95,13 @@ export function ProductCard({
 								</CardParagraphDescription>
 							</CardDescription>
 							<CardLink>
-								<IconLink /> <a href="#">{productLink}</a>
+								<IconLink /> <a href="/">{productLink}</a>
 							</CardLink>
 						</CardContent>
 						<CardFooter>
 							<CardTags>
-								<a href="#">{`#${productTags}`}</a>
-								<a href="#">{`#${productTags}`}</a>
+								<a href="/">{`#${productTags}`}</a>
+								<a href="/">{`#${productTags}`}</a>
 							</CardTags>
 							<CardReactions>
 								<IconHeart />
