@@ -12,7 +12,7 @@ export function Header({ children }: HeaderProps) {
 		<>
 			<HeaderWrapper>
 				<div className="row">
-					<div className="col-sm-12 px-0">
+					<div className="col-sm-12">
 						<HeaderContainer style={{ height: "450px" }}>
 							<HeaderSection className="col-sm-12 col-md-12">
 								<div
