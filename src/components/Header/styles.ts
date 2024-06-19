@@ -13,12 +13,22 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const HeaderContainer = styled.header`
+	height: 450px;
   width: 100%;
 	background-image: linear-gradient(to bottom right, #d5e8eb, #dfedf0);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	@media (min-width: 481px) and (max-width: 767px) {
+    height: 485px;
+  }
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    height: 485px;
+  }
+
 `;
 
 export const HeaderSection = styled.section`
