@@ -15,7 +15,8 @@ export const HeaderWrapper = styled.div`
 export const HeaderContainer = styled.header`
 	height: 450px;
   width: 100%;
-	background-image: linear-gradient(to bottom right, #d5e8eb, #dfedf0);
+	background: rgb(213,232,235);
+	background: linear-gradient(120deg, rgba(213,232,235,1) 35%, rgba(217,238,242,1) 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
