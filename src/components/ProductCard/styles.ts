@@ -5,7 +5,7 @@ export const CardWrapper = styled.div`
 	border-radius: 25px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 	margin-bottom: 10px;
 `;
 export const CardImage = styled.img`

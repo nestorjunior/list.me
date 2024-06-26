@@ -9,7 +9,7 @@ export function App() {
 	return (
 		<Router>
 			<div className="App">
-				<div className="container-fluid p-0">
+				<div className="container-fluid">
 					<GlobalStyles />
 					<AppRoutes />
 				</div>

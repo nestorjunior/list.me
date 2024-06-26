@@ -1,14 +1,11 @@
 import { FeedbackButton } from "../FeedbackButton";
-import { FooterContainer } from "./styles";
+import { FooterContainer, FooterContainerLinks } from "./styles";
 
 export function Footer() {
 	return (
 		<>
 			<FooterContainer className="footer mt-auto py-3 bg-light">
-				<div
-					className="container text-center"
-					style={{ display: "flex", flexDirection: "column" }}
-				>
+				<FooterContainerLinks>
 					<span>
 						<a href="/about" style={{ marginRight: "5px" }}>
 							About
@@ -26,7 +23,7 @@ export function Footer() {
 							Cookies policy
 						</a>
 					</span>
-				</div>
+				</FooterContainerLinks>
 				<FeedbackButton />
 			</FooterContainer>
 		</>

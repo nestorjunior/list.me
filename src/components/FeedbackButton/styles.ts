@@ -1,13 +1,4 @@
-import Fab from "@mui/material/Fab";
 import styled from "styled-components";
-
-export const FabButton = styled(Fab)`
-	border: 1px solid red;
-  position: absolute;
-  bottom: 0px;
-  right: 16px;
-	border: 1px solid green;
-`;
 
 export const FeedbackModal = styled.div`
   position: absolute;
@@ -16,7 +7,15 @@ export const FeedbackModal = styled.div`
   transform: translate(-50%, -50%);
   width: 600px;
   background-color: #fff;
-  box-shadow: 24px;
   padding: 32px;
   border-radius: 8px;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 350px;
+  }
+
+	@media (min-width: 320px) and (max-width: 480px) {
+    width: 350px;
+  }
+
 `;
