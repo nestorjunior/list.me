@@ -20,16 +20,14 @@ const baseIconStyle = css`
   color: var(--gray-900);
   font-size: 1.2rem;
   transition: all 0.5s ease-in-out;
+	margin-right: 5px;
 	
   &:hover {
     transform: scale(1.2);
   }
 `;
 
-const createStyledIcon = (
-	icon: IconDefinition,
-	additionalStyles = css``,
-) => styled(FontAwesomeIcon).attrs({
+const createStyledIcon = (icon: IconDefinition, additionalStyles = css``) => styled(FontAwesomeIcon).attrs({
 	icon,
 })`
   ${baseIconStyle}
@@ -38,8 +36,7 @@ const createStyledIcon = (
 
 export const StyledIconLink = createStyledIcon(faLink);
 export const StyledIconFileLines = createStyledIcon(faFileLines);
-export const StyledIconCircleChevronRight =
-	createStyledIcon(faCircleChevronRight);
+export const StyledIconCircleChevronRight = createStyledIcon(faCircleChevronRight);
 export const StyledIconHeart = createStyledIcon(faHeart);
 export const StyledIconThumbsUp = createStyledIcon(faThumbsUp);
 export const StyledIconsShareNodes = createStyledIcon(faShareNodes);

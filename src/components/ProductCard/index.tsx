@@ -19,6 +19,7 @@ import {
 	CardReactions,
 	CardTags,
 	CardTitle,
+	CardUpdateProdutct,
 	CardWrapper,
 } from "./styles";
 
@@ -84,13 +85,13 @@ export function ProductCard({
 						<CardContent>
 							<CardHeader>
 								<CardTitle className="card-title">{productTitle}</CardTitle>
-								<small className="text-body-secondary">
+								<CardUpdateProdutct className="text-body-secondary">
 									{productLastUpdate}
-								</small>
+								</CardUpdateProdutct>
 							</CardHeader>
 							<CardDescription>
 								<IconFileLines />
-								<CardParagraphDescription className="card-text">
+								<CardParagraphDescription>
 									{productDescription}
 								</CardParagraphDescription>
 							</CardDescription>

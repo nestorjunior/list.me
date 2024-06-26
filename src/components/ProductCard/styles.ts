@@ -5,7 +5,7 @@ export const CardWrapper = styled.div`
 	border-radius: 25px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 	margin-bottom: 10px;
 `;
 export const CardImage = styled.img`
@@ -47,24 +47,31 @@ export const CardTitle = styled.h5`
 	font-weight: 600;
 	font-size: 1.5rem;
 `;
+
+export const CardUpdateProdutct = styled.small`
+	margin-bottom: 8px;
+`;
+
 export const CardDescription = styled.div`
 	display: flex;
-	align-items: baseline;
+	/* justify-content: flex-start; */
 `;
 export const CardParagraphDescription = styled.p`
 	color: var(--gray-400);
 	font-weight: normal;
 	font-size: 1rem;
-	margin-bottom: 5px!important;
+	/* margin-bottom: 5px!important; */
 `;
 export const CardLink = styled.div`
+	display: flex;
+	align-items: center;
 	a {
 		color: var(--gray-400);
 		transition: background-color 0.5s, color 0.5s;
 		font-size: 1rem;
 		text-transform: none;
 		padding-left: 0;
-		font-weight: 500;
+		font-weight: normal;
 		&:hover {
 			color: var(--gray-500);
 			text-decoration: underline;
