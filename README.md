@@ -30,7 +30,7 @@ Typescript: 5.2.2
 Clone the repository to your local development environment:
 
 ```
-https://github.com/decooliveira/wishorama-web.git
+https://github.com/nestorjunior/list.me
 ```
 
 Then type the command:
