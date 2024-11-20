@@ -1,77 +1,76 @@
 import {
-	Button,
-	Checkbox,
-	Dialog,
-	DialogActions,
-	DialogContent,
-	DialogTitle,
-	List,
-	ListItem,
-	ListItemButton,
-	ListItemText,
+  Button,
+  Checkbox,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  List,
+  ListItemButton,
+  ListItemText,
 } from "@mui/material";
 import { useState } from "react";
 
 interface User {
-	id: number;
-	name: string;
+  id: number;
+  name: string;
 }
 
 interface ShareHintDialog {
-	open: boolean;
-	onClose: () => void;
-	onShare: (users: User[]) => void;
-	users: User[];
+  open: boolean;
+  onClose: () => void;
+  onShare: (users: User[]) => void;
+  users: User[];
 }
 
 export function ShareHintDialog({
-	open,
-	onClose,
-	onShare,
-	users,
+  open,
+  onClose,
+  onShare,
+  users,
 }: ShareHintDialog) {
-	const [selectedUsers, setSelectedUsers] = useState<User[]>([]);
+  const [selectedUsers, setSelectedUsers] = useState<User[]>([]);
 
-	const handleToggle = (user: User) => {
-		const currentIndex = selectedUsers.findIndex((u) => u.id === user.id);
-		const newSelectedUsers = [...selectedUsers];
+  const handleToggle = (user: User) => {
+    const currentIndex = selectedUsers.findIndex((u) => u.id === user.id);
+    const newSelectedUsers = [...selectedUsers];
 
-		if (currentIndex === -1) {
-			newSelectedUsers.push(user);
-		} else {
-			newSelectedUsers.splice(currentIndex, 1);
-		}
-		setSelectedUsers(newSelectedUsers);
-	};
+    if (currentIndex === -1) {
+      newSelectedUsers.push(user);
+    } else {
+      newSelectedUsers.splice(currentIndex, 1);
+    }
+    setSelectedUsers(newSelectedUsers);
+  };
 
-	const handleShare = () => {
-		onShare(selectedUsers);
-		onClose();
-	};
+  const handleShare = () => {
+    onShare(selectedUsers);
+    onClose();
+  };
 
-	return (
-		<>
-			<Dialog open={open} onClose={onClose}>
-				<DialogTitle>Share with users</DialogTitle>
-				<DialogContent>
-					<List>
-						{users.map((user) => (
-							<ListItemButton key={user.id} onClick={() => handleToggle(user)}>
-								<Checkbox
-									checked={selectedUsers.some((u) => u.id === user.id)}
-								/>
-								<ListItemText primary={user.name} />
-							</ListItemButton>
-						))}
-					</List>
-				</DialogContent>
-				<DialogActions>
-					<Button onClick={onClose}>Cancel</Button>
-					<Button onClick={handleShare} color="primary">
-						Share
-					</Button>
-				</DialogActions>
-			</Dialog>
-		</>
-	);
+  return (
+    <>
+      <Dialog open={open} onClose={onClose}>
+        <DialogTitle>Share with users</DialogTitle>
+        <DialogContent>
+          <List>
+            {users.map((user) => (
+              <ListItemButton key={user.id} onClick={() => handleToggle(user)}>
+                <Checkbox
+                  checked={selectedUsers.some((u) => u.id === user.id)}
+                />
+                <ListItemText primary={user.name} />
+              </ListItemButton>
+            ))}
+          </List>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={onClose}>Cancel</Button>
+          <Button onClick={handleShare} color="primary">
+            Share
+          </Button>
+        </DialogActions>
+      </Dialog>
+    </>
+  );
 }
