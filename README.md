@@ -30,7 +30,7 @@ Typescript: 5.2.2
 Clone the repository to your local development environment:
 
 ```
-https://github.com/nestorjunior/list.me
+https://github.com/decooliveira/wishorama-web.git
 ```
 
 Then type the command:
@@ -55,9 +55,15 @@ http://localhost:5173/
 
 This project exists thanks to all the people who contribute.
 
+[![Deco Oliveira](https://github.com/decooliveira.png?size=50)](https://github.com/decooliveira/)
+
+[Deco Oliveira](https://github.com/decooliveira/)
+
 [![Nestor Pereira](https://github.com/nestorjunior.png?size=50)](https://github.com/nestorjunior)
 
 [Nestor Pereira](https://github.com/nestorjunior)
+
+[![Eduardo Marrane](https://github.com/eduardo-marrane.png?size=50)](https://github.com/eduardo-marrane)
 
 ## License
 
